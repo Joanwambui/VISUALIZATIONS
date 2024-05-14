@@ -1,0 +1,4 @@
+1st Approach 
+Loading csv files one by one then append queries as new
+2Nd Approach
+Loading the whole folder and in the first column selecting combine all then deleting first column, that way it has become dynamic

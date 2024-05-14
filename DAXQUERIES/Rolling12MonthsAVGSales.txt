@@ -1,0 +1,4 @@
+CALCULATE(AVERAGE('Sale Sample 2'[Sales Value]),DATESINPERIOD
+(Calendar_table[Date],MAX(Calendar_table[Date]),-12,MONTH)
+
+So, overall, this DAX code calculates the average sales value from the 'Sale Sample 2' table but only considers data from the last 12 months relative to the maximum date in the 'Calendar_table'.

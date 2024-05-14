@@ -1,0 +1,4 @@
+--Using RANKX in DAX
+Ranking = RANKX(ALL(Sales[Region]),[Total Sales],,DESC,Dense)
+
+--We need to specify the sales argument properly and use a measure to get value for the second argument.
