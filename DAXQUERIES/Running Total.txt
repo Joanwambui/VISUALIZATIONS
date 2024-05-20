@@ -1,0 +1,1 @@
+Running Total = CALCULATE(SUM('Sales Sample'[Sales Value]), FILTER(All(Calendar_table), Calendar_table[Date] <= MAX(Calendar_table[Date])))
