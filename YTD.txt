@@ -1,0 +1,3 @@
+Total YTD value = TOTALYTD([Total Sales], Calendar_table[Date])
+Total YTD value = TOTALYTD([Total Sales], DATESYTD(Calendar_table[Date]))
+Total YTD using Calc = CALCULATE([Total  Sales], DATESYTD(Calendar_table[Date]))
