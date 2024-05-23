@@ -1,0 +1,14 @@
+Measure = CALCULATE(COUNTROWS(Sales),FILTER(Sales,[Total Sales] > 500))
+
+--Filter function requires a table then add the measure and filter condition
+
+
+Measure2 = IF(HASONEVALUE(Sales[Country]),VALUES(Sales[Country])) - Optimize this DAX Code
+
+--Running the above DAX it will only show the selected countries etc therefore we will optimize it in the following way
+
+Measure2 = SELECTEDVALUE(Sales[Country])
+
+
+DAX for HASONEVALUE Below
+=IF(HASONEVALUE(DateTime[CalendarYear]),SUM(ResellerSales_USD[SalesAmount_USD])/CALCULATE(SUM(ResellerSales_USD[SalesAmount_USD]),DateTime[CalendarYear]=2007),BLANK())
