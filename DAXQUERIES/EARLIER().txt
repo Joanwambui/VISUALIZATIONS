@@ -1,0 +1,11 @@
+Index = CALCULATE(COUNT('Table4'[Supplier]), FILTER('Table 4',
+EARLIER('Table 4'[Apple Phone]) = 'Table 4'[Apple Phone]  &&
+EARLIER('Table 4'[Supplier]) >= 'Table 4'[Supplier]))
+
+For this result below
+Apple phone  Supplier Index
+iPhone 13     India      1
+iPhone 13    Mexico      2
+iPhone 13    Spain       3
+iPhone 14    Brazil      1
+iPhone 14    China       2
