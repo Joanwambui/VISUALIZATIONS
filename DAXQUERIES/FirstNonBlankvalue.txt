@@ -1,0 +1,6 @@
+--Select First Non-Blank Value in POWERBI
+Total Count = COALESCE('Table 1'[First Count],'Table 1'[Last Count],'Table 1'[Hit Count])
+
+---Make a Dynamic Title, year changes when I select a value
+
+Dynamic Title = "Total Sales in " & SELECTEDVALUE('Table 2'[Year], "all years")
