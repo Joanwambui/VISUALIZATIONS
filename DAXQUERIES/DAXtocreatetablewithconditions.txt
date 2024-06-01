@@ -1,0 +1,4 @@
+lots of columns in a table. write dax to create 3 columns with the following conditions:
+product id less than or equal to 100, product name should start from s and product price should be greater or equal to 500
+
+Required table = CALCULATETABLE(SUMMARIZECOLUMNS(Problem[Product Id], Problem[Product Name], Problem[Price]), Problem[Product ID] <= 100, Problem[Price] >= 500, SEARCH("s", Problem[Product Name], 1, BLANK()))
