@@ -1,0 +1,6 @@
+I - Intro, name of product, what its about and how the project relates to the product
+P - Problem, feature requirement
+R - Role. Exact role in the project.
+C - Contribution, Exact contribution to the project ::end user doc, data sources from all db, querying only required fields, pulling to BI and analyzing using diff charts
+T - Timeline (Duration of the project)
+O - Outcome (All KPI'S on dashboard show the value of the project.Also mention learning-building dashboards in an agile way)

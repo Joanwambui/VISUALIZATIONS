@@ -1,0 +1,10 @@
+Total_Customers = COUNTROWS(CALCULATETABLE(VALUES(Sales[Customer Name]), DATESBETWEEN(Calendar_table[Date], MIN(Calendar_table[Date]), MAX(Calendar_table[Date])))
+
+
+Last_Year_Customers=
+COUNTROWS(CALCULATETABLE(VALUES(Sales[Customer Name]), DATESBETWEEN(Calendar_table[Date], MIN(Calendar_table[Date])-365, MAX(Calendar_table[Date])-365))
+
+
+Common_Customers = 
+COUNTROWS(INTERSECT(CALCULATETABLE(VALUES(Sales[Customer Name]), DATESBETWEEN(Calendar_table[Date], MIN(Calendar_table[Date]), MAX(Calendar_table[Date]))),
+CALCULATETABLE(VALUES(Sales[Customer Name]), DATESBETWEEN(Calendar_table[Date], MIN(Calendar_table[Date])-365, MAX(Calendar_table[Date])-365))
