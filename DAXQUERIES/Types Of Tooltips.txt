@@ -1,0 +1,5 @@
+Types of Tooltips
+Standard Tooltip - General for any visual on BI Desktop
+Visual Level Tooltip - Questionmarkicon from any visual (click visual, format section, header icons, help tooltip-that is the visual level tooltip)
+
+Report Level Tooltip - shows you something inform of a visual when you hover around it. (Create a new page, canvas settings , choose type tooltip, now on the page for example take a barchart, sales and customername on the barchart. How to connect the report leveltooltip, create a new measure eg cityselected= "Selected city" & SELECTEDVALUE(Sales[City], "All") Put measure in line with the visual)Connection. toolits , type report page and select page)

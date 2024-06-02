@@ -1,0 +1,26 @@
+Title = 
+VAR startDate = MINX(GENERALLEDGERENTRIES, GENERALLEDGERENTRIES[PostingDate])
+VAR endDate = MAXX(GENERALLEDGERENTRIES, GENERALLEDGERENTRIES[PostingDate])
+VAR country = SELECTEDVALUE(GENERALLEDGERENTRIES[Countries])
+ 
+VAR startMonth = FORMAT(startDate, "MM")
+VAR startDay = FORMAT(startDate, "DD")
+VAR startYear = FORMAT(startDate, "YYYY")
+ 
+VAR endMonth = FORMAT(endDate, "MM")
+VAR endDay = FORMAT(endDate, "DD")
+VAR endYear = FORMAT(endDate, "YYYY")
+ 
+VAR title =
+    "CUSTOMER PROFITABILITY AS OF " &
+    startMonth & "/" & startDay & "/" & startYear &
+    " TO " &
+    endMonth & "/" & endDay & "/" & endYear &
+    " FOR " & country
+ 
+VAR dtCondition =
+    IF(ISBLANK(startDate) || ISBLANK(endDate), "Please Select Period!",
+        IF(ISBLANK(country), "Please Select Country!", title))
+ 
+RETURN
+    dtCondition
