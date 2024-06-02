@@ -1,0 +1,20 @@
+Max value populated in new column using Switch or IF
+Max Orders= SWITCH(TRUE(),'Table'[Mon Orders]>'Table'[Tues Orders] && 'Table'[Mon Orders] > 'Table'[Wed Orders],'Table'[Mon Orders], 'Table'[Tues Orders]>'Table'[Mon Orders] && 'Table'[Tues Orders] > 'Table'[Wed Orders], 'Table'[Tues Orders], 'Table'[Wed Orders]> 'Table'[Mon Orders] && 'Table'[Wed Orders] > 'Table'[Tues Orders], 'Table'[Wed Orders])
+
+Prod MonOrd TueOrd WedOrd New Column
+P1    1      4       7       7
+P2    2      5       3       5
+P3    9      6       4       9
+
+
+Using IF
+Max Orders = 
+IF (
+    'Table'[Mon Orders] > 'Table'[Tues Orders] && 'Table'[Mon Orders] > 'Table'[Wed Orders],
+    'Table'[Mon Orders],
+    IF (
+        'Table'[Tues Orders] > 'Table'[Mon Orders] && 'Table'[Tues Orders] > 'Table'[Wed Orders],
+        'Table'[Tues Orders],
+        'Table'[Wed Orders]
+    )
+)
