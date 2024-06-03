@@ -1,0 +1,5 @@
+Max Value that can be visualized on a line chart:
+var max_data_point = MAXX(ALL('Table 3'),[Total Sales])
+var check_max = IF(max_data_point = [Total Sales], max_data_point, BLANK())
+return check_max
+Now add it to the y-axis on the line  chart visual
