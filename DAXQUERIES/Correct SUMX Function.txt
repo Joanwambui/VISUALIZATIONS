@@ -1,0 +1,2 @@
+Correct SUMX Function
+Correct total orders = IF(HASONEVALUE(Product_Categories[CategoryName]),[Total Orders], SUMX(Product_Categories, [Total Orders]))
