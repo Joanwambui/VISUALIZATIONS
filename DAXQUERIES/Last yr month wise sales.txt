@@ -1,0 +1,8 @@
+Finding values for months in the previous years
+Last yr month wise sales =
+CALCULATE([Total_Sales], DATEADD(Calendar_table[Date],-1,YEAR))
+
+Parallelperiod will sum the values of the last years month, each month will have that similar summation.
+
+
+Different between VALUES() and DISTINCT() functions - distinct will ignore the blanks but values will support blank values
