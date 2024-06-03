@@ -1,0 +1,11 @@
+Rank = 
+var max_state = MAX('Table 6'[State])
+var final_RANK = RANKX(FILTER(ALL('Table 6'), 'Table 6'[State]=max_state), [Total population],,DESC,Dense)
+return final_RANK
+
+Customer  State   POPULATION   RANK
+Akash     Asam       1500         2
+Abhinav   Asam       2500         1
+Saurabh   Chennai    700           3
+Prashat   Chennai    4000           2
+Shublam   Chennai    5000          1
