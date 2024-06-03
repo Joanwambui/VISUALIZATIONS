@@ -1,0 +1,6 @@
+InventoryOutput = 
+var demand = CALCULATE([Demand], WINDOW(1, ABS, 0,REL,ALLSELECTED(Inventory[Week])))
+Running T Supply = 
+var demand = CALCULATE([Supply], WINDOW(1, ABS, 0,REL,ALLSELECTED(Inventory[Week])))
+return
+IF(demand>supply,"OutOfStock","InStock")
