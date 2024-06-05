@@ -1,0 +1,13 @@
+How to get count of VARCHAR Values
+COUNT_COLUMN
+Row1): apple,apple,bat
+Row2) cat,bat,bat
+Row3) bat,cat,cat
+
+Measure=
+var_apple = CALCULATE(COUNTROWS(Siemens), SEARCH("apple",Siemens[Column]))
+var_cat = CALCULATE(COUNTROWS(Siemens), SEARCH("cat", Siemens[Column]))
+var_bat = CALCULATE(COUNTROWS(Siemens), SEARCH("bat", Siemens[Column]))
+
+return
+"Value of Apple=" & _apple & "Value of Cat=" & _cat & "Value of Bat=" & _bat
