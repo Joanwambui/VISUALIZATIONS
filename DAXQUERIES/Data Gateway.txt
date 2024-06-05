@@ -1,0 +1,15 @@
+Data Gateway
+Acts as a bridge between on-premises data sources and powerbi service so that data transfer happens efficiently. 
+
+Data Lake
+Stores both structured and unstructured data 
+Data Warehouse 
+All structured data is integrated and stored
+
+A database is a transactional data repository (OLTP). A data mart is an analytical data repository (OLAP)
+A database captures all the aspects and activities of one subject in particular. A data mart will house data from multiple subjects.
+
+Types of Data Mart
+Dependent
+Independent
+Hybrid
