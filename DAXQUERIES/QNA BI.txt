@@ -1,0 +1,24 @@
+QNA BI
+How to identify country as a different data type in PowerBI:
+Under column tools, Data category Choose Country
+
+Compress 1gb to less than 1 gb while loading?
+To reduce cardinality, lower cardinality if datetime, split to a data and time column separately
+
+PowerBI Architecture
+END TO END STEPS
+
+Data Flow
+Live power queries that run independently online
+
+PowerBI Works on what engine? XVelocity engine
+
+Multiple line chart? Bring line chart, add more values on y axis
+
+Pie chart - show diff categories in percentage, doughnut is type of pie chart with a whole and dispay categories as arcs
+
+RLS:Rowlevelsecurity,resticting data as per logged in user
+static,dynamic rls
+
+IndexColumn:Exists in PowerQuery under add column, gives unique value to ech record on table
+
