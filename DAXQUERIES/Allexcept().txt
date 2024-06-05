@@ -1,0 +1,16 @@
+Allexcept()
+
+Product   Count
+iPhone 11   2
+iPhone 12   1
+iPhone 11   2
+iPhone 13   3
+iPhone 13   3
+iPhone 14   1
+iPhone 13   3
+iPhone 15   1
+
+How to create the count column:
+
+Calculated column =
+CALCULATE(COUNT('Sample'[Product]),ALLEXCEPT('Sample','Sample'[Product]))
