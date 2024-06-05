@@ -1,0 +1,10 @@
+Types of Licenses in PowerBI
+PRO - Its per user based subscription, can refresh dataset 8 times a day , model size cant exceed 1 GB, Allowed to create nd use workspaces, Power BI Apps and Embed in SharePoint online 13usd
+
+
+PREMIUM - Capacity based license, best for a large user base, 48 refreshes a day, supports upto 400 GB, Will need to use it in conjuction with Pro license as this premium one is only available in app workspace  33 usd
+
+
+PREMIUM PER USER
+FREE - 48 refreshes, upto 100 GB, Not that big in their userbase 20 usd
+
