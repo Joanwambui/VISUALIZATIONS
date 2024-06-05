@@ -1,0 +1,16 @@
+INDEX()
+EmpID   Ename   Salary   Result
+1        A       100       0
+2        B         10       90
+3        C         50       50
+4        D         30       70
+5        E         60       40
+
+Result = CALCULATE([Total Salary], INDEX(1,ALLSELECTED(Scenario[Ename],Scenario[EmpID]))) #This will give us 100 as the output for all records
+
+
+Result = 
+var _firstrecord = CALCULATE([Total Salary], INDEX(1,ALLSELECTED(Scenario[Ename],Scenario[EmpID])))
+var _diff = _firstrecord - [Total Salary]
+return
+_diff
