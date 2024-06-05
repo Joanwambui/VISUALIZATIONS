@@ -1,0 +1,9 @@
+How to Show Multiple values in a card:
+
+eg multiselection of a card slicer to show
+America,Australia,Kenya
+
+Multiselect Slicer =
+var Countries = CONCATENATEX(DISTINCT(Sales[Country]),[Country],",")
+var result = SWITCH(TRUE(),ISFILTERED(Sales[Country]), Countries)
+return result
