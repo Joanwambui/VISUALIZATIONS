@@ -1,0 +1,13 @@
+All()
+Name       Price      AvgPrice
+Product A  10         35
+Product B  20         35
+Product c  30         35
+Product D  40         35
+Product E  50         35
+Product F  60         35
+Total      210        210
+
+Measure (AvgPrice)= CALCULATE(AVERAGE(Products[Price]), ALL(Products))
+
+Measure (Avg Price final) = IF(HASONEVALUE(Products[Name]),[AvgPrice],SUMX(Products, [AvgPrice]))
