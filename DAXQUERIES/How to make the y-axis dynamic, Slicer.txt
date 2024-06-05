@@ -1,0 +1,13 @@
+How to make the y-axis dynamic on the bar chart:
+
+To make it dynamic we need to use Field Parameters
+Field parameters allow us to dynamically change measures in the report
+
+Under Modelling, New Parameter, Fields option
+
+Give Name = Test
+
+Add all Columns on the fields 
+Check box add slicer to the page 
+
+Now make it in interactive, y axis will be test that we created on parameters
