@@ -1,0 +1,13 @@
+How to Join Disconnected Tables?
+Completely disconnected how do you combine the two?
+
+Customer             Address Detaails
+Age                    City
+Customer               Customer Address
+Gender                  State
+
+
+Add Index column in the customer table
+Add index base on address for address
+
+Merge the two tables based on Index, Inner Join
