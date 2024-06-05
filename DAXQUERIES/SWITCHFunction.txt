@@ -1,0 +1,20 @@
+Table:
+column1  Column2   Type
+value 1  127890.2  Decimal
+value 2  65482.1   Decimal
+Perc 1   0.99      Percentage
+Perc 2   0.98      Percentage
+
+
+
+Output to be
+Result column
+12,789
+65,482
+99.0%
+98.0%
+
+Ideally, we need to use SWITCH Function to be able to switch between the decimals and Percentages
+
+Result = FORMAT('Table'[Column2], SWITCH('Table'[Type], "Decimal", "00,000", "Percentage", "0.0%"))
+
