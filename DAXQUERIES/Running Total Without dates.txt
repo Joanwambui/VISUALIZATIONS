@@ -1,0 +1,20 @@
+Running Total Without dates
+For us to do this, we will use rank function as a calculated column in place of a date column
+
+Ranking = RANKX(ALL('Table 5'[Product ID],'Table 5'[Sales]),[Total_Sale],,DESC,Dense)
+
+Product ID    Total_Sales  Ranking
+103             6500        1
+101             5000        2
+104             3500        3
+100             2000        4
+102             1000        5
+
+Cumulative_total = CALCULATE([Total_Sale], FILTER(ALL('Table 5'), [Ranking] <= MAX('Table 5'[Ranking])
+
+Product ID    Total_Sales  Ranking  cu_t
+103             6500        1       6500
+101             5000        2      11500
+104             3500        3      15000
+100             2000        4
+102             1000        5
