@@ -1,0 +1,5 @@
+Many to Many - Data modeling:
+
+Many to many should only be used when neither column contains unique values.
+
+Incase our table has many to many but some of our columns from both have unique values, create a bridge table using the common column and remove duplicates then form a relationship among those three tables, now one to many relationship.
