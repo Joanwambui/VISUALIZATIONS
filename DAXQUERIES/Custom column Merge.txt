@@ -1,0 +1,13 @@
+Custom column Merge
+Merging 3 columns with the help of special characters such as hyphen or colon
+Will have to add custom column directly
+
+Ribbon click on custom column
+Result
+=[Product] & ":" [Code] & "-" & [Quantity])
+
+Product and Colour are text but quantity is no therefore we will get an error as the datatypes dontmatch
+
+Result
+=[Product] & ":" [Code] & "-" & Number.ToText[Quantity]) 
+finally change result column to text
