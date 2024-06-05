@@ -1,0 +1,52 @@
+Key Differences: Append & Merge
+Type of Combination:
+
+Append: Combines tables by adding rows.
+Merge: Combines tables by adding columns.
+Requirements:
+
+Append: Tables must have the same column structure.
+Merge: Tables must have a common key or keys to join on.
+Resulting Structure:
+
+Append: The resulting table has the same columns as the original tables.
+Merge: The resulting table has columns from both original tables, based on the join keys.
+
+
+Calculated column and DAX
+DIFFERENCE:
+
+Calculated Column: Evaluated in the row context, useful for row-level calculations.
+Measure: Evaluated in the filter context, useful for dynamic calculations that change with report filters.
+Storage:
+
+Calculated Column: Stored in the table, increasing the data model size.
+Measure: Not stored, dynamically computed, and thus more memory efficient.
+Recalculation:
+
+Calculated Column: Static once calculated, changes only with data refresh.
+Measure: Dynamic, recalculates based on the current context in reports and visuals.
+Performance:
+
+Calculated Column: This can slow down data refresh and increase storage requirements.
+Measure: Can slow down report rendering if overly complex but does not affect data refresh performance.
+
+
+Filters
+Purpose: Filters are used to restrict the data that is displayed in visuals across the entire report or within specific visuals.
+
+Scope: Filters can be applied at different levels:
+Report Level: Filters affect all pages in the report.
+Page Level: Filters affect only the current page.
+Visual Level: Filters affect only the specific visual they are applied to.
+Application: Filters are typically set up by the report designer during the report creation process. They are less interactive for end-users compared to slicers.
+Use Case: Use filters when you need to control which data is visible in the report or visual based on certain criteria. For example, showing data for a specific time period, region, or product category.
+
+
+Slicers
+Purpose: Slicers are visual controls that allow end-users to interactively filter data in reports.
+Scope: Slicers typically affect all visuals on the report page by default, but they can be scoped to specific visuals using visual interactions.
+Application: Slicers are added to the report canvas as visual elements, and users can interact with them to dynamically filter data.
+Use Case: Use slicers when you want to provide an interactive and user-friendly way for end-users to filter data in the report. For example, allowing users to select a specific date range, category, or any other field.
+
+Query Folding: where transformations are now not done in power query rather they are implemented from the data source itself
