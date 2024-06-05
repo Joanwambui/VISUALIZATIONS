@@ -1,0 +1,43 @@
+Q/A
+Total = a*b/c*d - how to optimize this dax?
+
+Total=
+var a =10
+var b = 20
+var c = 30
+var d = 40
+var e = a*b
+var f = c*d
+var g = DIVIDE(e,f)
+RETURN g
+
+
+
+Difference between star schema and snowflake schema? Each dimension in star schema is represented by one dimension table, contains set of attributes. Fact table is represented at the centre
+Fact table contains >80% of the data then star schema
+Snowflake schema, Dimension tables are normalized- splitting dimension tables to multiple dimension tables to have less redundant data. Schema should be used when dimension tables huge in size.
+
+
+What is data flow?
+Created in BI Service, live queries that run in BI Service. We reuse the query
+
+Diff refreshes:Manual refresh, scheduled refresh(gateways required), incremental refresh(few predefined steps-create two parameters etc)
+
+Field Parameters? Recently introduced, Helpful to dynamically change axis of the visual
+
+Edit Interactions and block visual to not be affected by slicer
+
+Static RLS
+Dynamic RLS
+
+I have a category column with a,b,c,d I wanted to show visual with x axis c,d,a,b. How to handle this scenario:
+Tableview and create a new column IF Statement
+Test = IF(categorytable[Total Sales]=300,1,IF(categorytable[Total Sales]=400,2,IF(categorytable[Total Sales]=100,3,IF(categorytable[Total Sales]=200,4)
+
+Now click on Category and sort by test column we created above
+On the report page now, click on the three elipses and sort axis by category 
+
+
+
+
+ 
