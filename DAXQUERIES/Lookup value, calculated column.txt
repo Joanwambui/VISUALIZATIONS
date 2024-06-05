@@ -1,0 +1,4 @@
+Lookup value, calculated column
+We want to get the discount value from the discount table using lookup. Both discount and Product tables have one column in common, Product name.
+
+Discount_% = LOOKUPVALUE(Discount[Discount%],Discount[Product Name],'Product'[Product Name])
