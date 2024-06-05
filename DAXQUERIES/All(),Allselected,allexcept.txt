@@ -1,0 +1,11 @@
+All():
+Return all rows in a table, column
+All measure = CALCULATE([Total], ALL(Products)) so it will populate summation of all total orders
+
+Allselected():Removes context filters from columns and rows in the current query, retains explicit filter
+ =
+CALCULATE([Total], ALLSELECTED(Products[ProductColor]))
+It responds to any filters we apply on the separate slicer.
+
+Allexcept():Removes all context filters that have been applied to specified columns. =
+CALCULATE([Total], ALLEXCEPT(Products,Products[ProductColor]))
