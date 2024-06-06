@@ -1,0 +1,436 @@
+The Import method stores the data within the Power BI file, while DirectQuery retrieves the data directly from the data source in real time
+
+Advantages of DirectQuery Mode
+
+This can result in faster query performance and better scalability when dealing with very large datasets. Finally, using DirectQuery mode ensures maximum accuracy as it always reflects up-to-date information without requiring manual updates or relying on scheduled refreshes.
+
+Is Import or direct query faster?
+Switching to Import Mode:
+
+Queries run faster because they don't have to go back to the source database for every interaction. You can consider importing only the most critical and frequently accessed data to improve performance, while keeping less frequently used data in DirectQuery mode
+
+
+
+Condition to append tables:
+tables must have the same column name, data types should be the same
+
+2 or more columns and we want to join to an existing tables then we use merge using join
+
+(Firstname) (Lastname) - DAX to join the two in BI
+FullName = [firstname] & " " & [lastname]
+FullName = CONCATENATE([firstname], CONCATENATE(" ", [lastname]))
+
+Difference btwn dimension table and fact table
+
+In Power BI, a fact table stores quantitative data and metrics such as sales amounts or transaction quantities, which can be aggregated for analysis. In contrast, a dimension table contains descriptive attributes like product names or dates, providing context and enabling detailed filtering and slicing of the data in reports and dashboards.
+Primarykey - fact table
+
+Differentiate primary to foreign keys?
+Primary Key
+Definition:
+
+A primary key is a unique identifier for each record in a table.
+It ensures that each row in the table can be uniquely identified.
+Characteristics:
+
+Contains unique values with no duplicates.
+Often a single column, but can be a combination of columns (composite key).
+Purpose:
+
+Used to uniquely identify records in a table.
+Facilitates relationships by linking to foreign keys in other tables.
+Example:
+
+In a Product dimension table, ProductID can be the primary key.
+Foreign Key
+Definition:
+
+A foreign key is a field in one table that uniquely identifies a row of another table.
+It creates a link between the data in two tables.
+Characteristics:
+
+Contains values that match primary keys in another table.
+May contain duplicates, as multiple rows in a table can reference the same foreign key value.
+Purpose:
+
+Used to establish and enforce a link between the data in two tables.
+Helps maintain referential integrity by ensuring that the relationships between tables remain consistent.
+Example:
+
+In a Sales fact table, ProductID can be a foreign key linking to the ProductID primary key in the Product dimension table.
+Usage in Power BI
+Primary Key in Power BI:
+
+Used to define relationships between tables by linking to foreign keys.
+Ensures data integrity by uniquely identifying each record in a dimension table.
+Foreign Key in Power BI:
+
+Used to create relationships in the data model, allowing for data to be pulled together from different tables.
+Enables users to perform complex queries and create visualizations that combine data from multiple tables.
+
+How to check column has unique values?
+Under table view highlight specific column and at the bottom it will show count of distict values. Using DAX,
+
+manytomany rltnship give ambiguous figures - normalization to create table with distinct uniuq values to make onetomany relationships
+
+Types of Schemas
+Snowflake size of dimension data is large therefore normalization of data compared to star schema
+
+1. Star Schema
+Structure:
+
+A central fact table connected to multiple dimension tables.
+Fact table contains keys to dimension tables and quantitative data (metrics).
+Dimension tables contain descriptive attributes.
+Characteristics:
+
+Simple and intuitive design.
+Easy to understand and query.
+Efficient for read operations and performs well with large datasets.
+Use Case:
+
+Ideal for analytical reporting and dashboards where users need to slice and dice data across multiple dimensions.
+Example:
+
+Sales Fact Table connected to Product, Customer, Time, and Store Dimension Tables.
+2. Snowflake Schema
+Structure:
+
+An extension of the star schema where dimension tables are normalized into multiple related tables.
+Dimension tables can have their own sub-dimension tables.
+Characteristics:
+
+More complex and involves more joins compared to a star schema.
+Reduces redundancy by normalizing data.
+Can improve data integrity and reduce storage requirements.
+Use Case:
+
+Useful when there are hierarchical relationships within dimensions that need to be modeled.
+Example:
+
+Sales Fact Table connected to a Product Dimension Table, which in turn is connected to a Category Table.
+3. Galaxy Schema (or Fact Constellation Schema)
+Structure:
+
+Multiple fact tables share dimension tables.
+Represents multiple star schemas.
+Characteristics:
+
+Suitable for complex data warehouse designs.
+Allows for shared dimensions among different fact tables, providing a unified view across multiple business processes.
+Use Case:
+
+Useful in large and complex business environments where multiple, related fact tables need to be analyzed.
+Example:
+
+Sales Fact Table and Inventory Fact Table both connected to shared dimension tables like Product, Time, and Store.
+4. Flat Table Schema
+Structure:
+
+A single table that contains all the data needed for analysis.
+No separate dimension or fact tables.
+Characteristics:
+
+Simplest form of data structure.
+Easy to implement but not scalable for large datasets.
+May lead to data redundancy and larger storage requirements.
+Use Case:
+
+Suitable for small datasets or simple analyses with limited dimensions.
+Example:
+
+A single table containing columns for Sales Amount, Product Name, Customer Name, Date, and Store Location.
+Choosing the Right Schema in Power BI
+Performance: Star and snowflake schemas are optimized for performance and efficient querying.
+Complexity: Star schema is simpler and easier to maintain, while snowflake schema is more complex but can handle detailed hierarchies.
+Data Volume: For large volumes of data and complex relationships, a star or galaxy schema is recommended.
+Redundancy: Snowflake schema reduces data redundancy through normalization.
+
+Card,slicer,doughnut,stackerbarchart
+stackedbarchart-bar can be divided into diff segments representing subcategory
+
+Filters
+Definition:
+
+Filters restrict the data that is shown in visuals across the report or within a specific visual.
+Types of Filters:
+
+Visual Level Filters: Apply to a single visual.
+Page Level Filters: Apply to all visuals on a single report page.
+Report Level Filters: Apply to all visuals across all pages in the report.
+Characteristics:
+
+Set in the Filters pane.
+Can be hidden from the report viewers.
+Useful for setting default data views or for security and data governance purposes.
+Use Cases:
+
+Apply a filter to a chart to only show data for a specific time period.
+Filter data to display specific regions across all visuals on a page.
+Example:
+
+Filtering sales data to show only the current year.
+Slicers
+Definition:
+
+Slicers are visual elements that allow users to interactively filter data on the report page.
+Types of Slicers:
+
+Category Slicer: Displays a list of categories (e.g., product names, regions).
+Numeric Slicer: Allows users to set numeric ranges (e.g., price range).
+Date Slicer: Allows users to filter by specific date ranges.
+Characteristics:
+
+Added directly to the report canvas as visual elements.
+Interactive and can be used by report viewers to dynamically adjust the data view.
+Provide an intuitive way for users to filter data.
+Use Cases:
+
+Allow users to filter sales data by different product categories.
+Provide a date range slicer for users to select specific time periods.
+Example:
+
+A slicer for selecting different regions to filter sales data on a dashboard.
+Key Differences
+Visibility and Interaction:
+
+Filters: Set by report designers and can be hidden from users. They are less interactive and mainly used for setting up the report.
+Slicers: Visible and interactive elements on the report that users can adjust to filter data dynamically.
+Scope:
+
+Filters: Can be applied at different levels (visual, page, report).
+Slicers: Typically affect all visuals on the page they are placed on but can be configured to target specific visuals.
+
+
+If slicer interaction is not working well, check the edit interactions if it is okay then check the relationship.
+
+Sales = SUMX(
+            FILTER(Product, Product[Country] = "India"),
+            Product[Sales]
+        )
+
+In Power BI, the FILTER function is a DAX function used to filter tables or columns in tables based on specified conditions. It returns a table that contains only the rows that meet the specified criteria.
+
+In Power BI, the RELATED function is used to retrieve a related value from another table based on a defined relationship. It's typically used in scenarios where you need to access data from a related table within a calculated column or measure. Here are some common use cases for the RELATED function:
+
+1. Accessing Related Data:
+Example: Suppose you have two tables, "Sales" and "Products", related by a common key "ProductID". If you want to display the product name in a visual alongside sales data from the "Sales" table, you can use the RELATED function to retrieve the product name from the "Products" table.
+2. Calculating Related Metrics:
+Example: If you have a fact table containing sales data and a dimension table containing product categories, you can use the RELATED function to calculate metrics such as total sales within each product category. This allows you to aggregate data from related tables in your reports and dashboards.
+3. Creating Hierarchies:
+Example: In a date dimension table, you may have columns for year, quarter, month, and day. If you want to create a hierarchy that allows users to drill down from year to quarter to month, you can use the RELATED function to retrieve the corresponding values from the related columns in the date table.
+4. Enforcing Row-Level Security:
+Example: In row-level security (RLS) scenarios, you may want to restrict access to certain rows in a table based on the user's role. You can use the RELATED function to filter the data based on the user's credentials and ensure that they only see the relevant rows.
+5. Calculating Derived Values:
+Example: If you have a calculated column that needs to reference a value from a related table, you can use the RELATED function to retrieve that value and perform calculations based on it. This allows you to create dynamic calculations that depend on relationships between tables.
+
+FUNCTIONS IN POWERBI
+1. Aggregation Functions
+SUM: Calculates the sum of a column or expression.
+AVERAGE: Calculates the average of a column or expression.
+MIN: Returns the minimum value in a column or expression.
+MAX: Returns the maximum value in a column or expression.
+COUNT: Counts the number of rows in a table or the number of values in a column.
+COUNTROWS: Counts the number of rows in a table or a table expression.
+2. Logical Functions
+IF: Returns one value if a condition is true and another value if it's false.
+SWITCH: Evaluates an expression against a list of values and returns the result corresponding to the first matching value.
+AND: Returns TRUE if all arguments are TRUE.
+OR: Returns TRUE if any argument is TRUE.
+NOT: Returns the opposite of a logical value.
+3. Date and Time Functions
+DATE: Creates a date from the specified year, month, and day.
+YEAR: Returns the year component of a date.
+MONTH: Returns the month component of a date.
+DAY: Returns the day component of a date.
+TODAY: Returns the current date.
+CALENDAR: Generates a table of dates.
+CALENDARAUTO: Generates a calendar table automatically based on data in the model.
+4. Text Functions
+CONCATENATE: Concatenates two or more text strings.
+LEFT: Returns the leftmost characters from a text string.
+RIGHT: Returns the rightmost characters from a text string.
+LEN: Returns the number of characters in a text string.
+FIND: Finds the starting position of one text string within another text string.
+SUBSTITUTE: Replaces occurrences of a specified string within a text string.
+5. Relationship Functions
+RELATED: Retrieves a related value from another table.
+RELATEDTABLE: Returns a table related to the current row by a single relationship.
+6. Filter Functions
+FILTER: Filters rows in a table based on a condition.
+ALL: Removes all filters from a table or column.
+ALLEXCEPT: Removes all filters except those specified in the function arguments.
+KEEPFILTERS: Applies filters to columns in the current context only.
+7. Statistical Functions
+MEDIAN: Returns the median of the values in a column.
+STDEV.P: Calculates the population standard deviation.
+STDEV.S: Calculates the sample standard deviation.
+VAR.P: Calculates the population variance.
+VAR.S: Calculates the sample variance.
+8. Information Functions
+ISBLANK: Checks whether a value is blank.
+ISNUMBER: Checks whether a value is a number.
+ISTEXT: Checks whether a value is text.
+TYPE: Returns the data type of an expression.
+9. Time Intelligence Functions
+TOTALYTD: Calculates a year-to-date total.
+DATESYTD: Returns a year-to-date set of dates.
+SAMEPERIODLASTYEAR: Returns a set of dates for the same period in the previous year.
+10. Ranking Functions
+RANKX: Assigns a rank to each row in a table based on the value of an expression.
+TOPN: Returns the top N rows based on a specified expression and ordering.
+11. Table Functions
+VALUES: Returns a single column table containing unique values from a column.
+ADDCOLUMNS: Adds calculated columns to a table.
+SUMMARIZE: Creates a summary table by grouping data and adding aggregations.
+12. Conversion Functions
+FORMAT: Formats a value with the specified format.
+CONVERT: Converts a value to a different data type.
+13. Financial Functions
+PV: Returns the present value of an investment.
+FV: Returns the future value of an investment.
+14. Cumulative Functions
+CUMULATE: Calculates a cumulative total over a specified column or expression.
+
+How to order months in the right way in PowerBI
+Tableview,create calculated column that calculates month number and then sort month name based on the monthno
+
+RLS:Resticting data based off logged in user
+
+Row-level security (RLS) is a security feature in Power BI that allows you to restrict access to data at the row level based on the user's identity. It enables you to control which rows of data a user can view, ensuring that users only see the data they are authorized to access. Here's all you need to know about row-level security in Power BI:
+
+1. How Row-Level Security Works:
+User Identity: RLS works by evaluating the identity of the user accessing the Power BI report or dataset. Each user is authenticated against their credentials.
+
+Security Roles: Security roles are defined in Power BI, where you specify which users or groups belong to each role. Each security role has its own set of rules that define which rows of data are accessible to users in that role.
+
+Role-based Filters: You create rules, typically in the form of DAX expressions, that filter the data based on the user's role. These filters are applied dynamically at runtime, ensuring that users only see the data allowed by their role.
+
+Dynamic Enforcement: RLS filters are enforced dynamically at the query level, meaning that the filtered data is retrieved from the data source based on the user's role. Users cannot bypass these filters, even if they attempt to modify the report or query.
+
+2. Implementation Steps:
+Define Security Roles: Identify the different groups of users who will access the report and define security roles for each group.
+
+Create Role-based Filters: Write DAX expressions that define the filtering logic for each security role. These expressions should determine which rows of data each role can access.
+
+Assign Users to Roles: Assign each user or group to the appropriate security role in Power BI. You can assign multiple users to a single role or have different users in different roles.
+
+Publish and Test: Publish the Power BI report with row-level security enabled and test it with different user accounts to ensure that the security filters are working as expected.
+
+3. Use Cases:
+Sensitive Data: RLS is used to restrict access to sensitive data, such as financial information, employee salaries, or personally identifiable information (PII).
+
+Multi-Tenancy: In multi-tenant environments, RLS ensures that each tenant can only access their own data, maintaining data segregation and privacy.
+
+Role-based Access: RLS allows you to implement role-based access control, where different users have different levels of access to the data based on their role or responsibilities.
+
+4. Limitations:
+Static Roles: Power BI supports static roles, where users are assigned to roles manually. Dynamic roles, based on parameters or external systems, are not directly supported.
+
+Dataset-level Security: RLS applies at the dataset level, meaning that users with access to the dataset can view the underlying data model and potentially infer information from the data structure.
+
+5. Best Practices:
+Granular Roles: Define security roles at a granular level to minimize the risk of overexposure to sensitive data.
+
+Regular Review: Regularly review and update security roles and filters to ensure that they align with the organization's security policies and user access requirements.
+
+Testing: Thoroughly test row-level security configurations with different user scenarios to verify that the data access controls are working correctly.
+
+Row-level security in Power BI is a powerful feature that helps organizations enforce data access controls and maintain data privacy and confidentiality. By implementing RLS, you can ensure that users only see the data relevant to their role or responsibilities, while protecting sensitive information from unauthorized access.
+
+Types of row level security
+ChatGPT
+In Power BI, there are primarily two types of row-level security (RLS) mechanisms available: Static and Dynamic. Let's explore each:
+
+1. Static Row-Level Security:
+Definition: Static RLS is based on predefined roles and filters that are static and do not change based on user interaction or context.
+
+Implementation:
+
+You define roles within Power BI and specify the filters for each role using DAX expressions.
+Users or groups are then assigned to these predefined roles.
+The filters associated with each role are applied to the data at query time, restricting access to rows that do not meet the filter criteria.
+Use Cases:
+
+When the access patterns are consistent and do not change frequently.
+Suitable for scenarios where users belong to distinct groups with well-defined data access requirements.
+Advantages:
+
+Simple to implement and manage.
+Well-suited for scenarios with fixed access requirements.
+2. Dynamic Row-Level Security:
+Definition: Dynamic RLS dynamically adjusts filters based on the context of the user interacting with the report, allowing for more flexible and personalized data access control.
+
+Implementation:
+
+Filters are determined based on user attributes or parameters, such as user name, department, or region.
+DAX expressions are used to calculate the filters dynamically based on the user's context.
+Filters are evaluated at query time, adapting to the user's identity and role.
+Use Cases:
+
+When data access requirements vary based on user attributes or parameters.
+Suitable for scenarios where users may have overlapping access rights or require personalized data views.
+Advantages:
+
+Provides more flexibility and granularity in data access control.
+Allows for personalized data views based on user attributes or parameters.
+Choosing Between Static and Dynamic RLS:
+Nature of Access Requirements: Consider whether the data access requirements are fixed and uniform (Static RLS) or variable and personalized (Dynamic RLS).
+
+Complexity and Flexibility: Dynamic RLS offers more flexibility but may require more complex DAX expressions and parameter handling compared to Static RLS.
+
+User Experience: Dynamic RLS can provide a more tailored and personalized user experience by dynamically adjusting data views based on user attributes or parameters.
+
+Performance: Dynamic RLS filters are calculated at query time, which may introduce overhead compared to Static RLS. Consider the performance implications based on the size and complexity of your data model.
+
+Both Static and Dynamic RLS mechanisms are essential tools for controlling data access and ensuring data security in Power BI reports and dashboards. The choice between them depends on the specific requirements of your organization and the nature of your data access control needs.
+
+
+Power BI offers several licensing options tailored to different user needs and organizational requirements. Here are the primary types of licenses available for Power BI:
+
+1. Power BI Free:
+Cost: Free
+Features:
+Access to Power BI Desktop for building reports and dashboards.
+Limited sharing and collaboration features.
+Limited data refresh frequency.
+Limited access to certain data connectors and advanced features.
+2. Power BI Pro:
+Cost: Paid subscription (per user, per month)
+Features:
+All features of Power BI Free.
+Enhanced sharing and collaboration capabilities, including sharing dashboards and reports with other Pro users.
+Ability to consume content shared by others.
+More frequent data refresh options.
+Access to more data connectors and advanced features, such as scheduled data refresh, AI capabilities, and larger dataset size limits.
+3. Power BI Premium:
+Cost: Paid subscription (per capacity, per month)
+Features:
+Includes all features of Power BI Pro.
+Dedicated capacity for hosting Power BI content, providing increased performance and scalability.
+Ability to share reports and dashboards with both Pro and Free users without requiring them to have a Pro license.
+More flexible data refresh options, higher dataset size limits, and support for large-scale deployments.
+Premium-only features such as paginated reports, larger model sizes, and incremental data refresh.
+4. Power BI Premium Per User (PPU):
+Cost: Paid subscription (per user, per month)
+Features:
+Includes all features of Power BI Pro.
+Access to premium features previously exclusive to Power BI Premium capacity, such as paginated reports, larger dataset size limits, and incremental data refresh.
+Users are allocated dedicated resources within the Power BI service, ensuring consistent performance and scalability.
+5. Power BI Embedded:
+Cost: Pay-as-you-go (based on resource consumption)
+Features:
+Designed for embedding Power BI analytics into custom applications and websites.
+Offers flexible pricing based on resource consumption (e.g., number of renders or API calls).
+Supports embedding interactive reports and dashboards seamlessly into applications.
+Choosing the Right License:
+User Requirements: Consider the needs of your users and the features required for their tasks, such as report creation, sharing, and collaboration.
+Budget: Evaluate the cost implications of each licensing option based on your organization's budget and resources.
+Scalability: Assess the scalability requirements of your Power BI deployment, including the number of users, data volumes, and performance needs.
+Future Growth: Plan for future growth and consider how your licensing choice will accommodate evolving needs and usage patterns.
+
+Data flow-transformations done in bi service that can be used across reports
+
+Gateway-bridge btwn localmachine and bi service
+
+
