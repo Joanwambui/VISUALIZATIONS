@@ -1,0 +1,10 @@
+Product Name   Category
+AbcBike         Bike
+Bike123         Bike
+DEF             Accessories
+LFG             Accessories
+Bike            Bike
+
+
+Clculate the category column in Power BI
+Category = SWITCH(TRUE(),CONTAINSSTRING(EY[Product Name], "Bike"),"Bike","Accessories")
