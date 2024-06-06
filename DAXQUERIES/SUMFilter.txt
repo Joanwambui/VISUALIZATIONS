@@ -1,0 +1,3 @@
+DAX Code to fnd how much females contrbtd in total sales in Maharashta,Delhi and Kantanaka
+
+CALCULATE(SUM(Sales[Amount]),FILTER(Sales,Sales[Gender]="F" && Sales[State] IN {"Karnataka","Maharashtra","Gujarat"}))
