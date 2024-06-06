@@ -1,0 +1,14 @@
+How to join two tables with help of DAX Function
+NATURALINNERJOIN, naturalleftouterjoin
+
+How to optimize DAX Code except from using measures, light consumer visuals, star schema, and data type?
+Store calculations in variables where its repetitive
+DAX Query - Externaltools DAX studio check time used to run dax functions, storage engine taking certain seconds
+Refresh single table in powerbi-right click and refresh data
+If bi service already all have been published
+XMLA Endpoint(Premium workspace,grab xmla endpoint from PowerBI ervice of that particular endpoint, go to sql server,click connect - analysis services and grab xmla endpoint that you copied.Go to particular table, rightclick and process table.
+
+Adv of slicer instead of filter
+report rendering is slow when we use a filter and its fast wen using slicer. You can control filtering when using the slicer. 
+
+50 users in BI How do we do that?
