@@ -1,0 +1,54 @@
+Discover Data Analytics
+Types of Database
+Transactional 
+Traditional 
+
+Telemetry? Data collected from one device and sent to another remote destination for analysis and storage. In telemetry performance is collected automatically and communicated in a remote location. Telemtry can be used in meteorology and variety of other fields. Telemtry can be relayed in the following ways:
+1.Radio
+2.Infared
+3.Ultrasonic
+4.Satellite
+5.Cable
+It depends on application 
+
+Telemetry is defined as the automatic process of the data created by your systems being remotely collected through the use of agents and protocols. It includes logs, metrics, events and traces that are created by your applications. 
+
+Benefits of Telemetry?
+Performance Monitoring-Developers keep track of their applications performance across various locations and user devices. By receiving realtime data on performance developers can identify areas where application is excelling and falling behind. 
+User Preferences: Telemetry analysis provides valuable insights into user preferences and behaviors. 
+Feature Enhancement: Deveopers can determine which features of their software are most popular among users in different regions. They can identify strengths and weaknesses of the application's features enabling them to prioritize enhancements for the next version
+Crash Reporting: Enables immediate reporting of application crashes eg contextual info such as background apps at time of crash. 
+Application Rating: User engagement is a crucial metric for evaluating application success. Developers can optimize application's content and design to increase user engagement, resulting in higher ratings
+
+Telemetry data makes it easier to ingest data into a singular dashboard, making ongoing performance monitoring much easier process to readily surface key insights on both user behavior and performance. Because we won't need the ETL Process gathering data is highly cost efficient and structured. 
+
+Telemetry data can be generated using collection of resources, SDKs & APIs,
+
+One of the places to read telemetry data is from Azure IoT Hub.
+
+Chalenge in data is understanding and using their data to positively effect change within the business. 
+
+Retail Business should use info to 
+1. Track Inventory
+2. Identifying Purchase Habits
+3. Detecting user trends and patterns
+4. Recommending purchases
+5. Determining price optimizations
+6. Identifying and stopping fraud
+
+Data may also be useful in identifying daily/monthly sale patterns. 
+Telling a story in your data is important as it can involve reallocating resources within the business to accommodate a need or help identify a failing campaign.
+
+You need to look at data and facilitate trusted business decisions. Then loo at metrics to understand those metrics. 
+
+
+
+
+
+
+
+
+
+
+
+
