@@ -1,0 +1,56 @@
+Storage mode
+Lets you control whether or not power bi caches table data in-memory for reports. Caching means temporarily storing data in memory.
+
+You can set the storage mode for each model individually in your model, enabling a single semantic model providing these benefits:
+Query performance - as users interact with visuals in BI, DAX queries are submitted to semantic model. caching data into memory by properly setting storage mode can boost query performance and intrctvty of reports.
+Large semantic models: tables that are not cached don't consume memory for caching purposes. You can enable intrctve analysis over larger semantic models that are too large or too expensive to compltly cache in memory.
+Data refresh optmztn: don't need to refresh tables that aren't cached. reduce refresh time by caching only the data that's necessary to meet your service level agreements and biz rqrmnts.
+Near real time mngmnt: Tables wit near real time managmnt might benefit from not being cached
+Writeback-enables biz users to explore whatif scenarios by changing cell values
+
+Storage mode can be one of the three rltd features
+Composite modes-have two or more data connections
+Many-to-many rltnships-rqqrmnts are removed for unique values in tables.
+storage mode-specify which visuals require a query to backend data sources
+
+IMPORT
+With this tables are cached. Queries submitted to BI Semantic model that return data from Import tables can be fulfilled from cached data.
+
+Examples:
+SaleAggregate table
+Historical sales data
+Product Catalog
+Customer demographics
+Financial Reports
+Employee Directory
+Marketing Campaign
+Annual budget data
+Standardized scores
+Inventory levels
+
+
+DIRECTQUERY
+Tables with this setting aren't cached.EG DAX Queries return data from directquery tables can only be fulfilled only by executing on-demand queries to data source. 
+
+Real Time inventory tracking
+Live Financial Data
+Current order status
+Website traffic analytics
+Social Media Feeds
+Sensor Data
+Stock levels
+Weather Data
+Transport and Logistics
+
+DUAL
+This setting can either be cached or not caced depending on context of the quer thats submitted to BI Semantic model. In some fulfill from cached data and other cases fulfill by on-demand query to data source
+
+Product availability
+Employee work hours
+Customer Orders
+Stock Market analysis
+Warehouse Inventory
+Stock market analysis
+Sales Pipline
+Customer must be refreshed daily.
+ate must be refreshed once every three years.

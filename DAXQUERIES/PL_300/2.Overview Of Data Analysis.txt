@@ -1,0 +1,58 @@
+Overview Of Data Analysis
+Data Analysis: Process of identifying, cleaning, transforming and modeling data to discover meaningful and useful information. 
+
+More demand for data analysts to help in data storytelling as the world is becoming more data-driven. 
+
+Data analysts can be helpful to:
+Evaluate customer sentiment
+Performance and Market & Product research
+Identifying trends and other data insights
+
+Core Components of Analytics are in the following categories:
+1. Descriptive
+2. Diagnostic
+3. Predictive
+4. Prescriptive
+5. Cognitive
+
+
+Descriptive Analytics
+Helps answer the question of what has happened based on historical data.
+Summarizes large semantic models to describe outcomes to stakeholders. 
+
+By developing KPI's these strategies can help track success or failure of key objectives. Metrics eg ROI are used in many industries and specialized metrics are developed to track performance in specific industries.
+
+Examples of descriptive analytics:
+1. Reports on sales and financial data of an organization.
+2. Customer Segmentation
+3. Campaign Performance
+4. Social Media Analytics
+5. Patient Health Records
+6. Stock Market Analysis
+7.Supply Chain Performance
+
+Diagnostic Analytics
+Helps answer questions about why events happened. Diagnostic Analytics supplement descriptive analytics. Performance indicators are further investigated to discover why these events improved or became worse. Process occurs in these steps:
+
+Identify anomalies in data.
+Collect data-related anomalies
+Use statistical techniques to discover relationships and trends that explain these anomalies.
+Exmples
+Sales Decline Analysis
+Customer Churn Analysis
+Campaign Effectiveness
+Website Traffic Analysis
+Patient Outcome Analysis
+Expense Analysis
+
+
+Predictive Analytics
+Help answer questions about what will happen in future. Use historical data to identify trends and determine if liely to recur. provides valuable insight into what will happen in future. Techniques include: Stastical and Machine learning techniques eg neural networks, decision trees and regression. 
+
+Prescriptive Analytics
+Helps answer question which actions should be taken to achieve a goal or target. 
+
+Cognitive Analytics
+Attempts to draw inferences from existing data and patterns, derive conclusions based on existing knowledge bases and add these findings back into knowledge base for future inferences. They are unstructured hypothesis that are gathered from several sources and expressed with varying degrees of confidence.
+
+ 
