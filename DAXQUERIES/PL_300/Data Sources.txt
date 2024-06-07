@@ -1,0 +1,197 @@
+Data Sources
+File Connections
+Excel, CSV,XML,JSON,Folder,PDF,Parquet,Sharepoint folder
+
+Database Data Sources
+SQL Server database
+Access database
+SQL Server Analysis Services database
+Oracle database
+IBM Db2 database
+IBM Informix database (Beta)
+IBM Netezza
+MySQL database
+PostgreSQL database
+Sybase database
+Teradata database
+SAP HANA database
+SAP Business Warehouse Application Server
+SAP Business Warehouse Message Server
+Amazon Redshift
+Impala
+Google BigQuery
+Google BigQuery (Microsoft Entra ID)(Beta)
+Vertica
+Snowflake
+Essbase
+AtScale Models
+Actian (Beta)
+Amazon Athena
+AtScale cubes
+BI Connector
+Data Virtuality LDW
+Denodo
+Dremio Software
+Dremio Cloud
+Exasol
+Indexima
+InterSystems IRIS (Beta)
+Jethro (Beta)
+Kyligence
+Linkar PICK Style / MultiValue Databases (Beta)
+MariaDB
+MarkLogic
+MongoDB Atlas SQL (Beta)
+TIBCO® Data Virtualization
+Exact Online Premium (Beta)
+
+Microsoft Fabric
+Power BI semantic models
+Dataflows
+Datamarts (preview)
+Warehouses
+Lakehouses
+KQL Database
+
+
+Power Platform data sources
+Power BI dataflows (Legacy)
+Common Data Service (Legacy)
+Dataverse
+Dataflows
+
+Azure data sources
+Azure SQL Database
+Azure Synapse Analytics SQL
+Azure Analysis Services database
+Azure Database for PostgreSQL
+Azure Blob Storage
+Azure Table Storage
+Azure Cosmos DB v1
+Azure Data Explorer (Kusto)
+Azure Data Lake Storage Gen2
+Azure HDInsight (HDFS)
+Azure HDInsight Spark
+HDInsight Interactive Query
+Azure Cost Management
+Azure HDInsight on AKS Trino (Beta)
+Azure Cosmos DB v2 (Beta)
+Azure Synapse Analytics workspace (Beta)
+Azure Time Series Insights (Beta)
+Azure Resource Graph (Beta)
+Azure Databricks
+
+Online Services data sources
+SharePoint Online List
+
+Microsoft Exchange Online
+
+Dynamics 365 Online (legacy)
+
+Dynamics 365 (Dataverse)
+
+Dynamics NAV
+
+Dynamics 365 Business Central
+
+Dynamics 365 Business Central (on-premises)
+
+Azure DevOps (Boards only)
+
+Azure DevOps Server (Boards only)
+
+Salesforce Objects
+
+Salesforce Reports
+
+Google Analytics
+
+Adobe Analytics
+
+appFigures (Beta)
+
+Data.World - Get Dataset (Beta)
+
+GitHub (Beta)
+
+LinkedIn Sales Navigator (Beta)
+
+Marketo (Beta)
+
+Mixpanel (Beta)
+
+Planview Portfolios
+
+QuickBooks Online (Beta)
+
+Smartsheet
+
+SparkPost (Beta)
+
+SweetIQ (Beta)
+
+Planview Enterprise Architecture
+
+Zendesk (Beta)
+
+Asana (Beta)
+
+Assemble Views
+
+Automation Anywhere
+
+Automy Data Analytics (Beta)
+
+CData Connect Cloud
+
+Dynamics 365 Customer Insights (Beta)
+
+Digital Construction Works Insights
+
+Emigo Data Source
+
+Entersoft Business Suite (Beta)
+
+eWay-CRM
+
+FactSet Analytics
+
+Palantir Foundry
+
+Funnel
+
+Hexagon PPM Smart® API
+
+Industrial App Store
+
+Intune Data Warehouse (Beta)
+
+Planview ProjectPlace
+
+Product Insights (Beta)
+
+Profisee
+
+Quickbase
+
+SoftOne BI (Beta)
+
+Planview IdeaPlace
+
+TeamDesk (Beta)
+
+Webtrends Analytics (Beta)
+
+Witivio (Beta)
+
+Zoho Creator
+
+Autodesk Construction Cloud
+
+Databricks
+
+Planview OKR (Beta)
+
+Viva Insights
+
+Autodesk Construction Cloud

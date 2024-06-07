@@ -1,0 +1,113 @@
+Data Sources Examples
+1. Power BI dataflows (Legacy)
+SQL Server Database
+Oracle Database
+Salesforce
+Azure Blob Storage
+SharePoint Online List
+OData Feed
+Web API
+MySQL Database
+Google BigQuery
+Teradata Database
+2. Common Data Service (Legacy)
+Dynamics 365 Sales
+Dynamics 365 Customer Service
+Dynamics 365 Marketing
+Dynamics 365 Field Service
+Dynamics 365 Finance and Operations
+Dynamics 365 Project Service Automation
+Dynamics 365 Commerce
+Power Apps
+Power Automate
+SharePoint Online
+3. Dataverse
+Dynamics 365 Sales
+Dynamics 365 Customer Service
+Dynamics 365 Marketing
+Dynamics 365 Field Service
+Dynamics 365 Finance
+Dynamics 365 Supply Chain Management
+Dynamics 365 Commerce
+Power Apps
+Power Automate
+SharePoint Online
+4. Dataflows
+SQL Server Database
+Oracle Database
+Salesforce
+Azure SQL Database
+SharePoint Online List
+Excel File (OneDrive)
+Google Sheets
+OData Feed
+MySQL Database
+PostgreSQL Database
+
+
+1. Power BI Semantic Models
+AdventureWorksDW
+Sales Data Model
+Financial Analysis Model
+Customer Insights Model
+HR Analytics Model
+Retail Sales Model
+Inventory Management Model
+Marketing Performance Model
+Project Management Model
+E-commerce Analytics Model
+2. Dataflows
+SQL Server Database
+Oracle Database
+Salesforce
+Azure SQL Database
+SharePoint Online List
+Excel File (OneDrive)
+Google Sheets
+OData Feed
+MySQL Database
+PostgreSQL Database
+3. Datamarts (Preview)
+Marketing Campaign Data Mart
+Sales Data Mart
+Customer Service Data Mart
+Financial Transactions Data Mart
+Human Resources Data Mart
+Inventory Data Mart
+Project Management Data Mart
+E-commerce Transactions Data Mart
+Product Performance Data Mart
+Supplier Management Data Mart
+4. Warehouses
+Azure SQL Data Warehouse
+Amazon Redshift
+Google BigQuery
+Snowflake
+Teradata
+IBM Db2 Warehouse
+Oracle Exadata
+SAP Data Warehouse
+Cloudera Data Warehouse
+Vertica
+5. Lakehouses
+Azure Data Lake Storage
+Amazon S3 Data Lake
+Google Cloud Storage
+Databricks Delta Lake
+Hadoop Distributed File System (HDFS)
+Apache Spark Lakehouse
+IBM Cloud Object Storage
+Oracle Cloud Data Lake
+SAP Data Intelligence Lake
+Snowflake Data Lake
+6. KQL Database
+Azure Data Explorer
+Log Analytics Workspace
+Application Insights
+Security Center
+Sentinel
+Azure Monitor
+Diagnostics Logs Database
+Audit Logs Database
+Performance Metrics Database
+Network Watcher Logs Database
