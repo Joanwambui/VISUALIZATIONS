@@ -1,0 +1,25 @@
+Gateway
+
+Option A is not the best choice as it requires online processing operations, which goes against one of the requirements. A. Create a dataflows connection that has DirectQuery mode selected.
+
+Option B is not necessary since the SQL Server is on-premises and not in a cloud environment. Gateway connections are typically used for cloud-based data sources that require access to on-premises data.
+
+Option D refreshes the data too frequently and might lead to unnecessary processing operations, which goes against one of the requirements.
+C. Create a dataflows connection that has Import mode selected and schedule a daily refresh. This minimizes unnecessary online processing operations.
+
+Accessing tables from on-premises Microsoft SQL Server means we alredy need a gateway.
+
+Power BI gateway (personal mode)
+On-premises data gateway (personal mode) supports refresh for the following data sources:
+
+All online data sources that appear in Power BI Desktop Get data and Power Query Editor.
+All on-premises data sources that appear in Power BI Desktop Get data and Power Query Editor, except for Hadoop files (HDFS) and Microsoft Exchange
+
+
+If data source is on-premise use on-premise gateway whereas a Virtual network data gateway connect from Microsoft Cloud Services to Azure Data Services within VNet without an on-premise data gateway.  
+
+Gateway steps:
+Configure Onprem gateway
+Add data source
+Add dataset owner
+Configure scheduled refresh
