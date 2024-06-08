@@ -1,0 +1,103 @@
+We use append if the table has similar columns, and we use merge if we have different columns between two tables.
+
+Append query as new-similar columns joining two tables
+Merge use similar column to merge another column to the former table
+
+
+Append Queries
+Append is used when you want to stack data from two or more tables that have the same structure (same columns). This operation adds the rows of one table to the end of another.
+
+Scenarios for Append:
+Combining Historical and Current Data:
+
+You have a table with historical sales data and another table with current sales data. Appending these tables will create a single table with both historical and current data.
+Union of Data from Different Sources:
+
+You have data from different regions stored in separate tables but with the same schema (columns). Appending these tables will result in a consolidated dataset.
+Periodic Data Collection:
+
+Monthly data stored in separate tables (e.g., January, February). Appending these tables will create a yearly dataset.
+Merge Queries
+Merge is used when you want to combine columns from two tables based on a common column (key). This is akin to SQL JOIN operations and can be left join, right join, inner join, full outer join, etc.
+
+Scenarios for Merge:
+Enriching Data:
+
+You have a sales transactions table and a customers table. Merging these tables on the customer ID will add customer details (e.g., name, address) to the sales data.
+Data from Different Granularity Levels:
+
+A table with order details and another with order summaries. Merging can combine detailed data with summary information based on a common order ID.
+Combining Reference Data:
+
+Merging a transactions table with a currency exchange rate table based on the date to convert transaction amounts to a different currency.
+Hierarchical Data:
+
+A table of employees and another table of departments. Merging on the department ID can add department names to the employee records.
+Detailed Comparison
+Structure Requirement:
+
+Append: Tables must have the same columns.
+Merge: Tables can have different columns but must have at least one common key column.
+Data Alignment:
+
+Append: Aligns data row-wise (rows of Table B are added to Table A).
+Merge: Aligns data column-wise based on the common key.
+Resultant Data:
+
+Append: Increases the number of rows.
+Merge: Increases the number of columns.
+Operation Type:
+
+Append: Similar to SQL UNION.
+Merge: Similar to SQL JOIN (Left Join, Right Join, Inner Join, Full Outer Join).
+Examples:
+Appending Two Tables:
+
+Table A:
+
+ID	Name	Sales
+1	John	100
+2	Jane	150
+Table B:
+
+ID	Name	Sales
+3	Mike	200
+4	Lucy	250
+Result:
+
+ID	Name	Sales
+1	John	100
+2	Jane	150
+3	Mike	200
+4	Lucy	250
+Merging Two Tables:
+
+Table A:
+
+CustomerID	Name
+1	John
+2	Jane
+Table B:
+
+CustomerID	Sales
+1	100
+2	150
+3	200
+Result (Left Join):
+
+CustomerID	Name	Sales
+1	John	100
+2	Jane	150
+Result (Right Join):
+
+CustomerID	Name	Sales
+1	John	100
+2	Jane	150
+3	NULL	200
+In summary, use append when combining tables with the same structure to increase rows and merge when combining tables with potentially different structures based on a key to increase columns.
+
+
+
+
+
+
