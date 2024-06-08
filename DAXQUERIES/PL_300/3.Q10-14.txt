@@ -1,0 +1,42 @@
+Its sharepoint folder not sharepoint list and we filter for the specific folder always.
+
+
+PowerQuery - Append table2to table1
+remove errors from table 
+query editor remove duplicates
+If it says use powerquery editor start from power query editor.
+
+Use delimeter to split 2018-12-31 at 08:59 to be able to use date hierarchies in Power BI.
+
+OneDrive to BI Desktop and BI Service:
+From Onedrive, choose details, and copy path. Use the link in BI Desktop to get data using Web, or another way to connect is  select sharepoint folder.
+
+Transform data, View Tab, Data Preview - Column distribution
+
+Data Profiling tools in Power BI include:
+Column quality
+Column distribution
+column profile
+
+The column quality feature labels values in rows in five categories:
+
+Valid, shown in green.
+
+Error, shown in red.
+
+Empty, shown in dark grey.
+
+Unknown, shown in dashed green. Indicates when there are errors in a column, the quality of the remaining data is unknown.
+
+Unexpected error, shown in dashed red
+69 under distinct means all including null and 4 shows unique that occur only once
+
+
+There are two primary ways of combining queries: merging and appending.
+* When you have one or more columns that you'd like to add to another query, you merge the queries.
+* When you have additional rows of data that you'd like to add to an existing query, you append the query.
+
+Managing loading of queries -
+In many situations, it makes sense to break down your data transformations in multiple queries. One popular example is merging where you merge two queries into one to essentially do a join. In this type of situations, some queries are not relevant to load into Desktop as they are intermediate steps, while they are still required for your data transformations to work correctly. For these queries, you can make sure they are not loaded in Desktop by un-checking 'Enable load' in the context menu of the query in Desktop or in the Properties screen: Disable query load if its an intermediary step. 
+
+
