@@ -1,0 +1,22 @@
+Pre-processing data is the first step.
+To optimize the performance of your Power BI report and minimize update times when interacting with visuals, the best approach is to pre-process the data as much as possible in Power Query. This reduces the need for real-time calculations in DAX, which can be computationally expensive.
+
+Given the requirement to analyze "Orders sold over time that include a measure of the total order value" and "Orders by attributes of products sold," the most effective approach would be to combine relevant data tables early in the data preparation process. This would allow you to have a more efficient dataset for analysis and visualization.
+
+Among the provided options:
+
+A. From Power Query, merge the Order Line Items query and the Products query.
+
+This is useful if you need to enhance the Order Line Items with product attributes, but it doesn’t directly help in aggregating orders by time.
+B. Create a calculated column that adds a list of product categories to the Orders table by using a DAX function.
+
+This involves creating calculated columns, which can be useful but may increase processing time during report interaction.
+C. Calculate the count of orders per product by using a DAX function.
+
+This focuses on a specific analysis rather than setting up an efficient data model for broader analysis.
+D. From Power Query, merge the Orders query and the Order Line Items query
+
+If provided with two that basically seem similar, choose the one that will make the two tables be sufficient.
+
+DAX for realtime calculations slows down report interactions
+Pre-aggregation give it valid steps.
