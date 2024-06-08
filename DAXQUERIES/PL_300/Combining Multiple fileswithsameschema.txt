@@ -1,0 +1,5 @@
+Combining Multiple files with same schema, combining to same schema.
+Use the following steps:
+Choose File>Folder and select connect
+Enter folder path and click OK, Then transform data 
+To combine binary files select first column and choose Home>Combine Files and select combine files icon.
