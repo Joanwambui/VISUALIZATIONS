@@ -1,0 +1,30 @@
+Unpivot
+You might want to unpivot data, sometimes called flattening the data, to put it in a matrix format so that all similar values are in one column. This is necessary, for example, to create a chart or a report.
+
+
+
+Transaction ID	Product A	Product B	Product C
+1	10	5	3
+2	8	2	6
+3	6	4	7
+
+
+
+To unpivot this data, we can transform it into a long format where each row represents a single product sold in a transaction, like this:
+
+Transaction ID	Product	Quantity
+1	Product A	10
+1	Product B	5
+1	Product C	3
+2	Product A	8
+2	Product B	2
+2	Product C	6
+3	Product A	6
+3	Product B	4
+3	Product C	7
+
+Steps
+
+Select columns
+Unpivot
+Rename attribute column and Value column

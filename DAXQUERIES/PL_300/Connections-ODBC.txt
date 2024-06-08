@@ -1,0 +1,10 @@
+ODBC - For DB's eg Cassandra
+Cassandra DB - ODBC
+MongoDB - Postgres
+Big Query - Google Analytics
+Amazon Redshift - PostgreSQL Database
+Salesforce - Web Connector using REST API
+Oracle - ODBC(Open Database Connectivity, Accesses databases helps to connect various data sources including Oracle)
+Snowflke - ODBC
+Hadoop Cluster - ODBC
+
