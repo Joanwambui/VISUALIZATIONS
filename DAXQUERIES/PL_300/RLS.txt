@@ -1,0 +1,36 @@
+RLS
+ In the Power BI service, users with access to a workspace have access to semantic models in that workspace. RLS only restricts data access for users with Viewer permissions. It doesn't apply to Admins, Members, or Contributors.
+If you want report layout to not be changed, most definitely use app to share reports or rather manage access
+
+1. Admin
+Admins have the highest level of permissions in a Power BI workspace. They can:
+
+Add and remove members, admins, contributors, and viewers.
+Delete the workspace.
+Update workspace settings.
+Publish, edit, and delete content (reports, dashboards, datasets, dataflows, etc.).
+Share content with others.
+Schedule data refreshes.
+Take over ownership of datasets.
+2. Member
+Members have significant permissions but less than admins. They can:
+
+Add and remove members, contributors, and viewers (but not admins).
+Publish, edit, and delete content (reports, dashboards, datasets, dataflows, etc.).
+Share content with others.
+Schedule data refreshes.
+3. Contributor
+Contributors have permissions to work with the content but cannot manage membership. They can:
+
+Publish, edit, and delete content (reports, dashboards, datasets, dataflows, etc.).
+Schedule data refreshes.
+Share content with others (if given explicit permission to do so).
+4. Viewer
+Viewers have the most limited permissions, primarily focused on consumption rather than creation or management. They can:
+
+View and interact with reports and dashboards shared with them.
+Export data (if the export setting is enabled on the dataset).
+Cannot edit or publish content.
+Cannot manage workspace settings or memberships.
+5. Reshare Permissions
+Additionally, the ability to reshare content is a specific permission that can be granted to members, contributors, and viewers. This permission allows users to share the content they have access to with others.
