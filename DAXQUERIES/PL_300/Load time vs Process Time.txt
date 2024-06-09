@@ -1,0 +1,3 @@
+Load time vs Process Time
+Load times of the query and time needed to process the data are two different aspects.
+Splitting column to date and time as two separate columns will reduce processing time whereas deleting unwanted columns will definitely reduce load time
