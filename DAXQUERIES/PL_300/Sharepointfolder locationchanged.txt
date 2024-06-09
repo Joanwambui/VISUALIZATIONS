@@ -1,0 +1,5 @@
+Excel was in sharepoint folder but location has moved - steps to use:
+From dataset settings of BI Desktop configure file path
+From power query editor use formula bar to configure file path for applied step
+from advanced editor in power query configure file path in m code
+Can only change location from power query, data source settings
