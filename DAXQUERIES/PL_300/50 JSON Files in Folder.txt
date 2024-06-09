@@ -1,0 +1,4 @@
+50 JSON Files in Folder, solution must not store data of the JSON Files
+Select folder as the source to import multiple json files - 
+
+Transformation will be: Expand Attibute column
