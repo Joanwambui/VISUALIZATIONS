@@ -1,0 +1,37 @@
+Improve Query performance 
+Assume referential integrity is a way to improve query performance in Direct query 
+Changing the cross filter direction setting can have a significant impact on query performance. Setting it to "Single" when appropriate can often improve performance by reducing unnecessary filtering in both directions. change them to single where applicable will improve performance as excessive bidirectional causes BI to slow down.
+
+Star Schema:
+
+Description: The simplest type of data warehouse schema. It consists of a central fact table connected to multiple dimension tables.
+Structure: Fact tables contain quantitative data (metrics), while dimension tables store descriptive attributes related to the facts.
+Use Case: Ideal for straightforward queries and reporting.
+Example: A sales fact table with dimensions for date, product, store, and customer.
+Snowflake Schema:
+
+Description: An extension of the star schema where dimension tables are normalized into multiple related tables.
+Structure: Dimension tables are split into sub-dimension tables to eliminate redundancy.
+Use Case: Useful for complex queries and where data normalization is important.
+Example: A customer dimension table split into individual tables for customer details, address, and contact information.
+
+             Date ------> Month
+              |
+              |
+             Sales
+            /  |  \  \ 
+         /     |    \  \
+    Product  Store  Customer
+       |       |       |
+   Category  Location Contact
+Snowflake - has additional info
+
+            Date
+             |
+             |
+            Sales
+           /  |  \
+        /     |     \
+    Product  Store  Customer
+
+Star schema one fact table and related dimensions
