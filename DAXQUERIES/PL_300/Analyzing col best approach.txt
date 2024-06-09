@@ -1,0 +1,2 @@
+Analyzing col best approach
+I have col1 and we need to analyze col1 length. Best practice for this would be from power query editor change distrbtn for column profile to group by length for col 1 instead of values. Analyzing does not mean add unnecessary columns
