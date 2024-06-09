@@ -1,0 +1,28 @@
+Errors in powerquery:
+step-level errors
+cell-level errors
+
+Steplevel prevents query from loading and displays the error componenets due to the following reasons: Column of table not found
+
+Can't find source error reasons:Inaccesssible by user, user does not have correct credentials to accesss data source or file moved to a different place.
+Solutions: Change file path to a path both users have access to. 
+
+Column of table wasn't found: triggered when step makes direct reference to col name that doesn't existin querying - possible sol can be to remove the renaming step. 
+
+Formula.firewall error due to: Data privacy levele btwn data sources or the way data sources are being combined or merged.
+
+All the above ar step level errors
+
+Cell level errors will not prevent query from loading but displays error values as Error in cell. How to handle cell level errors: Removing, replacing or keeping the errors
+
+To remove rows with errors in Power Query select column that contains errors, on home tab in reduce row group select remove rows and select remove errors
+same steps for keep errors under keep rows
+
+NestedValues shown as errors: they occur due to the following reasons-
+data privacy firewall buffers a data source nested non-scalar values are automatically converted to errors
+when colun defined with the Any data type contains non-scalar values such values will be reported as errors during load. 
+
+Possible solutions:
+remove column containing suc errors or set as non-any data type for such a clumn
+Change privacy levels of data sources involved to one that allows the to be combined without being buffered
+flatten tables before doing a merge to eliminate columns that contain nested structured values
