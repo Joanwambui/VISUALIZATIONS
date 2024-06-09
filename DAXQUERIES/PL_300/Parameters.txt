@@ -18,3 +18,5 @@ select replace errors to replace error value with 0.05
 Discount value change data type to decimal no
 
 
+Error could not find file in powerquery means:
+referenced file moved to new location, don't have permssns to the file
