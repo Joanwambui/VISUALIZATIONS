@@ -1,0 +1,23 @@
+DatasetvsReport file
+
+Definition: A dataset in Power Query refers to a collection of data that has been imported, transformed, and prepared for analysis. This can include tables, relationships, and calculated fields.
+Purpose: The primary purpose of a dataset is to serve as the data foundation for reports and visualizations. It includes all the data sources, transformations, and models necessary to analyze and visualize data.
+Components:
+Data Sources: Connections to various data sources (e.g., SQL databases, Excel files, web services).
+Queries: The set of queries (tables) that define how data is imported and transformed.
+Data Model: Relationships between tables, calculated columns, measures, and other metadata.
+Usage: Datasets are typically created and managed in Power BI Desktop and can be published to the Power BI service. Once published, they can be shared and used by multiple reports.
+Storage: When a dataset is published to the Power BI service, it is stored in the Power BI cloud and can be refreshed periodically to keep data up-to-date.
+
+Dataset can use direct query
+Report file can use import
+
+Report File
+Definition: A report file in Power Query (specifically in Power BI) is a document that contains visualizations, charts, graphs, and other reporting elements built on top of a dataset.
+Purpose: The primary purpose of a report file is to present data in an interactive and visually appealing manner to facilitate data analysis and decision-making.
+Components:
+Visualizations: Various types of charts, graphs, tables, and other visual elements.
+Pages: Multiple pages can be created within a report to organize different aspects or views of the data.
+Filters and Slicers: Interactive elements that allow users to filter and manipulate the data displayed in the visualizations.
+Usage: Reports are created using Power BI Desktop and can be published to the Power BI service. Users can interact with reports through the Power BI service, Power BI mobile apps, or by embedding them in other applications.
+Storage: Report files are saved with a .pbix extension in Power BI Desktop and can be published to the Power BI service, where they are stored alongside datasets.
