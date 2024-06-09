@@ -1,0 +1,47 @@
+DAX
+If measure total sales exists dont start dax with sum
+sameperiodlastyear needs one to give a date[date] as the measure
+CALCULATE[TotalSales],SAMEPERIODLASTYEAR'Date'[Date]
+
+
+You plan to create a report that will display sales data from the last year for multiple regions.
+You need to restrict access to individual rows of the data on a per region-basis by using roles.
+Import data
+create the roles on power bi
+Publish the report
+Assign Users to the role.
+
+ONE TO ONE BTW SALES_REGION AND REGION_MANAGER
+
+ONE TO MANY REGION_MANAGER AND MANAGER
+
+SALES_rEGION TO SALES MANAGER ONE TO MANY
+
+You will denormalize in the following steps:
+
+1.Merge [Region_Manager] and [Manager] by using an inner join.
+3.Merge [Sales_Region] and [Sales_Manager] by using an inner join.
+6.Merge [Sales_Region] and [Region_Manager] by using an inner join.
+
+Splitting visuals to different pages is a way to improve performance.
+
+orders
+date
+city
+
+one to many, date and orders / city and orders
+rls role 1 = City[State Province]="Kentucky"
+role 2 = Date[Calendar Year] = 2020 -
+
+User will see data for which state is Kentucky or year is 2020
+
+
+How to apply filter on a huge table you will import to bi from sql sever as loading full table and we don't need full table is not optimal
+Load your data in Power query.
+Create a "new parameter" from "Manage Parameters Menu" and assign your sample "start date" in "current value" field and reach ok.
+Filter your Datekey column by the created "new parameter" to get your sample in the model.
+
+Standard practice is to use WHERE clause in sql instead of filter in BI. Its best to filter close to the datasource. Under sql server database, set the sql server name, database and set the sql statement you would like to process.
+
+Immediate you unpivot rename the attribute. Converting data type usually flls under last steps.
+
