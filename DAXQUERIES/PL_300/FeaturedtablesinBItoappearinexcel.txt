@@ -1,0 +1,28 @@
+Featured tables in BI to appearinexcel
+
+how to set tables as featured in Power BI so they can be easily used in Excel. Here's a simplified summary:
+
+Select a Table in Power BI Desktop:
+
+Go to Model view.
+Select a table and set "Is featured table" to Yes.
+Fill in the required fields (Description, Row label, Key column).
+Publish the Semantic Model:
+
+Save the model with featured tables to a shared workspace.
+Once published, the featured table appears in the Excel Data Types Gallery.
+Using Featured Tables in Excel:
+
+Restart Excel to see the newly published tables.
+Excel will use these tables like a lookup function, matching cell values to table rows.
+Considerations and Limitations:
+
+Not all semantic models are supported (e.g., DirectQuery models).
+Excel only shows data from columns, calculated columns, and measures in the featured table.
+Some features and symbols are not supported.
+This makes it easier for users to integrate enterprise data from Power BI into their Excel sheets.
+
+Row label easily identifies the row, it appears as the cell value for a linked cell in data selector pane and Information card
+Key column provides unique ID for the row. Enables excel to link cell to specified row in table.
+
+We use text columns in featured table for row matching, most numerical columns are not considere for matching.
