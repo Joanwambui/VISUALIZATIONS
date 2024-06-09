@@ -1,0 +1,20 @@
+Parameters
+
+By using parameters, you can easily switch the data source between different environments without modifying the report or managing multiple PBIX files, thereby minimizing administrative effort.
+
+We only need One Parameter to transverse amongst the three databases.
+
+To meet the requirements specified, we can use a single parameter in the PBIX file that controls which database is used for data consumption based on the stage of the development lifecycle.
+
+We can use a Text parameter type in Power BI to achieve this. The parameter can be used to switch between the different database connections when a user interacts with the report. The text parameter could include values such as "Development", "Staging", and "Production", which correspond to the different databases shown in the table.
+
+The parameter can then be used in the queries to dynamically filter the data based on the selected stage of the development lifecycle. By using a single parameter, we can minimize administrative effort and ensure that the report works with each stage of the development lifecycle.
+
+
+
+Power Query sequential steps:
+Selct discount column
+select replace errors to replace error value with 0.05
+Discount value change data type to decimal no
+
+
