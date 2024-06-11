@@ -1,0 +1,20 @@
+Star Schema in BI
+
+Star schema is majorly used for relational data warehouses. 
+Dimension tables contains a key column that acts as a unique identifier and descriptive columns.
+
+Fact tables store observations or events and can be sales orders,stock balances. Fact table contain dimension key columns that relateto dimension tables and numeric measure columns. 
+
+Normalization is the term used to describe data that's stored in a way that reduces repetitious data. Consider a table of products that has a unique key value column, like the product key, and additional columns describing product characteristics, including product name, category, color, and size. A sales table is considered normalized when it stores only keys, like the product key. In the following image, notice that only the ProductKey column records the product.
+
+
+There are four departments in the Departments table.
+You need to ensure that users can see the data of their respective department only.
+What should you do?
+A. Create a slicer that filters Departments based on DepartmentID.
+B. Create a row-level security (RLS) role for each department, and then define the membership of the role. 
+C. Create a DepartmentID parameter to filter the Departments table.
+D. To the ConfidentialData table, add a calculated measure that uses the CURRENTGROUP DAX function.
+
+Create rowlevel security 
+

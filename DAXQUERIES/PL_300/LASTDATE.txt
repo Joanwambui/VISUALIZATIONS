@@ -1,0 +1,10 @@
+Accounts :=
+CALCULATE (
+DISTINCTCOUNT (Balances[AccountID]),
+LASTDATE ('Date'[Date])
+
+LASTDATE - LASTDATE returns the last date in the current context for the specified column of dates. 
+A table visual that displays the date hierarchy at month level and [accounts] measure will show total no of accounts that were live that day.
+
+
+
