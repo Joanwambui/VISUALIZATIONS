@@ -24,3 +24,5 @@ var var1 = YEAR(TODAY())
 return
 CALENDAR (DATE(var1 -9, 01, 01),
 	 DATE(var1, 12, 31))
+
+https://dax.guide/calendar/
