@@ -1,0 +1,54 @@
+Reference query vs duplicate query
+We use reference query when we want to create a new query pointing to same data as original query.
+
+In the context of database management and information retrieval, a **reference query** and a **duplicate query** have distinct meanings and uses. Here’s a breakdown of each:
+
+### Reference Query
+
+**Definition:**
+A reference query is a query that is used to retrieve information based on references, links, or pointers to other data. This type of query often involves joining tables, following foreign key relationships, or accessing linked data to compile a comprehensive response.
+
+**Examples and Use Cases:**
+- **Relational Databases:** In SQL, a reference query might use JOIN statements to retrieve related data from multiple tables. For instance, retrieving customer orders along with customer details from two separate tables.
+- **Graph Databases:** In graph databases, a reference query might traverse nodes and edges to gather related information. For example, finding all friends of a user in a social network.
+- **Document Databases:** In document databases like MongoDB, a reference query might involve following references (stored as IDs) to other documents to construct a full view of the data.
+
+**Key Characteristics:**
+- Utilizes relationships between data entities.
+- Often involves complex querying and data aggregation.
+- Helps in creating a unified view from dispersed datasets.
+
+### Duplicate Query
+
+**Definition:**
+A duplicate query is a query that identifies and retrieves records that are identical or very similar based on specified criteria. This type of query is crucial for data cleaning, deduplication, and ensuring data quality.
+
+**Examples and Use Cases:**
+- **Data Deduplication:** Finding and merging duplicate customer records in a CRM system.
+- **Data Quality Checks:** Identifying duplicate entries in a product catalog to ensure unique listings.
+- **Search and Matching:** Using algorithms to detect near-duplicates in text, images, or other types of data to prevent redundancy.
+
+**Key Characteristics:**
+- Focuses on identifying redundancy within a dataset.
+- Often involves comparison operations and may use techniques like hashing, fuzzy matching, or exact matching.
+- Essential for maintaining data integrity and quality.
+
+### Comparison
+
+1. **Purpose:**
+   - **Reference Query:** To gather and aggregate related data from different sources.
+   - **Duplicate Query:** To find and manage identical or similar records within a dataset.
+
+2. **Functionality:**
+   - **Reference Query:** Leverages relationships and links between data entities.
+   - **Duplicate Query:** Utilizes comparison techniques to identify redundancy.
+
+3. **Complexity:**
+   - **Reference Query:** Can be complex due to the need to navigate multiple relationships and possibly perform joins or traversals.
+   - **Duplicate Query:** Can vary in complexity from simple exact matches to complex fuzzy matching algorithms.
+
+4. **Outcome:**
+   - **Reference Query:** Provides a comprehensive view by integrating related data.
+   - **Duplicate Query:** Helps in data cleanup by identifying and potentially removing redundant entries.
+
+Understanding the differences between reference queries and duplicate queries is crucial for effective database management, as each serves a unique purpose in handling and optimizing data.
