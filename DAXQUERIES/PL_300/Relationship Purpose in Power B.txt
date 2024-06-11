@@ -1,0 +1,64 @@
+### Relationship Purpose in Power BI Models
+singles its slow and assigns or refers to one table on the right. 
+
+#### General Propagation
+- Filters applied to one table can propagate to related tables through defined relationships.
+- Relationships are deterministic, ensuring consistent filter propagation.
+- DAX functions can modify or disable filter propagation.
+- Model relationships do not enforce data integrity.
+
+#### Example of Filter Propagation
+- Model with tables: Category, Product, Year, Sales.
+- Category filters Product, Product filters Sales, and Year filters Sales.
+- Combined filters (Category and Year) result in an AND operation on the Sales table.
+
+#### Star Schema Design
+- Use star schema design principles with dimension and fact tables.
+- Dimension tables filter fact tables efficiently.
+- Example: Adventure Works model with a single fact table (Sales) and four dimension tables.
+
+#### Disconnected Tables
+- Unrelated tables in a model, called disconnected tables, do not propagate filters.
+- Used for user input, e.g., currency exchange rates for sales conversion.
+
+#### Relationship Properties
+- Relate columns between different tables, typically one-to-many or many-to-one.
+- Data types of related columns must match.
+- Power BI detects and sets cardinality type but allows manual updates.
+
+#### Cardinality Types
+- One-to-many (1:*), many-to-one (*:1), one-to-one (1:1), many-to-many (*:*).
+- One-to-many and many-to-one are the most common.
+- Many-to-many for complex model requirements.
+
+#### Cross Filter Direction
+- Single (default) or both (bi-directional) directions.
+- Bi-directional filtering can impact performance and cause ambiguity.
+
+#### Active vs Inactive Relationships
+- Only one active filter path between tables.
+- Inactive relationships used in specific calculations with USERELATIONSHIP DAX function.
+- Active relationships are preferred.
+
+#### Referential Integrity
+- Assume referential integrity property for DirectQuery tables, improving performance.
+- Should be enabled when data integrity is ensured.
+
+#### Relevant DAX Functions
+- RELATED, RELATEDTABLE, USERELATIONSHIP, CROSSFILTER, COMBINEVALUES, TREATAS, Parent and Child functions.
+
+#### Relationship Evaluation
+- Regular relationships: one-to-many within the same source group.
+- Limited relationships: many-to-many or cross-source group, no guaranteed "one" side.
+- Table expansion for regular relationships using JOIN semantics.
+
+#### Resolving Path Ambiguity
+- Power BI resolves filter path ambiguity using priority and weight rules.
+- Use USERELATIONSHIP function to influence relationship weights and resolve ambiguities.
+
+#### Performance Preferences
+- Fastest to slowest filter propagation:
+  - One-to-many intra source group relationships.
+  - Many-to-many with intermediary table and bi-directional relationship.
+  - Many-to-many cardinality relationships.
+  - Cross source group relationships.
