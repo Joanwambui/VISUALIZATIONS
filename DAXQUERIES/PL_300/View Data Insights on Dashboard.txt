@@ -1,0 +1,9 @@
+View Data Insights on Dashboard tiles
+Publish the report on powerbi service
+open the report ON FOCUS MODE and select Visual - choose pin to the dashboard (new dashboard rename it as dashboard A)
+Go to dashboard , hover visual from dashboard visual and select view insights
+
+From focus mode, review generated visuals
+from focus mode pin relevant visuals to dashboard A
+From dashboard A, select tileA options and select view insights
+
