@@ -1,0 +1,6 @@
+CALENDAR() DAX Function
+Create 10 full calendar years
+Date = 
+var var1 = YEAR(TODAY())
+return CALENDAR(DATE(var1 -9, 01, 01),
+		DATE(var1,12,31))
