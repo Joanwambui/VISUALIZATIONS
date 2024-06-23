@@ -1,0 +1,5 @@
+Impact of Summarization on no of rows
+Distinct shows values that are different but may appear more than once
+Unique are not repeated values
+Summarization as none the values will be unique no of rows
+Summarization will reduce the number of rows
