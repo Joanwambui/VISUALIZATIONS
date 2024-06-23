@@ -1,0 +1,7 @@
+Previous Year YTD
+
+Sales PYTD = 
+VAR startyear = STARTOFYEAR ( PREVIOUSYEAR('Calendar'[Date]))
+VAR enddate = LASTDATE( Sales[Date])-365
+RETURN 
+CALCULATE(SUM(Sales[Sales],DATESBETWEEN('Calendar'[Date],startyear, enddate)
