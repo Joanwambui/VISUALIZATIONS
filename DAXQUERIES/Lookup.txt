@@ -1,0 +1,6 @@
+Level 1 Key =
+LOOKUPVALUE(
+    COAMapping[Level 1 Key],
+    COAMapping[No],
+    'GeneralLedgerEntriesKSBS'[G_L_Account_No]
+)
