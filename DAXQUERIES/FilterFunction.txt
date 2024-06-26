@@ -1,0 +1,7 @@
+Transaction Size =
+VAR SalesTotal= Sales[Sales]
+VAR FilterSegmeent = FILTER('Transaction Size', AND ('Transaction Size'[Min]<=SalesTotal,
+'Transaction Size'[Max]>=SalesTotal))
+VAR Result = CALCULATE(DISTINCT('Transaction Size'[Transaction Size]), FilterSegment)
+RETURN
+Result
