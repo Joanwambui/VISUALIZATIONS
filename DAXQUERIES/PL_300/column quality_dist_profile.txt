@@ -1,0 +1,5 @@
+column quality checks for nulls,valid,error and empty percentage of data values
+You can access column quality from Power Query editor , under view tab in data preview section
+Column quality - how valid is your data, any errors or empty cells 
+column distribution- distinct,unique recods
+column profile - statistical info, count, error, empty, distinct, min,max 
