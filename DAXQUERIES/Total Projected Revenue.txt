@@ -1,0 +1,2 @@
+Total Projected Revenue
+IF NOT ISFILTERED ('Date'[Date])),SUM(Projection[Revenue Projection]))
