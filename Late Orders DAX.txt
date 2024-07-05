@@ -1,0 +1,6 @@
+Late Orders Percent = 
+VAR OrderCount = 
+COUNTROWS ('Orders')
+VAR LateOrders = 
+CALCULATE COUNTROWS('Orders'),FILTER(Order, Orders[ShippedDate]>Orders[RequiredDate]
+RETURN DIVIDE (LateOrders, OrderCount)
