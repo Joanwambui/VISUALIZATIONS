@@ -1,0 +1,4 @@
+WEEKTABLE = yyyyww
+DATETABLE = yyyymmdd
+Creating a relationship btwn these two tables:
+weekly table create new calculated column date_id in format yyyymmdd and use calculated column to create rltnshp to date table
