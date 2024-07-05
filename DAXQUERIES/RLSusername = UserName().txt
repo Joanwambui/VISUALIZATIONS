@@ -1,0 +1,3 @@
+username = UserName()
+will return DOMAIN\User
+userprincipalname() will retun user@contoso.com
