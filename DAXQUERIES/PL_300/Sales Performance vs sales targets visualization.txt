@@ -1,0 +1,5 @@
+Sales Performance vs sales targets
+KPI 
+Indicator - Sales[sales_amount]
+Trend Axis - Date[month]
+Target Goals = Targets[sales_target]
