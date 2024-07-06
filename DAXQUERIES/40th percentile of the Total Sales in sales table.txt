@@ -1,0 +1,7 @@
+Creating a Dashed horizontal line for a forecast visual denoting 40th percentile of daily sales 
+
+DAX = PERCENTILEX.INC(Sales,Sales[Total Sales],0.40)
+
+
+PERCENTILEX.INC: This function returns the percentile of a given column or expression evaluated over a table. The .INC variant includes both the minimum and maximum values in the calculation, following the "inclusive" method
+
