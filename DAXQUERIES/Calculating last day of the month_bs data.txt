@@ -1,0 +1,4 @@
+Calculating last day of the month in balance sheet data to ensure that one can relate it to balance sheet data to the Date table.
+
+M Custom column
+Date.EndOfMonth(#date([Year],[Month],1))
