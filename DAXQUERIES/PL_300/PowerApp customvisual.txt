@@ -1,1 +1,5 @@
-Create parameter named DatasourceExcel tat holds file name and location of Microsoft excel data source. Need to update query to reference parameter instead of multiple hard-coded copies, we will use Power apps custom visual to the report
+Create parameter named DatasourceExcel tat holds file name and location of Microsoft excel data source.
+Need to update query to reference parameter instead of multiple hard-coded copies, 
+we will use Power apps custom visual to the report
+
+In Power Query M Mode, you can replace the references of an excel file with DataSourceExcel
