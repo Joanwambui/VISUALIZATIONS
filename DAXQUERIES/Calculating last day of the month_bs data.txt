@@ -2,3 +2,7 @@ Calculating last day of the month in balance sheet data to ensure that one can r
 
 M Custom column
 Date.EndOfMonth(#date([Year],[Month],1))
+
+
+DAX Expression to get ending balances in balance sheet reports:
+CALCULATE( SUM (BalanceSheet[BalanceAmount],LASTDATE('Date'[Date])
