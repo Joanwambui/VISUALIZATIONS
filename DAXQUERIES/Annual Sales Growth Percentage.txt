@@ -1,0 +1,9 @@
+Annual Sales Growth Percentage = 
+((SUM(Sales[sales amount]) - CALCULATE(SUM(Sales[sales amount]), SAMEPERIODLASTYEAR('Date'[DateID]))) / 
+CALCULATE(SUM(Sales[sales amount]), SAMEPERIODLASTYEAR('Date'[DateID]))) * 100
+
+
+
+SUM(Sales[sales amount]): This part calculates the total sales amount for the current period.
+CALCULATE(SUM(Sales[sales amount]), SAMEPERIODLASTYEAR('Date'[DateID])): This calculates the total sales amount for the same period in the previous year.
+(SUM(Sales[sales amount]) - CALCULATE(SUM(Sales[sales amount]), SAMEPERIODLASTYEAR('Date'[DateID])) / CALCULATE(SUM(Sales[sales amount]), SAMEPERIODLASTYEAR('Date'[DateID]))): This part calculates the growth by subtracting last year's sales from this year's sales and dividing by last year's sales.
