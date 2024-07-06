@@ -1,0 +1,1 @@
+Create parameter named DatasourceExcel tat holds file name and location of Microsoft excel data source. Need to update query to reference parameter instead of multiple hard-coded copies, we will use Power apps custom visual to the report
