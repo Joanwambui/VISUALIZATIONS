@@ -1,0 +1,4 @@
+create 4 roles from BI Desktop
+add table filter DAX to the roles from BI Desktop
+publish dataset to powerbi.com
+from powerbi.com add role members to roles
