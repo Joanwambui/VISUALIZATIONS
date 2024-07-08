@@ -1,2 +1,4 @@
 Data Preview options
 column quality- check percentage of empty values,valid and error data values
+
+column profile - helpful to understand a list contains records for each state
