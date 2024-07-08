@@ -1,0 +1,3 @@
+Grouptolistvsgrouptobin
+Group Type to List: Manually grouping specific items into custom categories.
+Group Type to Bin: Automatically grouping numerical data into ranges for distribution analysis.
