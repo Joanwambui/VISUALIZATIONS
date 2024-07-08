@@ -1,0 +1,1 @@
+To create and publish app must be a member and to publish reports to workspace and delete dashboards one to be Contributor
