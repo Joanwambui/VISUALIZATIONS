@@ -1,0 +1,5 @@
+modeling data in table called SalesDetail in BI. Provide endusers access to summary statistics about salesdetail data. users require insights on completeness of data and value distrbtns.
+
+create blank query as datasouurce
+specify the query: =Table.Profile(#'SalesDetail')
+create visual for query table
