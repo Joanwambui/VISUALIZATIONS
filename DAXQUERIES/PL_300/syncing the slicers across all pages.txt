@@ -1,0 +1,2 @@
+syncing the slicers across all pages or Replacing the slicers with report-level filters have the same effect. Users will manage to filter the report once across all pages
+ 
