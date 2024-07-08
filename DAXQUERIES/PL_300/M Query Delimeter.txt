@@ -1,0 +1,14 @@
+Mike A  Math,English,Art
+Sam B   Physics
+
+Configure to display data in the following exhibit
+Mike A   Math
+Mike A  English
+Mike A   Art
+Sam B    Physics
+
+
+Which step to use in the query
+
+ Using M Query
+=Table.ExpandListColumn(Table.TransformColumns(Source,{{"classes", Splitter.SplitTextByDelimeter(",",QuoteStyle.None), let ItemType - (type nullable text) meta [Serialized.Text = true] in type {itemType}}}),"classes")
