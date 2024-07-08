@@ -1,0 +1,1 @@
+Use active directory groups to ensure users can browse available dashboards from powerbi.com. They can also see which dashboards contain Personally Identifiable Information (PII)
