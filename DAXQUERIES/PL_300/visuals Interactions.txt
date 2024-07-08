@@ -1,0 +1,1 @@
+selecting a quarter on line chart will not affect the visual but will cross filter the map visual
