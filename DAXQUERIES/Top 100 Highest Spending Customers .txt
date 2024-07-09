@@ -1,0 +1,7 @@
+Top 100 Highest Spending Customers =
+TOPN(100,SUMMARIZE(FactTransition,
+     FactTransition[Customer ID],
+    	"Sales"
+	SUM(FactTransaction[Sale]),
+	[Sales],
+	DESC)
