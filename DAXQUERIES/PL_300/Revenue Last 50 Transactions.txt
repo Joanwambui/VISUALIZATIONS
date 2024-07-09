@@ -1,0 +1,2 @@
+Revenue Last 50 Transactions = 
+CALCULATE (SUMX(Transactions[Amount]),TOPN(50, Transactions, Transactions[TransactionDate],DESC)
