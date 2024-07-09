@@ -1,0 +1,5 @@
+Ensure JSON Files read date columns as dates with hierarchies
+
+Convert List to a Table
+Expand the column
+Set the Date types
