@@ -1,0 +1,2 @@
+Product Category % of Total 2 = 
+DIVIDE ([Total Sales], CALCULATE([Total Sales], ALL SELECTED(Product[ProductCategoryName])))
