@@ -1,0 +1,2 @@
+DISTINCTCOUNT('Product'[ProductCategory]),'Date' not
+COUNT('Product'[ProductCategory]),'Date'
