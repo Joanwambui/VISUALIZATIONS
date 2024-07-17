@@ -1,0 +1,17 @@
+A user creates a Power Bl report named ReportA that uses a custom theme.
+
+You create a dashboard named DashboardA.
+
+You need to ensure that DashboardA uses the custom theme. The solution must minimize development effort.
+
+Which two actions should you perform? Each correct answer presents part of the solution.
+
+A. Publish ReportA to Power BI.
+
+B. From ReportA save the current theme. Correct
+
+C. Publish ReportA to the Microsoft Power BI Community theme gallery.
+
+D. From DashboardA, create a custom theme.
+
+E. From DashboardA, upload a JSON theme. Correct
