@@ -1,0 +1,4 @@
+BI Report to be viewed in mobile device
+Display data based on each user's location:
+In data category, set geographic data category for relevant columns
+Use columns of geography data type in all visuals
