@@ -1,0 +1,2 @@
+Smart narrative
+Shows trends and other useful information automatically. The visual updates based on selections in other visuals
