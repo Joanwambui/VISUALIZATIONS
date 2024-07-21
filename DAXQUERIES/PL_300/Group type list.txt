@@ -1,0 +1,4 @@
+Employees in 10 states. Recently decided to associate each state with these three regions:
+East, west, north
+My data model contains employee info by state.  It does not have region info yet. Report shows employee by state and want to show by region as quickly as possible:
+Create a new group on the state column and set the group type to list.
