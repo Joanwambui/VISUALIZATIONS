@@ -1,0 +1,2 @@
+Tooltips 
+When you have a line chart that shows the count of employees against time and want to see salary when you hover over a particular data point in the visual. You will add the tooltips to do this
