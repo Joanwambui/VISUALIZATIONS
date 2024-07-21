@@ -1,0 +1,1 @@
+In a report to maintain interactivity between the charts we will edit interactions but from power bi service we will pin the report page as a live tile
