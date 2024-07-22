@@ -1,0 +1,3 @@
+linechart
+add weeks and days field to values bucket to drilldown
+an average reference line can be used on line chart
