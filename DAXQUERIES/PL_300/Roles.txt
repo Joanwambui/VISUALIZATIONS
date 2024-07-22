@@ -1,0 +1,7 @@
+Roles
+Only Admin and Member can publish, unpublish, and change permissions for an app.
+Contributor -
+Admin,Member and Contributor can create, edit, and delete content, such as reports, in the workspace.
+Note: Contributor - This role can access and interact with reports and dashboards. Additionally, this role can create, edit, copy, and delete items in a workspace, publish reports, schedule refreshes, and modify gateways.
+Incorrect:
+Viewer - This role provides read only access to workspace items. Read access does provide report / dashboard consumers the ability to not only view, but also interact with visuals. Interaction does not mean changing a visual.
