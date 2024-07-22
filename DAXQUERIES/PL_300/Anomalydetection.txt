@@ -1,0 +1,1 @@
+Visual with anomaly detection enabled. No anomalies have been detected. Need to increase likelihood anomaly detection will identif anomalies, we can do this by Increasing the sensitivity setting.
