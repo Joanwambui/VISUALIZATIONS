@@ -1,0 +1,4 @@
+You have excel1 and we would like to pin dashboard A to be Q&A enabled from excel1. You will now be able to ask questions based on excel1 and pin visuals on queries to dashboard A. Steps to take are as follows:
+From powerbi.com upload excel1
+From powerbi.com import excel as a dataset
+from powerbi.om add a tile for excel1 dataset to Dashboard A
