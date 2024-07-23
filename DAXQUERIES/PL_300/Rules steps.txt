@@ -1,0 +1,3 @@
+open background color for revenue column
+set format style to rules
+add and configure new rule for each value range
