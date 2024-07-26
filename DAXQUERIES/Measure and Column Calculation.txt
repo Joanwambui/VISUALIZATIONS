@@ -1,0 +1,7 @@
+Measure and Column Calculation in one
+Net Premium_Unearned = CALCULATE(
+SUMX(
+    GIN_POLICY_RISK_REG,
+    GIN_POLICY_RISK_REG[RSKRG_COMP_NET_RET] * GIN_POLICY_RISK_REG[UnearnedProportion]
+)
+)
