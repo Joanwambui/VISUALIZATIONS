@@ -1,0 +1,6 @@
+Data Source Setting in Power Query 
+-supports editing permissions
+-clearing permissions
+-modifying the path of data source file
+
+Structural changes eg adding, removing, or renaming columns are not supported by the Data Source setting in power query interface
