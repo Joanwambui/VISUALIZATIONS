@@ -1,0 +1,4 @@
+1) Create four roles
+2) add DAX filters
+3) publish
+4) add role members
