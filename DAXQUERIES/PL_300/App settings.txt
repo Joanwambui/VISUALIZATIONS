@@ -1,0 +1,1 @@
+If users can't access reports from app workspace, navigate to app workspace cick update app and configure access settings and click update
