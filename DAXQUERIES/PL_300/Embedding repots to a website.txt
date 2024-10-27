@@ -1,0 +1,1 @@
+reports with rls,reports shared to user account and reports where datasts are from an on-premises SQL Server analysis service (SSAS) databse cannot be ebedded to a website
