@@ -1,0 +1,3 @@
+Access power BI App - need a free license
+Modify report in an app workspace - Power BI PRO
+Share dashboards created in workspace - PowerBI PRO
