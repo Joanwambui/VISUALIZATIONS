@@ -1,0 +1,34 @@
+Benefits of import in place of direct query
+Full support for Q&A Power BI Service
+Full support for quick insights Power BI Service
+https://learn.microsoft.com/training/modules/get-data/6-storage-mode
+
+SharePoint folder only connector to import multiple excel files stored in a onedrive for Business folder without a gateway 
+
+Get data from files - Training | Microsoft Learn
+https://learn.microsoft.com/power-query/connectors/sharepointfolder
+
+When importing data from an Excel workbook into Power BI, you receive the error message: “We couldn't find any data formatted as a table.”
+In the Excel workbook, select the data you want to import, create a table, and save the change.
+https://learn.microsoft.com/training/modules/get-data/9-import-errors
+
+Col distribution - distinct, unique values
+Col profile - value distribution/ col statistics
+Col Quality - errors, valid, empty
+https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/6-profile-data
+
+Use advanced Editor to modify m-code
+
+Have multiple columns - Pivot
+Reducing clumns - Unpivot
+https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/2-shape-data
+
+https://learn.microsoft.com/training/modules/clean-data-power-bi/4-column-data-types
+Change int to text in power query already applied steps to ensure the leading zeros are not lost
+
+
+
+
+
+
+
