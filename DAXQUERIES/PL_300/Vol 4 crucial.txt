@@ -1,0 +1,39 @@
+Adding synonyms to model fields will help users search for them. For example, you can give a synonym of (Actuals) for the (Sales) measure. A linguistic schema describes terms and phrases that Q&A should understand for objects within a dataset, including parts of speech, synonyms, and phrasings that relate to that dataset. Composite models are not supported by Q&A today. Organizing fields by display folders will not impact Q&A search capabilities.
+
+https://learn.microsoft.com/en-us/training/modules/perform-analytics-power-bi/
+
+Before you create a bookmark, you need to configure the report page to show the state you want to capture in the bookmark. Visuals are visible by default, therefore, you must mark them as hidden. To add a bookmark, you first need to update the bookmark after hiding the visuals. Bookmarks can be created in Power BI without publishing to the Power BI service. While spotlight does focus on the clustered bar chart, it does not completely hide the cards.
+https://learn.microsoft.com/training/modules/power-bi-effective-user-experience/
+
+
+Matrix and table visuals support conditional formatting. Gauge chart, scatter chart, and treemap do not support conditional formatting.
+https://learn.microsoft.com/training/modules/power-bi-effective-user-experience/
+
+
+A scatter visual displays a relationship between values associated with two axes: one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. It is particularly suitable for identifying outliers because it displays them away from the bulk of data. A card visual displays a single data point. A treemap visual displays data as a set of nested rectangles. A gauge visual displays a circular arc including a single value that measures progress toward a goal or target.
+
+Why Use Grouping and Binning?
+Grouping and binning simplify your visuals and let you focus on patterns:
+
+Grouping helps analyze categories by creating custom groups.
+Binning lets you analyze continuous data by grouping values into ranges.
+
+Grouping handles categorical data eg states, products - used to combine specific categories into one group eg high sale states vs other states
+
+Binning handles continuous data eg Order Quantity or date, divides data into equal ranges. Oder quantities in ranges
+
+Date/time and numeric data types support bins-based grouping. Binary, Boolean, and text data types do not support bins-based grouping.
+https://learn.microsoft.com/training/modules/perform-analytics-power-bi/4-group-data
+
+The Key influencers visual helps you understand correlated factors impacting a particular metric. The Q&A visual allows end-users to ask natural language questions to create AI generated charts based on the questions.
+
+The Decomposition Tree visual lets you visualize data between multiple dimensions and drill down in any order. The Smart Narrative visual lets you combine natural language text with metrics from your model in sentence forms.
+
+
+You need to add a new visual to a Power BI Dashboard. This visual does NOT exist on a report in the workspace.
+
+What should you do first?
+Select Ask a question about your data.
+The Q&A feature lets you create a visual by typing in a question about your data. This new visual can then be pinned to the dashboard, without adding it to a report. Inside the file menu and the tiles menu there are no “visual” options. See Related Content displays related content like reports, datasets, etc. You can’t create a new visual from here.
+https://learn.microsoft.com/training/modules/create-dashboards-power-bi/3-explore-data
+
