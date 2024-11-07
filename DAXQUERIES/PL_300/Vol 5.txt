@@ -1,0 +1,65 @@
+RLS involves several configuration steps, which should be completed in the following order:
+Create a report in Microsoft Power BI Desktop.
+Import the data.
+Confirm the semantic model between both tables.
+Create the report visuals.
+Create RLS roles in Power BI Desktop by using DAX.
+Test the roles in Power BI Desktop.
+Deploy the report to Microsoft Power BI service.
+Add members to the role in Power BI service.
+Test the roles in Power BI service.
+
+https://learn.microsoft.com/en-us/training/modules/row-level-security-power-bi/2-static-method
+
+Activating the View as feature will allow you test the row-level security as someone with the Salesperson role. A what-if parameter is intended for visualization and analytics of results of changing a value of a variable, not validating row-level security. Adding a DAX expression filter to the Salesperson table is part of implementing row-level security, which is already completed. A conditional column is computed from other columns or values.
+
+You need to create a row level security (RLS) role for a dataset.
+
+What should you do first?
+In Power BI Desktop, open Manage roles.
+RLS roles are created or modified from the Manage roles space. You can assign AD users/groups to an existing role in the security settings, but new RLS roles must be created in Power BI desktop or other model authoring external tool. RLS configurations cannot be accessed from any Power Query window. Before you can assign users to a security group, it first needs to be created for the model in Power BI Desktop.
+https://learn.microsoft.com/power-bi/enterprise/service-admin-rls
+https://learn.microsoft.com/training/modules/design-model-power-bi/
+
+You upload reports to the Power BI service and pin several visuals to a dashboard.
+
+You plan to create alerts rules for several visuals.
+
+What are two locations you can view the alerts? Each correct answer presents a complete solution.
+By default, notifications are available in the notification center. You also have the option of sending notifications via email. A dashboard, Microsoft Teams channel, and a report are not available as the locations of alerts.
+
+
+You plan to create a Power BI workspace.
+
+You need to ensure that you will be able to configure a Microsoft 365 group whose SharePoint Online document library is available to workspace users once the workspace is created.
+
+Which setting should you configure when creating the workspace?
+The Workspace OneDrive setting allows you to configure a Microsoft 365 group whose SharePoint Online document library is available to workspace users once the workspace is created. The Allow contributors to update the app for this workspace setting is meant to provide additional permissions for workspace contributors. The Develop a template app setting allows you to set up a template app workspace. The license mode allows you to choose between Pro, Premium per user, Premium per capacity, and Embedded licensing.
+https://learn.microsoft.com/training/modules/create-manage-workspaces-power-bi/2-distribute-report-dashboard
+https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces
+
+Your company has a SharePoint server located in a datacentre in Montreal.
+
+You plan to create a report in the Power BI service that will use Microsoft Excel files stored on the SharePoint server.
+
+You need to recommend a solution to ensure that the dataset for the report can automatically refresh daily.
+
+What should you include in the recommendation?
+an on-premises data gateway
+An on-premises SharePoint server requires a Power BI gateway since it’s an on-premises data source. VPN-based solutions would provide connectivity to an Azure virtual network, but not Power BI service. Azure Data Box is a solution for migrating data to Azure, which is not applicable in this scenario.
+https://learn.microsoft.com/training/modules/manage-datasets-power-bi/4-power-bi-gateway
+
+ou manage a Power BI workspace in shared capacity. The workspace contains a dataset named DS1.
+You plan to schedule the refresh of DS1.
+What is the maximum number of data refreshes per day? 8 
+
+USERPRINCIPALNAME would return the Microsoft Entra ID login in the format of “name@company.com”. USEROBJECTID would not return the Microsoft Entra ID login in the same format. NAMEOF is a function that is used for Field Parameters. TREATAS is a function related to column filtering.
+
+https://learn.microsoft.com/training/modules/row-level-security-power-bi/3-dynamic-method
+
+A certified dataset can be configured to be discoverable for users without access to request permissions to access. A promoted dataset can be configured to be discoverable for users without access to request permissions to access. RLS is not required on a dataset to become discoverable. Premium (capacity or shared) is not required to make a dataset discoverable.
+https://learn.microsoft.com/power-bi/collaborate-share/service-endorse-content
+https://learn.microsoft.com/training/modules/create-manage-workspaces-power-bi/
+
+
+
