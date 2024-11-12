@@ -1,0 +1,79 @@
+Column Profiling, Column Distribution, Column Quality can be found from the power query editor window. Checks the count of rows. the min and max, which will tell you the smallest and largest value in a column. Shows statistics for each column.
+
+Profiling data - Determining anomalies, examining and developing underlying data structures, querying data statistics such as row counts, value distributions, minimum and max values, aerages and the like. 
+Column Quality - Empty, Error , Valid (Column quality shows you the percentages of data that is valid, in error, and empty. In an ideal situation, you want 100 percent of the data to be valid.)
+Column Distribution - Distinct, Unique (Column distribution shows you the distribution of the data within the column and the counts of distinct and unique values, both of which can tell you details about the data counts. Distinct values are all the different values in a column, including duplicates and null values, while unique values do not include duplicates or nulls. Therefore, distinct in this table tells you the total count of how many values are present, while unique tells you how many of those values only appear once.)
+
+Outliers in data are identified using Column Distribution
+https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/6-profile-data
+
+Analyzing data in power query to check for outliers in *text column* - the top and bottom entries in Value distribution
+Outliers in *numeric column* - min and max values in column profile. 
+The top and bottom entries in Value distribution identify outliers, which appear, respectively, the greatest and the smallest number of times in that column. The value of the Distinct entry in Column statistics indicates the total count of different values. The value of the Unique entry in Column statistics indicates the total count of different values that appear only once. The min and max values in the Column profile of a text column designate the entries which appear, respectively, first and last in alphabetical order.
+
+Unpivot columns - will unpivot all the selected columns into a new single column (Converting columns into rows)
+Having multiple columns instead we will use pivot columns (Converting rows to columns)
+https://learn.microsoft.com/training/modules/clean-data-power-bi/2-shape-data
+
+
+Preview pane for JSON files shows a list of record items when connecting to a collection of JSON formatted items.  To view individual item fields, open the Power Query window and use the Expander button on the right side of the Column1 header to display the list of fields.
+NoSL DB basically means its a flexible type of database that does not use tables to store data eg Cosmos DB
+
+https://learn.microsoft.com/training/modules/get-data/4-nosql-database
+
+Primary keys are column(s) that identify each unique, non-null data row.
+
+Designed a star schema to simplify data. What is the relationship from a fact table to a dimension table? Many to One. There is a many-to-one relationship from a fact table and dimension table. For each row in a dimension table there may be multiple matching rows in the fact table.
+https://learn.microsoft.com/training/modules/design-model-power-bi/1-introduction
+
+To avoid ambiguity in data, many-to-many cardinality should be avoided. One-to-one cardinality in Power BI should be avoided and, if present, should be eliminated by combining the related tables. However, this type does not introduce ambiguity.
+
+One-to-one (1:1) relationship:
+Describes a relationship in which only one instance of a value is common between two tables.
+Requires unique values in both tables.
+Is not recommended because this relationship stores redundant information and suggests that the model is not designed correctly. It is better practice to combine the tables.
+For one-to-one relationships, the only option that is available is bi-directional cross-filtering.
+
+Disabling Auto Date/Time for new files from the Current File options will disable all Auto Date/Time tables in this dataset. Enabling Mark as date table for the Calendar table will also disable the auto datetime tables in the dataset. Disabling the Global option Auto Date/Time for new files means that new files will no longer have Auto Date/Time enabled, but the file containing the current dataset will still have it enabled until it is disabled. Changing the data category will not impact the auto date table feature.
+
+You can have multiple inactive relationships between two tables in Power BI datasets. DAX measures can then use the USERELATIONSHIP function to activate a relationship for calculations. Relationship direction is not required for either the relationships or measures to work in this model setup. Only one active relationship can exist between two tables in a Power BI dataset. Applying a security filter in both directions isn’t required for this model setup.
+
+A calculated table only duplicates data. Any model configurations such as column visibility or hierarchies must be recreated if needed.
+https://learn.microsoft.com/en-us/training/modules/dax-power-bi-add-calculated-tables/1-introduction
+
+Calculated tables have a cost: They increase the model storage size and they can prolong the data refresh time. The reason is because calculated tables recalculate when they have formula dependencies to refreshed tables.
+
+A calculated table only duplicates data; it doesn't duplicate any model properties or objects like column visibility or hierarchies. You'll need to set them up for the new table, if required.
+
+The CALENDARAUTO DAX function takes a single optional argument, which is the last month number of the year, and returns a single-column table. If you don't pass in a month number, it's assumed to be 12 (for December). For example, at Adventure Works, their financial year ends on June 30 of each year, so the value 6 (for June) is passed in.
+
+The function scans all date and date/time columns in your model to determine the earliest and latest stored date values. It then produces a complete set of dates that span all dates in your model, ensuring that full years of dates are loaded. For example, if the earliest date that is stored in your model is October 15, 2021, then the first date that is returned by the CALENDARAUTO function would be July 1, 2021. If the latest date that is stored in the model is June 15, 2022, then the last date that is returned by the CALENDARAUTO function would be June 30, 2022.
+https://learn.microsoft.com/training/paths/dax-power-bi/
+
+
+Time intelligence functions have performance implications and are disabled for quick measures against DirectQuery tables. Mathematical operations, aggregate per category, and X-functions are all supported against DirectQuery.
+https://learn.microsoft.com/power-bi/transform-model/desktop-quick-measures
+https://learn.microsoft.com/training/paths/dax-power-bi/
+
+Variable names are often shorter than the original expressions, and the final variable returned at the end of the measure will be more readable with variable names included. Variables cache the defined calculation, allowing it to be referenced multiple times without additional impacts from recalculations. The functions in DAX are universal, and there are no specific functions that can only be used within variables. The data source connection is set in the model and cannot be changed from within a DAX measure.
+https://learn.microsoft.com/en-us/training/modules/optimize-model-power-bi/3-variables
+Example of variable
+Sales YoY Growth =
+VAR SalesPriorYear =
+    CALCULATE ( [Sales], PARALLELPERIOD ( 'Date'[Date], -12, MONTH ) )
+VAR SalesVariance =
+    DIVIDE ( ( [Sales] - SalesPriorYear ), SalesPriorYear )
+RETURN
+    SalesVariance
+
+improves the overall performance of the resulting DAX measure
+improves the overall readability of the resulting DAX measure
+
+
+The #duration function of the M language allows you to specify the datetime values that will be entered into individual rows of a date table. The #date function creates a date value based on the date parameters you specify. The List.Combine() combines multiple lists into one. List.Durations returns a list of count duration values, rather than dates.
+https://learn.microsoft.com/powerquery-m/power-query-m-function-reference
+
+
+
+
+
