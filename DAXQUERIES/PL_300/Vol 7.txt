@@ -85,4 +85,5 @@ https://learn.microsoft.com/training/modules/create-manage-workspaces-power-bi/2
 
 Power BI Premium per user workspace is limited to 48 refreshes per day compared to 8 refreshes for those with normal not premium workspace
 
-
+https://learn.microsoft.com/en-us/power-bi/
+All ref material
