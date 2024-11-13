@@ -1,0 +1,88 @@
+When we are trying to flatten parent-child hierarchy we use PATHITEM CROSS JOIN, EXCEPTPATH t work out the listing and see direct and indirect managers.
+
+A funnel visualization displays a linear process with sequentially connected stages, with one stage transitioning to the next. A slicer visualization is available in different formats, including list, drop-down, and buttons, but not sequentially connected stages, with one stage transitioning to the next. A treemap visualization displays data as a set of nested rectangles. A waterfall visualization displays a running total as values are added or subtracted.https://learn.microsoft.com/training/modules/power-bi-effective-reports/
+
+
+Steps taken to create a custom r visual in PowerBI
+1. Enable R in Power BI
+Ensure R is installed on your system. You can download and install R from CRAN.
+In Power BI Desktop, go to File > Options and settings > Options.
+Under Global > R scripting, set the path to your R installation.
+2. Add an R Visual to the Report
+In Power BI Desktop, go to the Visualizations pane and select the R icon. This adds an R visual placeholder to the report canvas.
+When you add the R visual, a script editor appears at the bottom of the screen.
+3. Prepare and Add Data Fields
+Drag the fields you want to use in the R visual into the Values pane for the R visual.
+Power BI will pass the selected data to the R script as a dataframe called dataset.
+4. Write the R Script
+In the R script editor, write the R code to create your desired visual. You can use popular R visualization packages like ggplot2, plotly, or lattice.
+For example, if you’re creating a scatter plot, you might use code like this:
+R Code
+
+library(ggplot2)
+ggplot(dataset, aes(x = field1, y = field2)) + geom_point()
+
+5. Run the Script
+When you finish writing the R code, click Run in the R script editor. Power BI executes the R code and displays the resulting visual in the report canvas.
+If there are errors, make sure all libraries used in the code are installed in your R environment, and check the syntax.
+6. Customize the Visual (Optional)
+Adjust the plot dimensions, labels, colors, or other plot elements in your R code to fit your needs.
+You may need to add additional R packages or modify data processing to ensure the visual is correctly rendered within Power BI.
+7. Format and Style the R Visual
+Use the Formatting options in Power BI to adjust size, title, background, and other visual elements to make it visually consistent with other visuals in your report.
+8. Publish and Share
+After creating and styling the visual, you can publish the report to the Power BI Service. However, ensure that the R packages used are supported in Power BI Service if you intend to share it online, as not all R packages are supported.
+
+
+You implement the Q&A feature in a report, so users can get answers to their questions on their own.
+You need to improve your Q&A search capabilities for end-users.
+Which two configurations can you add? Each correct answer presents a complete solution.
+Add a linguistic schema to the dataset.
+Add synonyms to model fields.
+
+Matrix and table visuals support conditional formatting. Gauge chart, scatter chart, and treemap do not support conditional formatting.
+https://learn.microsoft.com/training/modules/power-bi-effective-user-experience/
+
+A gauge visual displays a circular arc including a single value that measures progress toward a goal or target.
+
+You need to add an analytics line to a visual. The value for the line must equal the result of a DAX measure that always returns a consistent single value. The DAX measure must only be used to populate the analytics line.
+ 
+Which type of analytics line should you use? Constant line (If its a consistent single value we use the constant line)
+
+The following visuals can use only a constant line from the Analytics pane:
+
+Stacked area chart
+Stacked bar chart
+Stacked column chart
+Waterfall chart
+100% Stacked bar chart
+100% Stacked column chart
+
+
+You can't apply any dynamic lines to these visuals:
+
+Funnel
+Line and clustered column chart
+Line and stacked column chart
+Ribbon chart
+Non-Cartesian visuals, such as Donut chart, Gauge, Matrix, Pie chart, and Table
+
+To implement an incremental refresh of the dataset, you first need to define an incremental refresh policy, which, in turn, requires defining filter parameters. An incremental refresh policy does not require upgrading to a Premium SKU. Publishing the dataset to the Power BI service is required for the incremental refresh policy to take effect, so it's the last step of setting up an incremental refresh.
+
+Benefits of incremental Refresh: 
+Quicker refreshes -- 
+More reliable refreshes - no longer need to keep long-running data connections to open schedule refresh 
+educe resource consumption 
+You can define an incremental refresh policy to solve this business problem. This process involves the following steps:
+
+Define the filter parameters.
+Use the parameters to apply a filter.
+Define the incremental refresh policy.
+Publish changes to Power BI service.
+
+App workspace is the only place where users will not receive a notification that they have been added on the workspace via email. Deployment pipelines are used for moving artifacts between test, development, and production environments. Metrics are where you can create goals based off existing datasets. You can add members to a workspace, but they receive a notification that they’ve been added to the workspace.
+https://learn.microsoft.com/training/modules/create-manage-workspaces-power-bi/2-distribute-report-dashboard
+
+Power BI Premium per user workspace is limited to 48 refreshes per day compared to 8 refreshes for those with normal not premium workspace
+
+
