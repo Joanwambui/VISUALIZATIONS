@@ -1,0 +1,2 @@
+The storage mode of a table in Power BI Desktop is configurable from the Model view, not the Data or Report view. Page view is an option available from within the Report view.
+https://learn.microsoft.com/training/modules/get-data/6-storage-mode
