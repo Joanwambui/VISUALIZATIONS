@@ -1,7 +1,7 @@
 Its sharepoint folder not sharepoint list and we filter for the specific folder always.
 
 
-PowerQuery - Append table2to table1
+PowerQuery - Append table2to table1.
 remove errors from table 
 query editor remove duplicates
 If it says use powerquery editor start from power query editor.
