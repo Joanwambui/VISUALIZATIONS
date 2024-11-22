@@ -1,0 +1,12 @@
+Adding a separate date dimension table that includes year, month, and week information is the optimal approach which provides the required functionality, while minimizing the model size and administrative effort. Adding a year, month, and week columns to the fact table would increase the amount of administrative effort. Enabling the Auto date/time global or current file option would increase the model size. In addition, it would not provide the ability to describe weekly time periods (only year, quarter, month, and day).
+
+The CALENDAR function returns a table with a column named Date that contains a contiguous set of dates based on the start date and end date that you specify. The CALENDARAUTO function returns a table with a column named Date that contains a contiguous set of dates based on data in the model.
+
+DAX Studio, once connected to the data model, can be used to clear the data engine cache. The Clear Cache function can be invoked from DAX Studio, once you connect it to the data model. The Refresh Metadata function can be invoked from DAX Studio to update the metadata of the currently selected model. Adding a blank page to the .pbix file and selecting it is the first step in clearing the visual cache, not the data engine cache.
+
+
+The CALENDARAUTO function generates a range of dates based on the earliest and latest date within the dataset. The CALENDAR function generates a range of dates, but it requires providing the start and end date. The DATE function returns the specified date in the datetime format. The DATEDIFF function returns an interval between two dates.
+
+https://learn.microsoft.com/training/modules/power-bi-effective-user-experience/
+https://learn.microsoft.com/power-bi/consumer/end-user-bookmarks 
+
