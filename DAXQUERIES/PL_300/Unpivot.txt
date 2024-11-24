@@ -28,3 +28,5 @@ Steps
 Select columns
 Unpivot
 Rename attribute column and Value column
+Pivot gives us more columns
+Unpivot gives us more rows
