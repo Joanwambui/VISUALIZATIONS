@@ -10,3 +10,10 @@ B. filter
 
 C. no impact
 
+In Power BI, visual interactions determine how one visual affects another when you select data points. Here’s how the interaction modes apply in this scenario:
+
+Highlight:
+
+When you set the column chart to "Highlight" mode, selecting a customer segment in the bar chart will display the portion of the total monthly sales that corresponds to that customer segment.
+The column chart will still show the total sales for each month, but the selected segment’s contribution will be highlighted within the columns. The rest of the column will be grayed out.
+This matches your requirement to see which portion of the total sales belongs to the selected customer segment.
