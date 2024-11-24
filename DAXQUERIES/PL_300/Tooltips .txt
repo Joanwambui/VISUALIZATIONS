@@ -1,2 +1,96 @@
 Tooltips 
 When you have a line chart that shows the count of employees against time and want to see salary when you hover over a particular data point in the visual. You will add the tooltips to do this
+
+### **Tooltips in Power BI:**
+
+Tooltips in Power BI provide additional, context-specific information when you hover over a visual element (such as a bar, line, or data point). They give users a quick way to see more details without needing to click or navigate to other parts of the report.
+
+### **Scenario:**
+Imagine you have a **Line Chart** showing the **count of employees** over time (say, by month or year), and you want to see the **salary** of the employee when hovering over a specific data point in the line chart.
+
+In this case, you can use **Tooltips** to show the salary data in a more detailed and interactive way, without cluttering the main visual.
+
+---
+
+### **How Tooltips Work in Power BI:**
+
+1. **Basic Tooltip:**
+   - In its simplest form, when you hover over a data point in a visual (such as a line chart), Power BI displays a basic tooltip with values related to the fields used in the visual.
+   - For instance, in a line chart showing employee count over time, the default tooltip might show the count of employees for that particular date or time period.
+
+2. **Enhanced Tooltip:**
+   - You can **customize tooltips** to show additional information that is not directly part of the visual. This can be anything from an average salary, employee position, or department, to a completely different measure or field.
+   
+---
+
+### **Adding Tooltips to Your Visual:**
+
+Here’s how you can **add salary** information to the tooltip when you hover over a data point in a **line chart** showing employee count over time:
+
+1. **Create a Line Chart:**
+   - Drag and drop the **Date/Time field** (such as `Date` or `Month`) into the **Axis** of the line chart.
+   - Drag and drop the **Count of Employees** into the **Values** of the line chart.
+
+2. **Create a Tooltip:**
+   - **Step 1:** Go to the **Fields pane** and drag the **Salary** field (or any other field you want to show) to the **Tooltips** well (under "Visualizations").
+     - This will add the **Salary** information to the tooltip, and it will show when you hover over the line chart's data points.
+   
+   - **Step 2 (Optional)**: If you want a **more advanced tooltip** (for example, showing detailed salary information or aggregate values like average salary):
+     - You can create a **tooltip page** by clicking on the **+** (New Page) and then designing it as you would any other report page (e.g., including visualizations like a card or table showing salary information).
+     - Set this page as a **tooltip** by going to the **Page Information** in the Visualizations pane and toggling the **Tooltip** setting to **On**.
+   
+3. **Adjusting Tooltip Formatting:**
+   - You can format the tooltip to show the information you want, such as adjusting the text, number formatting, and adding custom visuals to make the tooltip more insightful.
+
+---
+
+### **What Happens When You Hover Over a Data Point?**
+
+- Once you’ve added the salary field to the tooltip, when you hover over a data point (say, a particular month or year in your line chart), the **tooltip will display**:
+   - The **count of employees** for that month (this comes from the main chart).
+   - The **salary information** for the corresponding data point (this is your added field in the tooltip).
+
+---
+
+### **Custom Tooltip Page:**
+You can create a **custom tooltip page** for more advanced or detailed information.
+
+#### Steps for Custom Tooltip:
+1. **Create a New Page:**
+   - In the report view, click the **+** icon at the bottom of Power BI to add a new page.
+   - Design this page with visuals that display the detailed data you want to show in the tooltip (e.g., salary averages, total salary, employee names, etc.).
+
+2. **Enable Tooltip on the Page:**
+   - On the **Visualizations pane**, select **Page Information**.
+   - Set **Tooltip** to **On** for this new page.
+
+3. **Assign the Custom Tooltip to the Visual:**
+   - Go back to your line chart, select it, and in the **Visualizations** pane, click on the **Tooltip** field.
+   - Choose the newly created **tooltip page**.
+
+Now, when you hover over a data point in your line chart, Power BI will show the custom tooltip page with detailed salary information.
+
+---
+
+### **Key Benefits of Using Tooltips:**
+1. **Improved User Experience**: Tooltips provide users with quick, additional context without cluttering the main report visuals.
+2. **Increased Interactivity**: Users can interact with the visuals by hovering over elements, making the report more engaging.
+3. **Data Exploration**: Tooltips allow users to explore deeper layers of data, such as viewing specific values, aggregations, or related metrics without navigating away from the main visual.
+4. **Cleaner Reports**: You can keep the visual clean and concise while still providing all the necessary information in the tooltips.
+
+---
+
+### **Example:**
+
+Imagine your **line chart** shows the count of employees for each month, and you want to see the **average salary** of those employees when you hover over a specific point:
+
+1. Add the **Salary** field to the **Tooltips** section of the line chart.
+2. When you hover over a point (e.g., for the month of January), Power BI will show:
+   - The **count of employees** in January (from the line chart).
+   - The **average salary** for employees in January (from the tooltip).
+
+---
+
+### **Conclusion:**
+
+Tooltips in Power BI enhance the interactivity of your reports. They allow you to **display additional data**, like salary information, when you hover over a specific data point, helping users gain deeper insights without cluttering the main visual. You can customize tooltips, use them for detailed information, and even create **custom tooltip pages** for more complex data presentations.
