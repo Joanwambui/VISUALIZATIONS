@@ -3,3 +3,5 @@ modeling data in table called SalesDetail in BI. Provide endusers access to summ
 create blank query as datasouurce
 specify the query: =Table.Profile(#'SalesDetail')
 create visual for query table
+
+Table.Profile() is a Power Query function that computes a table profile summary for a given table.
