@@ -1,2 +1,37 @@
 Its not dashboard mobile layout rather report mobile layout
 
+Understanding the Report Mobile Layout in Power BI
+Power BI offers a Mobile Layout feature to optimize reports for viewing and interacting on mobile devices. This layout is designed to provide a user-friendly, responsive experience by tailoring visuals to smaller screens, such as smartphones.
+Key Features of Report Mobile Layout
+Separate Mobile Layout:
+
+The mobile layout is a distinct design from the desktop layout.
+You can rearrange and resize visuals specifically for mobile users without altering the desktop report.
+Portrait Orientation:
+
+The mobile layout is designed in portrait orientation, which fits most smartphone screens better than the standard landscape (desktop) layout.
+Customizable Visual Arrangement:
+
+You can include or exclude specific visuals from the mobile view, focusing only on the most important data for quick insights.
+Interactivity:
+
+Mobile reports maintain interactivity, including slicers, filters, drill-throughs, and tooltips.
+Lightweight and Focused:
+
+Mobile layouts encourage simplicity, displaying only the most essential KPIs or visuals for quick decision-making.
+
+Best Practices for Mobile Layout Design
+Focus on Key Metrics:
+
+Display critical KPIs and summary visuals at the top for quick access.
+Avoid complex visuals like scatter plots or large tables, as they may be hard to interpret on small screens.
+Optimize for Readability:
+
+Use larger fonts and ensure sufficient spacing between visuals to avoid crowding.
+Prefer simple charts like bar or line charts over detailed visuals.
+Use Slicers and Filters Wisely:
+
+Include slicers or dropdown filters for quick data filtering, but don’t overload the mobile layout with too many interactive elements.
+Test Responsiveness:
+
+Use the Power BI Mobile App to test your layout and ensure it looks good on actual devices.
