@@ -1,2 +1,152 @@
 The storage mode of a table in Power BI Desktop is configurable from the Model view, not the Data or Report view. Page view is an option available from within the Report view.
 https://learn.microsoft.com/training/modules/get-data/6-storage-mode
+
+In Power BI, the workspace is divided into three main views: **Report View**, **Data View**, and **Model View**. Each view has specific capabilities and features tailored to different aspects of the report-building process. Here's a detailed breakdown of the capabilities for each view:
+
+---
+
+### **1. Report View**
+The **Report View** is where you design and interact with the visuals that make up your report.
+
+#### **Capabilities:**
+- **Visualizations:**
+  - Create and arrange visualizations (charts, tables, maps, etc.).
+  - Add, edit, and format visuals (change chart types, colors, labels, etc.).
+  - Use **Slicers** to filter and interact with your data dynamically.
+  - Create **Bookmarks** to capture report states (e.g., filter settings).
+  - Add **Text boxes**, **Shapes**, and **Images** for report annotations and design.
+  - **Drillthrough**: Set up drillthrough filters so users can right-click on a data point to see more detailed information.
+  - **Tooltip**: Add tooltips to visuals for enhanced interactivity (show additional info when hovering over data points).
+  
+- **Interactivity:**
+  - **Cross-Filtering & Cross-Highlighting**: Visuals on the report interact with each other. Selecting a data point in one visual can filter or highlight data in others.
+  - **Sync slicers across pages**: Create slicers that apply to multiple pages in the report.
+  - **Publish to Power BI Service**: Publish the report to Power BI Service directly from the Report view.
+  
+- **Page View:**
+  - Control the **Page Layout** of the report (size, orientation, and formatting).
+  - Create and manage **multiple report pages**.
+  
+- **Navigation:**
+  - Add **Navigation buttons** to enable users to navigate between different pages within the report.
+
+- **Themes:**
+  - Apply and customize **themes** for consistent visual design across the report.
+
+- **Custom Visuals:**
+  - Add and configure **Custom visuals** from the marketplace (e.g., maps, KPIs, etc.).
+
+- **Filters:**
+  - Add filters to visuals or the entire page/report.
+  - Configure **visual-level filters**, **page-level filters**, and **report-level filters**.
+
+---
+
+### **2. Data View**
+The **Data View** is where you see and work with the raw data that your visuals are based on. It lets you view tables, fields, and the data within them.
+
+#### **Capabilities:**
+- **Data Exploration:**
+  - **View data tables**: Browse and inspect the data loaded into Power BI.
+  - **Search for specific values** or columns in the data.
+  
+- **Data Transformation:**
+  - Edit column names, data types, and apply simple transformations (e.g., merging or splitting columns).
+  - **Create calculated columns** and **measures** using DAX.
+  
+- **Relationships:**
+  - View and inspect **relationships** between tables.
+  - Add or remove relationships between tables.
+  - Manage **relationship properties** (cardinality, direction, etc.).
+
+- **Modeling:**
+  - **Storage Mode**: Change the storage mode of a table (Import, DirectQuery, or Composite).
+  - **Create Hierarchies**: Create and manage hierarchies for drill-down functionality in reports.
+  - **Create new tables** by applying DAX expressions (e.g., `SUMMARIZE`, `FILTER`, `GENERATE`).
+  
+- **Column Tools:**
+  - Edit **column data types**, **formatting**, and **properties**.
+
+- **Metadata:**
+  - Edit or view **metadata** for tables and columns (such as descriptions).
+
+---
+
+### **3. Model View**
+The **Model View** is where you define and manage the relationships and structure of your data model.
+
+#### **Capabilities:**
+- **Manage Relationships:**
+  - **Create, modify, and delete relationships** between tables.
+  - Adjust **relationship settings** (cardinality, cross-filter direction, active/inactive).
+  
+- **Model Structure:**
+  - **View the schema** of your data model (tables and relationships).
+  - **Create calculated tables** (tables that are dynamically created from expressions).
+  
+- **Storage Mode:**
+  - **Change the storage mode** of tables (Import, DirectQuery, Composite).
+  - Optimize performance by configuring storage settings.
+  
+- **Manage Tables and Fields:**
+  - Add **new tables** and **fields** to the model.
+  - Organize fields into **folders** for better navigation.
+  - Hide fields that you do not want visible in the report view.
+  
+- **Measure Management:**
+  - **Create and manage measures** (such as aggregations, KPIs, calculations) using DAX.
+  
+- **Relationships View:**
+  - **Inspect and modify relationships** between tables in a visual interface.
+  - Ensure proper **star schema** design (fact tables connected to dimension tables).
+
+- **Advanced Modeling:**
+  - Use **DAX Studio** for more advanced modeling tasks (requires additional tools).
+  
+- **Data Sources:**
+  - **View** and **manage data sources** (e.g., connection strings, query dependencies).
+
+---
+
+### **4. Power Query Editor (Transform Data)**
+While not technically one of the main views (it's an editor), the **Power Query Editor** is essential for data transformation and loading.
+
+#### **Capabilities:**
+- **Data Transformation:**
+  - Clean, filter, and transform data (e.g., removing duplicates, changing data types, merging queries).
+  - **Apply transformations** such as pivoting, unpivoting, and splitting columns.
+  - **Group, aggregate**, and manipulate data into desired shapes.
+  
+- **Query Management:**
+  - **Create and manage queries** that transform data before it's loaded into the model.
+  - **Merge or append queries** to consolidate multiple tables into one.
+
+- **Advanced Transformation:**
+  - Apply **M code** for more advanced transformations and custom logic.
+
+---
+
+### **Summary of Capabilities by View:**
+
+| **Feature**                        | **Report View**         | **Data View**           | **Model View**           | **Power Query Editor** |
+|------------------------------------|-------------------------|-------------------------|--------------------------|-------------------------|
+| **Create & Modify Visuals**        | Yes                     | No                      | No                       | No                      |
+| **View Data**                      | Limited                 | Yes                     | Yes                      | Yes                     |
+| **Create Calculated Columns**      | Yes (limited to visuals)| Yes                     | Yes                      | No                      |
+| **Create Measures**                | Yes (in visuals)        | Yes                     | Yes                      | No                      |
+| **Manage Relationships**           | No                      | Yes (view relationships)| Yes (create/edit)        | No                      |
+| **Change Storage Mode**            | No                      | Yes                     | Yes                      | No                      |
+| **Manage Metadata**                | No                      | Yes                     | Yes                      | No                      |
+| **Data Modeling**                  | No                      | No                      | Yes                      | Yes (indirectly)        |
+| **View Schema/Model**              | No                      | No                      | Yes                      | No                      |
+| **Transform Data**                 | No                      | Limited                 | No                       | Yes                     |
+| **Add Custom Visuals**             | Yes                     | No                      | No                       | No                      |
+
+---
+
+### **Conclusion:**
+
+- **Report View** is where you build and interact with your report, including visualizations and filters.
+- **Data View** is where you view and work with the data in its tabular form, manage transformations, and inspect the dataset.
+- **Model View** is where you manage the overall data model, including relationships, storage modes, and field organization.
+- The **Power Query Editor** is for cleaning, transforming, and shaping your data before it is loaded into the Power BI model.
