@@ -1,3 +1,68 @@
 Access power BI App - need a free license
 Modify report in an app workspace - Power BI PRO
 Share dashboards created in workspace - PowerBI PRO
+
+Yes, you need a license to access the Power BI app, but the type of license required depends on **how you intend to use Power BI**. Here’s a detailed breakdown:
+
+---
+
+### **1. Power BI Free**
+- **Do you need a license?** 
+  - Yes, but this license is free.
+- **Who can use it?**
+  - Individuals who want to create and view their own reports and dashboards.
+- **What can you do?**
+  - Build, view, and share content with yourself (no sharing with others).
+  - Publish reports to the Power BI service.
+- **Limitations:**
+  - No collaboration or sharing with others.
+  - Cannot access content shared by others.
+
+---
+
+### **2. Power BI Pro**
+- **Do you need a license?**
+  - Yes, a paid license is required.
+- **Who can use it?**
+  - Individuals or teams who need to collaborate, share, and access Power BI content.
+- **What can you do?**
+  - Share reports and dashboards with others.
+  - Collaborate with team members in workspaces.
+  - Access shared content in the Power BI app.
+- **Cost:** Approx. $10/month per user (pricing may vary by region).
+
+---
+
+### **3. Power BI Premium (Per User or Per Capacity)**
+- **Do you need a license?**
+  - Yes, this is a higher-tier paid license.
+- **Who can use it?**
+  - Organizations or users with advanced analytics and sharing needs.
+- **What can you do?**
+  - Access advanced features (e.g., paginated reports, AI-driven analytics).
+  - Share content with free users (if using Premium capacity).
+- **Cost:**
+  - **Premium Per User:** Approx. $20/month per user.
+  - **Premium Per Capacity:** Starts at $4,995/month for unlimited sharing within the organization.
+
+---
+
+### **4. Power BI Mobile App**
+- The **Power BI Mobile App** itself is free to download (available on iOS and Android).
+- **Do you need a license?**
+  - Yes, to access shared or premium content, you must have at least a Power BI Pro or Premium license.
+  - Free users can only view their own content.
+
+---
+
+### **When You Might Not Need a License**
+- If your organization has a **Power BI Premium Capacity**, free users can view shared content without needing a Pro license.
+
+---
+
+### **Conclusion**
+- **Free License:** For personal use only.
+- **Pro License:** For collaboration and sharing.
+- **Premium License:** For large-scale sharing or advanced features.
+
+Choose the license based on your needs and whether you require collaboration and advanced analytics features.
