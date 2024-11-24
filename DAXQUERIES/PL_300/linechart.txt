@@ -1,3 +1,35 @@
 linechart
 add weeks and days field to values bucket to drilldown
 an average reference line can be used on line chart
+
+Understanding Line Charts with Drilldown and Reference Lines in Power BI
+A line chart is a commonly used visualization in Power BI that is great for showing trends over time or across categories. When you add weeks and days fields to the Values bucket, you can enable drilldown functionality, allowing users to interactively explore the data from higher-level time periods (weeks) to more granular ones (days). Additionally, you can add an average reference line to the chart to compare the actual data against an average value.
+
+Drilldown in Line Charts
+Drilldown allows users to explore data at multiple levels of granularity (hierarchy). For example, users can view sales trends by weeks and then drill down to see trends by days.
+
+Steps to Add Weeks and Days to the Line Chart:
+Set Up the Fields:
+
+In your dataset, ensure you have a Date column. Create calculated columns or fields for:
+Weeks: A column grouping data by weeks (e.g., W01, W02 for week 1 and week 2).
+Days: A column representing individual days.
+Add Fields to the Line Chart:
+
+Drag the Weeks field into the X-axis bucket in the Visualizations pane.
+Drag the Days field below the Weeks field to create a hierarchy on the X-axis.
+Enable Drilldown:
+
+Click the drilldown button (a small icon with a forked arrow) in the top-left corner of the chart to activate drilldown functionality.
+Users can now drill down from the weekly trend view into daily trends by clicking on the data points or using the drilldown buttons.
+
+Benefits of These Features
+Drilldown Functionality:
+
+Provides granular insights without overloading the visual with too much data upfront.
+Users can explore the data interactively based on their needs.
+Average Reference Line:
+
+Acts as a benchmark, helping users understand how individual data points compare to the overall trend.
+Highlights deviations, outliers, or periods of underperformance.
+By combining these features, you create a dynamic, insightful line chart that allows end-users to extract meaningful information with ease.
