@@ -1,1 +1,11 @@
 selecting a quarter on line chart will not affect the visual but will cross filter the map visual
+Cross Filtering
+Definition: Cross filtering filters data in one visualization based on your selection in another. It adjusts the data displayed in the second visualization by removing rows that do not match the selection criteria.
+Effect: Only the relevant data remains visible, and unrelated data is completely filtered out.
+Example: Selecting "Product A" in a bar chart will cause a table or another chart to show data only for "Product A," excluding all other products.
+Use Case: Ideal when you want to narrow down data and focus only on specific subsets.
+Cross Highlighting
+Definition: Cross highlighting emphasizes data that matches your selection while still displaying the other data in a dimmed or faded state.
+Effect: The related data is highlighted, but unrelated data remains visible in a subdued format.
+Example: Clicking "Product A" in a bar chart will highlight the corresponding data in another chart (e.g., a line chart), while the rest of the data remains visible but grayed out.
+Use Case: Best for comparing selected data with the entire dataset.
