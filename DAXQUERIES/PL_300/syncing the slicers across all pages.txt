@@ -1,2 +1,21 @@
 syncing the slicers across all pages or Replacing the slicers with report-level filters have the same effect. Users will manage to filter the report once across all pages
- 
+ 1. Syncing Slicers Across All Pages
+What It Does: Syncing slicers allows slicers on different pages of a report to stay connected. When a user makes a selection on one slicer (e.g., filtering by "Region" on Page 1), the same filter is applied to slicers on all other pages.
+How It Works:
+In the Sync Slicers Pane, you can select which pages the slicer should be synced across.
+You can choose whether the slicer is visible on each page or just synced in the background.
+Advantages:
+Gives users the flexibility of visual interaction with slicers across pages.
+Ideal if you want slicers visible on multiple pages for easy modification.
+Example Use Case:
+If you have a "Year" slicer on multiple pages, syncing ensures selecting "2023" on Page 1 applies to all other pages with the same slicer.
+2. Replacing Slicers with Report-Level Filters
+What It Does: Report-level filters are set in the Filters pane and apply a filter to the entire report. Users can manage the filter once, and it automatically applies to all pages without the need for visible slicers.
+How It Works:
+Add fields to the Filters on all pages section in the Filters pane.
+Users interact with these filters from the Filters pane, not directly on the visuals.
+Advantages:
+Reduces visual clutter since no slicers are required on the report.
+Ensures consistent filtering across all pages with minimal setup.
+Example Use Case:
+If you have a "Region" filter and want all report pages to focus on "North America," using a report-level filter achieves this seamlessly.
