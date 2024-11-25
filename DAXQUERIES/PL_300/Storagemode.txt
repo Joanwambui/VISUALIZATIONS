@@ -1,6 +1,6 @@
 The storage mode of a table in Power BI Desktop is configurable from the Model view, not the Data or Report view. Page view is an option available from within the Report view.
 https://learn.microsoft.com/training/modules/get-data/6-storage-mode
-
+#
 In Power BI, the workspace is divided into three main views: **Report View**, **Data View**, and **Model View**. Each view has specific capabilities and features tailored to different aspects of the report-building process. Here's a detailed breakdown of the capabilities for each view:
 
 ---
