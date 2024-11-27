@@ -8,3 +8,13 @@ From Advanced Editor in Power Query Editor, configure the file path in the M cod
 OData feed can read Azure DevOps Analytics views and pulls only data needed by filtering appropiately
 Azure DevOps (Boards only) can only view the boards section not the analyticalviews.
 Azure DevOps Server (Boards only) its for on-prem not cloud
+
+Undefined values and errors occur, likely because the case sensitivity in the source data is causing mismatches or duplications in the semantic model.
+
+Normalizing casing means converting all data in the column to a consistent case
+(e.g., all uppercase or all lowercase) either at the source query or in the Power Query Editor.
+This ensures that "Apple" and "apple" are treated as the same value, preventing undefined values and errors caused by case mismatches.
+
+Power BI's semantic model (and many databases) is case-insensitive by default. 
+However, if the underlying data source is case-sensitive, inconsistencies can arise.
+Normalizing the casing resolves these inconsistencies, ensuring a clean and error-free model.
