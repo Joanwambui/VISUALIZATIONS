@@ -4,3 +4,7 @@ If file has been moved, three ways to resolve the issue in BI:
 From the Data source settings in Power BI Desktop, configure the file path
 From Power Query Editor, use the formula bar to configure the file path for the applied step.
 From Advanced Editor in Power Query Editor, configure the file path in the M code.
+
+OData feed can read Azure DevOps Analytics views and pulls only data needed by filtering appropiately
+Azure DevOps (Boards only) can only view the boards section not the analyticalviews.
+Azure DevOps Server (Boards only) its for on-prem not cloud
