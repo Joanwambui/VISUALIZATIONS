@@ -1,1 +1,6 @@
 &operator in power query concatenates values
+
+If file has been moved, three ways to resolve the issue in BI:
+From the Data source settings in Power BI Desktop, configure the file path
+From Power Query Editor, use the formula bar to configure the file path for the applied step.
+From Advanced Editor in Power Query Editor, configure the file path in the M code.
