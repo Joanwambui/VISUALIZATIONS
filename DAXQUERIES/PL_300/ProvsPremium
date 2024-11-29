@@ -18,4 +18,15 @@ Processing a 3 GB file requires significant memory and computational power. Thes
 4. Enterprise Features
 A Premium license also includes advanced features like Paginated Reports, AI capabilities, and XMLA endpoints, which are designed for heavy data workloads like your 3 GB XLSX file. These features complement the need for handling larger datasets.
 
-Excel workbooks,Power BI Desktop, or .pbix report files,Comma-separated value,XML (.xml) or text (.txt), you can use Excel Get & Transform Data to query, transform, and load the data first. You can then import the Excel file into the Power BI service.
+Excel workbooks,Power BI Desktop, or .pbix report files,Comma-separated value,XML (.xml) or text (.txt), you can use Excel Get & Transform Data to query,
+ transform, and load the data first. You can then import the Excel file into the Power BI service.
+Semantic model size limit. Semantic models stored in shared capacities in the Power BI service have a 1-GB size limit.
+Distinct values in a column. When a Power BI semantic model caches data in Import mode, it can store a limit of 1,999,999,997 distinct values in a column.
+
+Row limit. When you use DirectQuery, Power BI imposes a limit on the query results that it sends to your underlying data source. If the query sent to the data source returns more than 1 million rows, you see an error and the query fails. The underlying data can still contain more than 1 million rows. You're unlikely to reach this limit, because most reports aggregate the data into smaller sets of results.
+
+Column limit. The maximum number of columns allowed across all tables in a semantic model is 16,000 columns. This limit applies to the Power BI service and to semantic models Power BI Desktop uses. Power BI uses this limit to track the number of both columns and tables in the semantic model, which means the maximum number of columns is 16,000 minus one for each table in the semantic model.
+
+Data source user limit. The maximum number of data sources allowed per user is 1,000. This limit applies only to the Power BI service.
+
+Single sign-on (SSO) considerations. DirectQuery models can enable SSO access to their data sources, which allows the security in the source system to be implicitly applied to the DAX queries executed by each user.
