@@ -5,3 +5,5 @@ column distribution- distinct,unique recods
 column profile - statistical info, count, error, empty, distinct, min,max 
 Column quality shows the percentage of values within a column that are valid, have errors, or are empty; column profile provides this information in the column statistics as well.Both can identify errors
 Use column distribution to identify primary keys within your lookup tables when the number of distinct values is equal to the number of unique values.
+Data profiling tools like column quality, column distribution, and column profile provide a visual way to explore data and get a sense of your dataset composition, while the contextual menus allow you to solve column quality issues.
+
