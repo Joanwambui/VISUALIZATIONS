@@ -150,3 +150,5 @@ While not technically one of the main views (it's an editor), the **Power Query 
 - **Data View** is where you view and work with the data in its tabular form, manage transformations, and inspect the dataset.
 - **Model View** is where you manage the overall data model, including relationships, storage modes, and field organization.
 - The **Power Query Editor** is for cleaning, transforming, and shaping your data before it is loaded into the Power BI model.
+
+In import storage mode, tables are stored in-memory, whereas in DirectQuery tables are connected directly to the source. Dual storage mode allows tables to come from in-memory data or by an on-demand query to the data source
