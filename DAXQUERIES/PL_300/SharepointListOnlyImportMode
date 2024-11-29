@@ -1,0 +1,15 @@
+When populating a table in a Power BI dataset with data from a Microsoft SharePoint Online list, the default storage mode is Imported.
+
+Explanation:
+Imported Mode:
+Data is loaded into the Power BI model and stored in-memory. This is the typical mode for SharePoint Online lists, ensuring fast performance as queries run against the local in-memory model instead of hitting the SharePoint server.
+Why not the others?
+DirectQuery:
+
+Power BI does not currently support DirectQuery for SharePoint Online lists. Data must first be imported into the Power BI model.
+Live Connection:
+
+Live connection is specific to certain sources like Analysis Services or Power BI datasets. SharePoint Online lists do not use this mode.
+Composite Mode:
+
+Composite mode combines Imported and DirectQuery for specific tables within a model, but since DirectQuery isn't supported for SharePoint Online lists, composite mode doesn't apply here
