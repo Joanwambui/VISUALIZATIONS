@@ -1,0 +1,6 @@
+The Power BI REST API has the following operations:
+- Dataset operations: Get and create Datasets.
+- Table operations: Get Tables and update Table schema.
+- Row operations: Add Rows and Delete Rows.
+- Group operations: Get Groups
+
