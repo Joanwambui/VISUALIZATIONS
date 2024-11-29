@@ -1,0 +1,21 @@
+TSV is not supported via Power BI Service
+XML is not supported via Power BI Service
+JPG is not suported via Power BI Service
+
+1. File Size Limitations
+A Pro license typically imposes stricter file size limits to optimize performance for individual or small-scale users. For example:
+
+Power BI Pro caps datasets or imports at 1 GB per file.
+This restriction ensures that shared resources in the Pro environment (e.g., memory, processing power) are not overwhelmed.
+A Premium license, on the other hand, is designed for enterprise-scale use cases, offering higher resource quotas. For example:
+
+Power BI Premium supports datasets up to 10 GB (or even more with Premium per capacity).
+2. Dedicated Resources in Premium
+With a Pro license, resources like CPU, RAM, and storage are shared across all Pro users within the tenant. Large files can strain shared resources, reducing performance for everyone.
+A Premium license, however, provides dedicated capacity. This means your operations, including handling large datasets, don't compete for resources with other users, making it possible to process larger files efficiently.
+3. Performance Optimization
+Processing a 3 GB file requires significant memory and computational power. These demands are better suited for the robust infrastructure Premium offers, such as high-performance data caching, larger storage pools, and enhanced refresh capabilities.
+4. Enterprise Features
+A Premium license also includes advanced features like Paginated Reports, AI capabilities, and XMLA endpoints, which are designed for heavy data workloads like your 3 GB XLSX file. These features complement the need for handling larger datasets.
+
+Excel workbooks,Power BI Desktop, or .pbix report files,Comma-separated value,XML (.xml) or text (.txt), you can use Excel Get & Transform Data to query, transform, and load the data first. You can then import the Excel file into the Power BI service.
