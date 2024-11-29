@@ -3,3 +3,5 @@ You can access column quality from Power Query editor , under view tab in data p
 Column quality - how valid is your data, any errors or empty cells 
 column distribution- distinct,unique recods
 column profile - statistical info, count, error, empty, distinct, min,max 
+Column quality shows the percentage of values within a column that are valid, have errors, or are empty; column profile provides this information in the column statistics as well.Both can identify errors
+Use column distribution to identify primary keys within your lookup tables when the number of distinct values is equal to the number of unique values.
