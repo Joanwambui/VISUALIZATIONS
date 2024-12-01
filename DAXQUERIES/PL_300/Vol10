@@ -1,0 +1,37 @@
+Which Power Query tool can you use to roll-up daily transaction data into monthly transactions
+Group By function
+“Pivoting” is a fancy way to describe the process of turning distinct row values into columns (“pivoting”) or turning columns into rows (“unpivoting”).
+Which two blocks make up the M code that runs your query?
+let & in - Opening the advanced editor allows you to see the M code that makes up your query, 
+which consists of two blocks: let (the definition of all variables) & in (the output of your query)
+
+You manage a Power BI model that has two tables named Sales and Product.
+You need to ensure that a sales team can view only data that has a CountryRegionName value of Unites States and a ProductCategory value of Clothing.
+From Power BI Desktop, create a new role that has the following filters. [CountryRegionName] = "United States" [ProductCategory] = "Clothing"
+Note: you can't filter 2 columns from 2 DIFFERENT TABLES using && but you can use && in case of the columns you wanna filter in the SAME TABLE only, so
+(From Power BI Desktop, create a new role that has the following filter. [CountryRegionName] = "United States" && [ProductCategory] = "Clothing")
+in incorrect.
+
+When you attempt to create a map that shows SalesAmount by Zone, you discover that the map shows a bubble based on cities instead of states.
+You need to ensure that the map shows bubbles based on states.
+What should you do?
+This is a common problem when the data in your location field is ambiguous, such as using an area name like Washington, 
+which could indicate a state or a district.
+One way to resolve the location data problem is to rename your column to be more specific, such as State. 
+Another way is to manually reset the data category by selecting Data Category on the Modeling tab. From the Data Category list,
+you can assign a category to your data such as "State" or "City." (https://docs.microsoft.com/en-us/power-bi/guided-learning/visualizations#step-5)
+
+From the Extract menu, click Text After Delimiter.
+When you need to end with one column. You need to remove the part you are not interested in. The "Text Delimited" option in the Extract Menu
+
+Transform > Format > Trim (how o access trim function in powerBI)
+
+You plan to use Power BI Desktop to import 100 CSV files.
+The files contain data from different stores. The files have the same structure and are stored in a network share.
+You need to import the CSV files into one table. The solution must minimize administrative effort.
+What should you do?
+Add a folder data source and use the Combine Files command.
+
+You are previewing an Excel file in Power Query Editor in Power BI Desktop. The file contains data in a matrix format with years on the columns, months on the rows, and sales amount in the values.
+You need to shape the data into a table with three columns.
+What should you do? Unpivot
