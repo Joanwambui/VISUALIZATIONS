@@ -35,3 +35,42 @@ Add a folder data source and use the Combine Files command.
 You are previewing an Excel file in Power Query Editor in Power BI Desktop. The file contains data in a matrix format with years on the columns, months on the rows, and sales amount in the values.
 You need to shape the data into a table with three columns.
 What should you do? Unpivot
+
+Fact tables store observations or events while dimension tables contain information about specific entities within the data
+
+Cardinality is the direction that the data flows in a relationship between two tables
+
+A dimension that can filter related facts differently is called a Role-Playing Dimension
+A Role-Playing Dimension is a single dimension table that can be used in different ways (or "roles") to filter fact data. For example:
+A Date dimension can be used to filter by Order Date, Ship Date, or Delivery Date in the same fact table.
+Each "role" creates a separate relationship to the fact table, allowing you to analyze data based on different contexts.
+This is common in star schemas where a single dimension serves multiple purposes
+
+One-to-many
+A customer can have many invoices within one month.
+Single
+For One-to-many relationships, the cross filter direction is always from the "one" side, and optionally from the "many" side (bi-directional).
+For Single cross filter direction means "single direction", and Both means "both directions". A relationship that filters in both directions is commonly described as bi- directional.
+What turns a collection of independent tables into a data model? Connecting the tables via relationships, based on their common fields
+In a data model, tables are connected via relationships, based on their common fields
+
+A well designed model is critical and ideally should use a star schema with one-to-many (1:*) relationships, NOT many-to-many
+
+Which of the following fields would typically find in a data table?(Look for numeric values)
+
+Primary keys uniquely identify each row of a table, and match the foreign keys in related data tables.
+
+Merging data by pulling all the attributes into the fact table itself creates redundant data
+and utilizes significantly more memory and processing power than creating relationships between multiple small tables.
+
+In a one-to-many relationship cardinality, what is the "many" attached to?
+Foreign key
+Cardinality refers to the uniqueness of values in a column, and whenever there is only one instance of each value, then it is a primary key,
+if there are many instances then it is a foreign key.
+
+filter flow - 
+The filter directions (arrows) in each relationship will point from the “one” side of the relationship (lookups) to the “many” side (data) by default. 
+When you filter a table, that filter context is passed along to all related “downstream” tables (following the direction of the arrow). 
+Filters cannot flow “upstream” (against the direction of the arrow).
+
+The USERELATIONSHIP function allows you to determine which relationship to use between to tables, including inactive relationships.
