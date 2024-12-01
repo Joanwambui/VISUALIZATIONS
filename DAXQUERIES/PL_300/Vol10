@@ -74,3 +74,17 @@ When you filter a table, that filter context is passed along to all related “d
 Filters cannot flow “upstream” (against the direction of the arrow).
 
 The USERELATIONSHIP function allows you to determine which relationship to use between to tables, including inactive relationships.
+
+You have a new table named Fiscal that has the same schema as the Date table, but contains the fiscal dates of your company.
+You need to create a report that displays the total sales by fiscal month and calendar month.
+What should you do?
+Merge Fiscal into the Date table.When Should You Use It?
+When your data has gaps in a column and you need to repeat the last known value for those blank cells.
+Common in scenarios like:
+Group headers that only appear once for a group but should apply to all rows in that group.
+Categorical data with blank rows for sub-items.
+You need to ensure that the values in the Date column contain a date. Null values must be replaced with the date from the previous row.
+What should you click on the Transform tab in Query Editor?
+Fill, and then Down
+Under Fill in the Transform ribbon, you DOWN (for replacing null values with preceding values, and UP (replaces null values with values after them).
+Fill Down takes the value from the row above a blank cell in a column and copies it downward until it reaches a non-blank value or the end of the column.
