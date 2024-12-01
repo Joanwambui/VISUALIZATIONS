@@ -103,4 +103,55 @@ in
     Result
 
 
+You start building out a dynamic calendar table in the query editor. 
+Which of the following statements would you use to create a Start of Week column that begins on Monday? 
+Table.AddColumn(#"Inserted Day Name", "Start of Week", each Date.StartOfWeek([Date],Day.Monday), type date)
+
+Where should you create calculated columns to reduce model size and improve performance?
+Source data
+
+Measures are all about filter context, while calculated columns deal with row context.
+
+Measures are numerical, calculated values that can be analyzed in the “values” field of a report visual.
+
+Iterator (or “X”) functions allow you to loop through the same calculation on each row of a table,
+and then apply some sort of aggregation to the results (SUM, MAX, etc.).
+
+ALL - Instead of adding filter context, ALL removes it; 
+use it when you need unfiltered values that won’t react to changes in filter context (i.e. % of Total, where the denominator needs to remain fixed)
+
+TOPN,FILTER,DATEADD all return a table for the data
+
+DATESINPERIOD allows you to calculate running totals. 
+DATESYTD is allows you to calculate performance to-date, 
+and DATEADD allows you to calculate for a previous period.
+
+CALCULATE [Total Sales this year], DATEADD('Date'[Date],-1,YEAR)) : You plan to create a KPI to compare the current yearly sales to the previous year
+
+ 
+You need to rank customers on the basis of sale amount and not sale
+RANKX(ALL(customer), SUMX(RELATEDTABLE(Sales), [Sales_amount]))
+
+Schedule Display = IF(COUNTROWS(Schedule) > 0, UNICHAR(9635)," ")
+This measure might be used in a table or matrix in Power BI to visually indicate whether there is data in the Schedule table
+for each context (e.g., a specific date, product, or category).
+
+You plan to create a bar chart showing the count of sales by year that have a SalesAmount greater than $1,000.
+You need to create a measure that will be used in the bar chart.
+COUNTROWS(FILTER('FactInternetSales','FactInternetSales'[SalesAmount]>1000)
+
+1st already existing measure to calculate ytd sales:
+YtdSales = CALCULATE(SUM(FactInternetSales[SalesAmount]), DATESYTD(FactInternetSales[DueDate]))
+To be able to compare you need to create a 2nd measure to calculate ytd sales same period previous year:
+YtdSalesSamePeriodLastYear = CALCULATE([YtdSales], SAMEPERIODLASTYEAR(FactInternetSales[DueDate]))
+
+You need to create a measure to calculate the last 12 months of sales. 
+You must start from the last date a sale was made and ignore any filters set on the report.
+Last12monthSales = 
+var varlast12m = 
+CALCULATE (DATEADD(LASTNONBLANK (Sales[OrderDate] SUM(Sales[SalesAmount])),-12,MONTH)
+
+DAX measure that finds the middle value in the range of Age values.
+PERCENTILE.INC((‘Person’[Age], 0.5), MEDIAN(‘Person’[Age])
+
 
