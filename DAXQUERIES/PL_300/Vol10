@@ -88,3 +88,19 @@ What should you click on the Transform tab in Query Editor?
 Fill, and then Down
 Under Fill in the Transform ribbon, you DOWN (for replacing null values with preceding values, and UP (replaces null values with values after them).
 Fill Down takes the value from the row above a blank cell in a column and copies it downward until it reaches a non-blank value or the end of the column.
+
+Measures are calculated by demand and they ae also calculated based on the filters that are used by the report user
+
+Which DAX function evaluates an expression in a modified filter context? CALCULATE
+What type of Measure uses SUM to aggregate over one set of dimensions and a different aggregation over a different set of dimension?SemiAdditive
+
+To remove columns with a suffix of sourceid in Power Query
+let
+    Source = [Your API Data], // Load your data source here
+    ColumnsToRemove = List.Select(Table.ColumnNames(Source), each Text.EndsWith(_, "sourceid")),
+    Result = Table.RemoveColumns(Source, ColumnsToRemove)
+in
+    Result
+
+
+
