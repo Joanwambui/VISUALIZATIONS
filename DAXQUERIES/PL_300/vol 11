@@ -1,0 +1,55 @@
+Node.js
+To develop custom visuals, you need to have NodeJS installed with Power BI tools and a server certificate.
+
+custom visuals must be imported from AppSource each time you start developing a new report.
+
+One can analyze the performance of each of the report elements by using the performance analyzer 
+
+Can you use bookmarks to create a slide show in Power BI?
+Yes, you can, by adding buttons as navigation to go between saved bookmarks.
+
+custom streaming data
+The only way to visualize a streaming dataset is to add a tile and use the streaming dataset as a custom streaming data source.
+
+You create a dashboard by using the Microsoft Power BI Service. The dashboard contains a card visual that shows total sales from the current year.
+You grant users access to the dashboard by using the Viewer role on the workspace.
+A user wants to receive daily notifications of the number shown on the card visual.
+You need to automate the notifications.
+What should you do?
+Create a subscription.
+You can subscribe yourself and your colleagues to the report pages, dashboards, and paginated reports that matter most to you. Power BI e-mail subscriptions allow you to:
+- Decide how often you want to receive the emails: daily, weekly, hourly, monthly, or once a day after the initial data refresh.
+- Choose the time you want to receive the email, if you choose daily, weekly, hourly, or monthly.
+Note: Email subscriptions don't support most custom visuals. The one exception is those custom visuals that have been certified.
+Email subscriptions don't support R-powered custom visuals at this time.
+
+The key influencers visual helps you understand the factors that drive a metric you're interested in. It analyzes your data, ranks the factors that matter, and displays them as key influencers.
+The key influencers visual is a great choice if you want to:
+- See which factors affect the metric being analyzed.
+- Contrast the relative importance of these factors. For example, do short-term contracts have more impact on churn than long-term contracts?
+
+You have a dataset named Pens that contains the following columns:
+- Unit Price
+- Quantity Ordered
+You need to create a visualization that shows the relationship between Unit Price and Quantity Ordered. The solution must highlight orders that have a similar unit price and ordered quantity.
+Which type of visualization and which feature should you use?
+A scatter plot.
+A scatter chart always has two value axes to show: one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis.
+The chart displays points at the intersection of an x and y numerical value, combining these values into single data points.
+Power BI may distribute these data points evenly or unevenly across the horizontal axis. It depends on the data the chart represents.
+Automatically find clusters
+Scatter charts are a great choice to show patterns in large sets of data, for example by showing linear or non-linear trends, clusters, and outliers.
+
+Scatter Charts
+Purpose: Displays data points based on two numerical variables plotted on the X and Y axes.
+Use Cases:
+Analyze relationships between two variables.
+Spot patterns, clusters, and outliers in data.
+Substitute for line charts to reveal scale changes.
+Features:
+Maximum of 10,000 data points.
+Tooltip support for detailed information on data points.
+Adjustable axis scales (including logarithmic).
+
+Outliers are those data points that lie outside the overall pattern of distribution & the easiest way to detect outliers is though graphs.
+  Box plots, Scatter plots can help detect them easily.
