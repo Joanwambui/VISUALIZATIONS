@@ -53,3 +53,20 @@ Adjustable axis scales (including logarithmic).
 
 Outliers are those data points that lie outside the overall pattern of distribution & the easiest way to detect outliers is though graphs.
   Box plots, Scatter plots can help detect them easily.
+
+The best data for forecasting is time series data or uniformly increasing whole numbers is Line Chart. The line chart has to have only one line.
+Try forecasting: Try the new forecasting capabilities of Power View today on your own data or with the sample report available as part of the Power BI report samples. 
+To view your own data, upload a workbook with a Power View time series line chart to Power BI for Office 365.
+
+Common use cases for scatter charts include showing patterns in large sets of data, showing linear & non-linear trends, 
+performing cluser analysis, and identifying outliers.
+
+The Q&A visual lets you explore data "in your own words" using what?
+Natural language queries
+
+Visual level filters apply only to the specific visual in which they are defined.
+
+The decomposition tree visual allows you to perform exploratory analysis by successively breaking down a measure across multiple dimensions.
+The key influencers visual helps you understand the factors that drive a specific metric.
+
+
