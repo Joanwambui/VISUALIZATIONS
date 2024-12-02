@@ -154,4 +154,9 @@ CALCULATE (DATEADD(LASTNONBLANK (Sales[OrderDate] SUM(Sales[SalesAmount])),-12,M
 DAX measure that finds the middle value in the range of Age values.
 PERCENTILE.INC((‘Person’[Age], 0.5), MEDIAN(‘Person’[Age])
 
+Benefits of using DirectQuery
+There are a few benefits to using DirectQuery:
+- DirectQuery lets you build visualizations over very large datasets, where it would otherwise be unfeasible to first import all the data with pre-aggregation.
+- Underlying data changes can require a refresh of data. For some reports, the need to display current data can require large data transfers, making reimporting data unfeasible. By contrast, DirectQuery reports always use current data.
+The 1-GB dataset limitation doesn't apply to DirectQuery.
 
