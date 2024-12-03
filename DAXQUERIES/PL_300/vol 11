@@ -69,4 +69,41 @@ Visual level filters apply only to the specific visual in which they are defined
 The decomposition tree visual allows you to perform exploratory analysis by successively breaking down a measure across multiple dimensions.
 The key influencers visual helps you understand the factors that drive a specific metric.
 
+From the properties of the datasets, modify the Q&A and Cortana settings - to get natural language queries for the Q&A
+You can modify the setting for Dataset property for sure. Not from Dashboard property.
 
+When using New Parameter it automatically creates GENERATESERIES function. 
+Second, in GENERATESERIES function the second parameter is the max value which is 0,5.
+
+From the Modeling tab, change the Data Type to Percentage.
+
+Changing scorecard to %
+Go to "Table View" Modeling ribbon tab, 
+
+Convert the visualization to a different type.
+
+KPI doesn't have SORT option. You need to start over again.
+
+Converting to different visual type just in order to view the month sequence, and then go to Table View,
+selecting the month column, and click “Sort by column” under Ribbon Tab “Table Tools”, 
+selecting the “Sort by Month #”, and back to Visual interface, check the result (month(text) sequence), 
+if ok, convert back to KPI visual.
+
+a report published to the web cannot implement row level security
+
+
+Key Note: Once you convert the visualization to a KPI, there's no option to sort. You must sort it correctly now.
+change the Data Type to "percentage" and keep 2 decimal.
+
+Power BI Report Server is an on-premises report server where organizations can host, manage, 
+and share Power BI reports, paginated reports, and traditional SQL Server Reporting Services (SSRS) reports.
+It’s ideal for companies that don’t want to or cannot use the Power BI Service (cloud-based) due to compliance,
+security, or infrastructure reasons.
+- Report1.pbix contains a custom visualization.
+- Report2.pbix implements row level security.
+- Report3.pbix connects to a Microsoft SQL Server database by using DirectQuery.
+all eports can be published to report server but repot2 is not possible when publishing to the web
+Dashboard : A canvas of report elements that can be built in the Power BI service.
+
+Benefit of PowerBI realtime streaming capabilities
+You can stream data and update dashboards as soon as the data is logged.
