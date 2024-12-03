@@ -107,3 +107,53 @@ Dashboard : A canvas of report elements that can be built in the Power BI servic
 
 Benefit of PowerBI realtime streaming capabilities
 You can stream data and update dashboards as soon as the data is logged.
+
+Pinning a page is an easy way to pin more than one visualization at a time.
+Also, when you pin an entire page, the tiles are live; you can interact with them right there on the dashboard.
+
+What feature in dashboards is used to alert consumers to the sensitivity of the data?
+Data classification - Data Classification refers to the process of labeling or categorizing data based on its sensitivity or intended use. 
+It helps organizations manage and secure their data, ensuring compliance with regulations and governance policies.
+
+Report interactions allow you to define how filters applied to one visual impact the others. 
+The options are: filter, which produces a fully filtered chart; highlight, which produced a chart that highlights the filtered segments; 
+and none, in which the chart remains unfiltered. Drill through is a separate type of filter.
+
+Drill through filters allow users to jump to different report pages (like bookmarks), while simultaneously filtering based on the specific item selected
+
+Importing custom visuals from files, your organization, or the AppSource marketplace requires you to sign in to Power BI.
+
+Themes: Promote brand consistency.
+Layer Order: Ensure visuals appear as intended without overlap issues.
+Tab Order: Improve report usability and accessibility for all users.
+All the above are examples of Power BI's different accessibility features that allow consumers to easily navigate reports.
+
+Slicers cannot be pinned to a dashboard individually, they need to be pinned as part of a live page.
+
+The Pin Live Page option pins an entire report to a dashboard while also importing slicers,
+preserving functionality, and reflecting any updates to the report.
+
+Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards.
+After you create your Publish to web embed code and share it, the report is updated with any changes you make,
+and the embed code link is immediately active. Anyone who opens the link can view it.
+After this initial action, however, updates to reports or visuals can take approximately one hour before becoming visible to your users.
+
+For pubnub data, we can visualize it using data tile on dashboard and configure pubnub as data source.
+
+You create a new report.
+You need to ensure that users have a good experience when they consume the report on a mobile device.
+What are two ways to achieve the goal? Each correct answer presents a complete solution.
+Create a mobile report layout in Power BI Desktop and publish the report.
+Navigate to PowerBI.com on a mobile device and test the experience.
+
+Why are parameters important in Power BI paginated reports?
+They allow the user to control aspects of how the report is rendered when the report is run.
+
+Power BI paginated reports are created by using which tool?
+Power BI Report Builder
+
+R visuals in the Power BI service have a few limitations including:
+- Data size limitations data used by the R visual for plotting is limited to 150,000 rows.
+If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
+Additionally, the input data has a limit of 250 MB.
+
