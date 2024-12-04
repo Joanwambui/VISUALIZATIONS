@@ -1,0 +1,47 @@
+The Analyze feature allows a user to understand why the distribution of data looks the way it does.
+
+Time series charts can be imported from AppSource.
+
+The AI Splits feature in Power BI is a functionality within the Decomposition Tree visual.
+It uses artificial intelligence (AI) to automatically identify and suggest factors that contribute the most to a given value or trend in your data.
+
+AI splits work by considering all the available fields and determining which one to drill into to get the highest/lowest value of a measure that is being analyzed.
+
+you can access the Q&A feature by selecting the Q&A button type.
+
+Decomposition tree can enable one to:
+Conduct root cause analysis to understand a measure better.
+Automatically analyze selected dimensions to find where a measure is highest or lowest.
+
+If edit interactions is not set when you select a value in the line chart it will cross filter the other visuals otherwise nothing will happen
+
+You plan to create the chart shown in the following exhibit.
+How should you create the dashed horizontal line denoting the 40th percentile of daily sales for the period shown?
+Add a new percentile line that uses Total Sales as the measure and 40% as the percentile.
+
+R plots are limited to 150,000 rows
+
+You use Power BI Desktop to create a visualization for a Microsoft SQL Server data source.
+You need to ensure that you can use R visualization.
+Which two actions should you perform?
+Enable R Scripting on the computer that has Power BI Desktop installed, Download and install Microsoft R on the computer that has Power BI Desktop installed.
+
+How does the admin workspace role differ from other types of workspace roles?
+Admins are the only role that can remove users.
+
+What feature in Power BI service can you use to troubleshoot the flow of data from its source to destination?
+Lineage view
+
+You have multiple dashboards.
+You need to ensure that when users browse the available dashboards from powerbi.com, they can see which dashboards contain Personally Identifiable Information (PII). The solution must minimize configuration effort and impact on the dashboard design.
+What should you use?
+Microsoft Information Protection sensitivity labels
+
+In the Power BI service, sensitivity labels can be applied to semantic models, reports, dashboards, and dataflows.
+When labeled data leaves Power BI, either via export to Excel, PowerPoint, PDF, or .pbix files, or via other supported export scenarios such as Analyze in Excel or live connection PivotTables in Excel, Power BI automatically applies the label to the exported file and protects it according to the label's file encryption settings.
+This way your sensitive data can remain protected, even when it leaves Power BI.
+
+Your company plans to completely separate development and production assets such as datasets, reports, and dashboards in Microsoft Power BI.
+You need to recommend an application lifecycle strategy.
+The solution must minimize access to production assets and prevent end users from viewing the development assets. What should you recommend?
+Create a workspace for development and a workspace for production. From the production workspace, publish an app.
