@@ -147,3 +147,65 @@ Unfortunately, flat files do not support query folding.
 You modify the dataset to allow featured questions to show as suggested Q&As.
 
 
+Dataset1 and Dataset2 are both contained in the app,
+therefore for you to be able to delete dataset2 you need to first unpublish the app ,
+delete the unwanted dataset and then republish the app.
+
+USERPRINCIPALNAME() - function will tell you the logged on username in the Power BI Service
+
+If a report end user switches regions, one need to request them to be added to the correct Azure Active directory group
+
+I a user has two roles they can see in the RLS, they will see data which the State Province value is Kentucky and the Calendar Year is 2020.
+
+Which of the following functions allows you to define filtered views for a specific list of users? USERPRINCIPALNAME()
+
+RLS rules can be applied to users with which permission level? Viewers
+
+You configure row-level security (RLS) so that the district managers of the stores only see the sales from the stores they manage.
+When the district managers view the Store by Items report, they see items for all the stores.
+You need to ensure that the district managers can see items for the stores they manage only.
+How should you configure the relationship from Sales to Item?
+Change the Cross filter direction to Both.
+
+Summary statistics about SalesDetail data: create blank query as dataYou are modeling data by using Microsoft Power BI.
+Part of the data model is a large Microsoft SQL Server table named Order that has more than 100 million records.
+During the development process, you need to import a sample of the data from the Order table. 
+Solution: You add a report-level filter that filters based on the order date. Does this meet the goal?source,
+specify thequery table.profile (#salesdetail), create a visual for query table.
+No
+The filter is applied after the data is imported. Instead add a WHERE clause to the SQL statement.
+
+Step 1: Open the Dashboard.
+Step 2: Change the dashboard view to Phone view
+Step 3: Pin items from the reports to the dashboard.
+Step 4: Rearrange, resize, or remote items from the Phone view.
+
+1. Select the line chart
+2. From the Analytics pane, Add the average line
+3. Turn on Data Label for the new line.
+
+1. Duplicate the Customer query
+2. Group the CustomerGrouped query to find the max modified date
+3. Merge the two queries on inner join
+
+A member can create and publish apps for PowerBI
+Contributor can publish reports to a worksace and delete dashboards
+
+To add  synonyms on Power BI App:
+open report using power bi desktop
+edit the synonyms
+publish reort to app workspaces
+update the app from bi.com
+
+Measure1 = DIVIDE([TotalSales], CALCULATE([TotalSales],
+ALL(Sales[ProductCategory], Sales[ProductSubcategory])))
+
+You create a report in Power BI Desktop.
+You need to embed the report into a Microsoft SharePoint Online site.
+Which three actions should you perform in sequence?
+Publish your Power BI report to your Power BI account
+Get the URL to the report
+Add the Power BI (preview) web part to your SharePoint Online page
+Paste the URL of the report when prompted
+To finish, save and publish your page
+
