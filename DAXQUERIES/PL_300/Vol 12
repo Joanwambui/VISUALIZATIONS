@@ -45,3 +45,14 @@ Your company plans to completely separate development and production assets such
 You need to recommend an application lifecycle strategy.
 The solution must minimize access to production assets and prevent end users from viewing the development assets. What should you recommend?
 Create a workspace for development and a workspace for production. From the production workspace, publish an app.
+
+Uses data stoed in microsoft one drive for business and uses custom visuals - These two can be embedded in a website
+RLS, Report shared to user account, uses on prem SSAS DB these reports can't be embedded in a website.
+
+To manage those that have access to apps - From the Office 365 Admin center, click Groups.
+
+Your organization has a Microsoft Office 365 subscription.
+When the users attempt to access the Power BI Service, they receive the error message shown in the exhibit.
+(Your IT has turned off signup options)
+From Microsoft Azure PowerShell, run the Set-MsolCompanySettings cmdlet.
+The Set-MsolCompanySettings cmdlet is used to set company-level configuration settings.
