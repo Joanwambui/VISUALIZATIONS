@@ -285,3 +285,23 @@ Any Power View sheets in the workbook are re-created in Power BI as reports.
 
 Excel workbook -> publish -> “upload’ -> PowerBI.com “connect” (view only in powerBI, only editable in Excel workbook)
 Excel workbook -> publish -> “export’ -> PowerBI.com “import” (sync both side, editable both side and updated both side)
+
+FORMAT('Date'[date], "MMM YYYY") - gettig month value.
+
+Answer is Create a security role that has a table filter on the Sales_Manager table where username = UserName().
+
+The Power BI DAX USERNAME() function helps to return the user domain login with the form of (DomainUser) in the locality or your local system.
+The Power BI DAX USERPRINCIPALNAME() function helps to return the user principal name with the form of (User’s login credential or Preeti@.onmicrosoft.com) in the Power BI Online Service.
+Assuming username in the table contains DomainUser data, answer is A. If you are accessing the table it will be using the username.
+If it was in BI Service you will use userprincipalname()
+
+Answer is an additional date table named ShipDate, a one-to-many relationship from Date[date_id] to Sales[Sales_date_id], and a one-to-many relationship from ShipDate[date_id] to Sales[sales_ship_date_id]
+
+Scenario:
+The customer service department requires a visual that can be filtered by both sales month and ship month independently.
+In Power BI Desktop, only one relationship can be active between a Fact table and Dimension table, so we need an extra table.
+Use one-to-many relationship to be able to filter.
+
+A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal.
+indicator sales[amount], trend axis[date column], target [sales_target]
+
