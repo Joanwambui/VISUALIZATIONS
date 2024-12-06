@@ -209,3 +209,79 @@ Add the Power BI (preview) web part to your SharePoint Online page
 Paste the URL of the report when prompted
 To finish, save and publish your page
 
+Instead create a percentile line by using the Salary measure and set the percentile to 50%.
+Note: The 50th percentile is also known as the median or middle value where 50 percent of observations fall below.
+
+The question asked to grant read only access to it's viewer. Based on the attached reference on workspaces,
+the Viewer role gives a read-only experience to its users. They can view dashboards, reports, or workbooks in the workspace,
+but can’t browse the datasets or dataflows.
+Instead assign all the users the Viewer role to the workspace.
+Note: The Viewer role gives a read-only experience to its users.
+They can view dashboards, reports, or workbooks in the workspace,
+but cant browse the datasets or dataflows. Use the Viewer role wherever you would previously use a classic workspace set to Members can only view Power BI content.
+
+You have several reports and dashboards in a workspace.
+You need to grant all organizational users read access to a dashboard and several reports.
+Give them view access 
+
+the Viewer role gives a read-only experience to its users.
+They can view dashboards, reports, or workbooks in the workspace,
+but can’t browse the datasets or dataflows.
+
+If you want to add a formula, then add a custom column.
+A conditional column is just a custom column with a form that creates the formula for you.
+
+You need to create a hierarchy that has Category, Subcategory, and Product.
+To the product table, add a column named SubCategory that uses the RELATED ('Product SubCategory'[SubCategory]) DAX Function
+To the Product table, add a column named category that uses the RELATED('Product Category'[Category]) DAX Function
+Create a hierarchy
+
+Product Ranking = RANKX(ALL('Product'), [SalesAmount],,DESC, Dense)
+
+You can write a filter over two columns using a filter over the entire table that contains both columns.
+[Sales Red or Contoso - table filter] :=
+CALCULATE (
+[Sales Amount],
+FILTER (
+'Product',
+'Product'[Color] = "Red" || 'Product'[Brand] = "Contoso"
+)
+)
+
+You plan to add a table named Date to the model. The table will have columns for the date, year, month, and end of the last month, and will include data from January 1, 2013 to December 31, 2015.
+The Date table and the Sales table will have a relationship.
+Which DAX functions should you use to create the columns?
+CALENDAR, YEAR, MONTH, and EOMONTH
+CALENDAR instead of CALENDARAUTO is because we need to specify Jan 1 to Dec 31 frm 2013 to 2015.
+What if auto may give u Jan something else.
+
+EOMONTH instead of EndOfMonth is because we EOM returns a date, EndofM return a table.
+
+CALCULATE( COUNT(Sales[ShipDate]), FILTER(Sales, NOT(ISBLANK(Sales[ShipDate])) ) )
+
+You should prevent users to export data from here;
+Power Bi Admin Portal -> Tenant Settings -> Export data
+(From the Microsoft Office 365 Admin center, you modify the properties of Contoso PowerBI.)
+
+Developer settings are only for Apps and APIs. Therefore does not meet the goal-not for the wokspace
+
+IFrames can only be embedded into internal pages and need authentication, while the question wants to address external users.
+
+The only method of sharing a Report open to Free licence users is to publish the Report to the Web.
+Moreover, question has stated users do not even have any Power BI license.
+Shared capacity (10 GB) means only Pro level license, which only could work with Pro user as well,
+unless organization holds a Premium license with Premium capacity ( > 10 GB) which just could work with whichever user (including free user).
+So you need you need PREMIUM license.
+
+From the data security perspective,
+premium capacity could share to anyone (free end user), and assign role as "Viewer only".
+
+Aim is to have Power View sheets shown as Reports. That's done via Publish -> Export.
+
+Export workbook data to Power BI
+When you choose the Export option,
+any supported data in tables and/or a data model are exported into a new dataset in Power BI.
+Any Power View sheets in the workbook are re-created in Power BI as reports.
+
+Excel workbook -> publish -> “upload’ -> PowerBI.com “connect” (view only in powerBI, only editable in Excel workbook)
+Excel workbook -> publish -> “export’ -> PowerBI.com “import” (sync both side, editable both side and updated both side)
