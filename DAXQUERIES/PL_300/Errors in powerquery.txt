@@ -13,7 +13,7 @@ Formula.firewall error due to: Data privacy levele btwn data sources or the way 
 
 All the above ar step level errors
 
-Cell level errors will not prevent query from loading but displays error values as Error in cell. How to handle cell level errors: Removing, replacing or keeping the errors
+Cell level errors will not prevent query from loading but displays error values as Error in cell. How to handle cell level errors: Removing, replacing or keeping the errors or replace values
 
 To remove rows with errors in Power Query select column that contains errors, on home tab in reduce row group select remove rows and select remove errors
 same steps for keep errors under keep rows
