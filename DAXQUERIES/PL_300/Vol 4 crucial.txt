@@ -37,3 +37,4 @@ Select Ask a question about your data.
 The Q&A feature lets you create a visual by typing in a question about your data. This new visual can then be pinned to the dashboard, without adding it to a report. Inside the file menu and the tiles menu there are no “visual” options. See Related Content displays related content like reports, datasets, etc. You can’t create a new visual from here.
 https://learn.microsoft.com/training/modules/create-dashboards-power-bi/3-explore-data
 
+Binning, on the other hand, handles continuous data like numerical values or dates. It divides data into ranges (e.g., grouping order quantities into bins like "0-50," "51-100"). Binning is distinct from grouping because it applies only to continuous data types.
