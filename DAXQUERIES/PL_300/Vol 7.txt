@@ -1,3 +1,4 @@
+The Column Distribution feature is used to detect outliers in a numeric column by showing the min, max, distinct, and unique values. Column Profiling helps you see basic statistics, but Column Distribution is what you use for identifying outliers in Power Query.
 When we are trying to flatten parent-child hierarchy we use PATHITEM CROSS JOIN, EXCEPTPATH t work out the listing and see direct and indirect managers.
 
 A funnel visualization displays a linear process with sequentially connected stages, with one stage transitioning to the next. A slicer visualization is available in different formats, including list, drop-down, and buttons, but not sequentially connected stages, with one stage transitioning to the next. A treemap visualization displays data as a set of nested rectangles. A waterfall visualization displays a running total as values are added or subtracted.https://learn.microsoft.com/training/modules/power-bi-effective-reports/
