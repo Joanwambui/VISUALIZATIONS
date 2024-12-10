@@ -87,3 +87,17 @@ Power BI Premium per user workspace is limited to 48 refreshes per day compared 
 
 https://learn.microsoft.com/en-us/power-bi/
 All ref material
+
+To flatten a parent-child hierarchy and analyze direct and indirect relationships, the combination of PATHITEM, CROSSJOIN, and EXCEPT is used. PATHITEM extracts elements from the hierarchy, and CROSSJOIN is useful for combining tables, while EXCEPT helps identify the differences between levels in the hierarchy.
+
+The correct order for setting up incremental refresh is:
+Define filter parameters (to control the data range for the refresh).
+Apply the filter using the parameters.
+Define the incremental refresh policy (to set up how data is refreshed incrementally).
+Publish changes to the Power BI service (this activates the policy).
+
+In Power BI Premium Per User (PPU) workspaces, you can refresh datasets 48 times per day, compared to 8 refreshes per day in regular workspaces.
+
+ When you load a JSON file into Power BI and see a list of records in the Preview Pane, the Expander button next to the column header is used to expand the records and reveal the individual fields.
+
+When you disable Auto Date/Time in the Global Settings for Power BI Desktop, it does not retroactively disable it for already-created datasets. Instead, it will only be disabled for newly created relationships and datasets. Existing datasets will retain the Auto Date/Time feature unless explicitly disabled.
