@@ -1,6 +1,11 @@
 In which two places can a DAX calculated column be used, but a DAX calculated measure cannot be used? Each correct answer presents a complete solution.
 Unlike a measure, a calculated column can be used in a slicer to place filter options on the report page. DAX measures cannot be placed in the “Filters on this page” well. They can only be placed per visual, in the “Filters on this visual” well of the Filters Pane. Both DAX columns and measures may be used as a visual-level filter. Both DAX columns and measures can be used in the drillthrough well.
 
+The RELATED function requires a One-to-Many or One-to-One relationship.
+Dashboards are read-only, with static tiles.
+The Decomposition Tree allows you to analyze data across multiple dimensions interactively. Key Influencers identify correlations but don’t support drill-down.
+
+
 The RELATED function retrieves the value at the one-side of the relationship, while the RELATEDTABLE retrieves values on the many-side. The RELATEDTABLE function returns a table object.
 When the tables aren't related, you can use the LOOKUPVALUE DAX function.
 
