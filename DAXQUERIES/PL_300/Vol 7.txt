@@ -102,3 +102,5 @@ In Power BI Premium Per User (PPU) workspaces, you can refresh datasets 48 times
  When you load a JSON file into Power BI and see a list of records in the Preview Pane, the Expander button next to the column header is used to expand the records and reveal the individual fields.
 
 When you disable Auto Date/Time in the Global Settings for Power BI Desktop, it does not retroactively disable it for already-created datasets. Instead, it will only be disabled for newly created relationships and datasets. Existing datasets will retain the Auto Date/Time feature unless explicitly disabled.
+
+ A clustered bar chart displays comparisons between categories but does not include rankings over time. It doesn't show ranked relationships.
