@@ -10,3 +10,24 @@ The CALENDARAUTO function generates a range of dates based on the earliest and l
 https://learn.microsoft.com/training/modules/power-bi-effective-user-experience/
 https://learn.microsoft.com/power-bi/consumer/end-user-bookmarks 
 
+CALENDARAUTO generates a contiguous set of dates based on the data in the model, ensuring there are no gaps.
+
+DAX Studio provides the Clear Cache option to reset the data engine cache, which is separate from the visual cache.
+
+Adding multiple date columns to the fact table increases model size and redundancy, making administration more complex and inefficient. Using a date dimension resolves these issues.
+
+CALENDARAUTO automatically expands the range to cover the full years of the earliest and latest dates. Therefore, the range will be January 1, 2022, to March 31, 2023.
+
+CALENDARAUTO requires at least one date column in the dataset. If no date columns exist, it will throw an error.
+
+Clearing the visual cache is done directly in Power BI Desktop (by switching to a blank page). Clearing the data engine cache must be performed in DAX Studio or similar tools.
+
+Refreshing metadata in DAX Studio updates the model's schema to reflect any recent structural changes (e.g., new tables, relationships). It does not refresh or recalculate datasets.
+
+returns last day of each month : FILTER('Date', EOMONTH('Date'[Date], 0) = 'Date'[Date])
+
+Clearing the data engine cache resolves model-level calculation issues, while clearing the visual cache resolves only local rendering issues.
+The WEEKDAY function with a return type of 2 starts the week on Monday, making 6 (Saturday) and 7 (Sunday) correspond to weekends.
+IF(WEEKDAY('Date'[Date], 2) >= 6, "Weekend", "Weekday")
+
+
