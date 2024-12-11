@@ -1,0 +1,9 @@
+The Data Source Settings in the Power Query interface supports editing permissions, clearing permissions, and modifying the path of the data source file.
+Any structural changes to a file, such as adding, removing, or renaming columns are not supported by the Data Source Settings in the Power Query interface.
+
+The formula fails because row context transformations in FILTER are incompatible with implicit aggregation in SUMX. You would need to ensure proper context transitions by either using CALCULATE or avoiding implicit filtering.
+
+formula to identify leap years should handle exceptions for years divisible by 100 but not 400
+IF(YEAR('Date'[Date]) MOD 4 = 0 && (YEAR('Date'[Date]) MOD 100 <> 0 || YEAR('Date'[Date]) MOD 400 = 0), "Leap Year", "Non-Leap Year")
+
+The Admin role is the only one that has the permission to update workspace metadata.
