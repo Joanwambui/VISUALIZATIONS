@@ -30,4 +30,7 @@ Clearing the data engine cache resolves model-level calculation issues, while cl
 The WEEKDAY function with a return type of 2 starts the week on Monday, making 6 (Saturday) and 7 (Sunday) correspond to weekends.
 IF(WEEKDAY('Date'[Date], 2) >= 6, "Weekend", "Weekday")
 
+return the first day of the current month in a calculated column - DATE(YEAR(TODAY()), MONTH(TODAY()), 1)
+How can you ensure consistent results when using the WEEKNUM function in a calculated column for global datasets? b) Use a separate date dimension table with a pre-defined week number column.
+Explanation: While changing the first day of the week in Power BI settings might help with some local cases, for global consistency, it's recommended to use a dedicated date dimension table. A date dimension table allows for standardized week numbering, taking into account different regional settings for the start of the week.
 
