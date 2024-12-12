@@ -2,6 +2,32 @@ Errors in powerquery:
 step-level errors
 cell-level errors
 
+Which of the following could cause a step-level error?
+a) Missing values in a column
+b) Column renaming in a previous step
+c) Incorrectly combining or merging data sources
+
+What is the primary reason for a "Formula.Firewall" error in Power Query?
+Combining or merging data sources with conflicting privacy levels
+
+solution for handling a "Formula.Firewall" error?
+a) Change the privacy levels of data sources involved.
+b) Flatten tables before merging to remove nested structures.
+d) Use a shared file path for all users accessing the source.
+
+Which action would remove rows with errors in Power Query?
+
+Correct Answer: b) Select the column containing errors, go to the Reduce Rows group, and click Remove Errors.
+
+When could nested non-scalar values be reported as errors?
+a) When the column has the "Any" data type and contains non-scalar values.
+b) When privacy levels between data sources conflict.
+
+Which of the following scenarios would result in a "Column of table not found" error?
+
+Correct Answer: b) A step references a column name that no longer exists.
+
+
 Steplevel prevents query from loading and displays the error componenets due to the following reasons: Column of table not found
 
 Can't find source error reasons:Inaccesssible by user, user does not have correct credentials to accesss data source or file moved to a different place.
