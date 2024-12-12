@@ -1,6 +1,17 @@
 Node.js
 To develop custom visuals, you need to have NodeJS installed with Power BI tools and a server certificate.
 
+Scatter charts are used to explore relationships and patterns between two numerical data points.
+purpose of the key influencers visual in Power BI?To understand factors driving a specific metric
+
+Which feature in a scatter chart helps identify patterns, clusters, or outliers? The "Automatically find clusters" feature in scatter charts groups similar data points.
+
+What type of analysis can be performed using the decomposition tree visual?Exploratory breakdown of measures across dimensions
+
+Data classification labels or categorizes data based on sensitivity, ensuring compliance with governance policies.
+
+Only certain visuals like cards, KPIs, and gauges support individual pinning for alerts. Slicers cannot be pinned individually.
+
 custom visuals must be imported from AppSource each time you start developing a new report.
 
 One can analyze the performance of each of the report elements by using the performance analyzer 
