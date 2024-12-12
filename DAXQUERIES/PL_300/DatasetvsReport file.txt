@@ -1,4 +1,5 @@
 DatasetvsReport file
+A dataset can use DirectQuery, but a report file must use Import.
 
 Definition: A dataset in Power Query refers to a collection of data that has been imported, transformed, and prepared for analysis. This can include tables, relationships, and calculated fields.
 Purpose: The primary purpose of a dataset is to serve as the data foundation for reports and visualizations. It includes all the data sources, transformations, and models necessary to analyze and visualize data.
