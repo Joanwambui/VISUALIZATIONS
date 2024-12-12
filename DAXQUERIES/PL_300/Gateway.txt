@@ -4,6 +4,22 @@ Option A is not the best choice as it requires online processing operations, whi
 
 Option B is not necessary since the SQL Server is on-premises and not in a cloud environment. Gateway connections are typically used for cloud-based data sources that require access to on-premises data.
 
+Which of the following is NOT supported by the Power BI gateway (personal mode)?
+Correct Answer: b) On-premises Microsoft Exchange Server
+
+What is the best mode to minimize unnecessary processing for accessing on-premises SQL Server data in Power BI?
+Correct Answer: b) Import mode with scheduled daily refresh
+
+Configure gateway → Add data source → Add dataset owner → Configure scheduled refresh
+
+What is the primary purpose of a Virtual Network Data Gateway?
+Correct Answer: b) Connect from Microsoft Cloud Services to Azure Data Services in VNet
+
+Why is Import mode with scheduled refresh preferred over DirectQuery mode for on-premises SQL Server in most cases?
+Correct Answer: b) Import mode minimizes online processing operations
+
+
+
 Option D refreshes the data too frequently and might lead to unnecessary processing operations, which goes against one of the requirements.
 C. Create a dataflows connection that has Import mode selected and schedule a daily refresh. This minimizes unnecessary online processing operations.
 
