@@ -2,3 +2,8 @@ Employees in 10 states. Recently decided to associate each state with these thre
 East, west, north
 My data model contains employee info by state.  It does not have region info yet. Report shows employee by state and want to show by region as quickly as possible:
 Create a new group on the state column and set the group type to list.
+
+Why is grouping by state into regions useful in this scenario?
+It helps in organizing the employee data into more general categories for quicker analysis.
+ Grouping by region helps to organize the data more effectively for high-level analysis. It doesn't aggregate the data into a single value per state but helps categorize the data by region for better clarity.
+
