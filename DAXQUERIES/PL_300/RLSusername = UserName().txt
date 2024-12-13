@@ -2,5 +2,5 @@ username = UserName()
 will return DOMAIN\User
 userprincipalname() will retun user@contoso.com
 
-Use UserName() if your organization primarily uses Windows Active Directory (AD) for authentication and access control.
-Use UserPrincipalName() when your organization uses Azure Active Directory (AAD) or other cloud-based identity services.
+Use UserName() if your organization primarily uses Windows Active Directory (AD) for authentication and access control. - onprem
+Use UserPrincipalName() when your organization uses Azure Active Directory (AAD) or other cloud-based identity services. -cloud
