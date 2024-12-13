@@ -2,6 +2,9 @@ RLS
  In the Power BI service, users with access to a workspace have access to semantic models in that workspace. RLS only restricts data access for users with Viewer permissions. It doesn't apply to Admins, Members, or Contributors.
 If you want report layout to not be changed, most definitely use app to share reports or rather manage access
 
+RLS does not apply to Admins, Members, or Contributors, only to users with Viewer permissions.
+Using an app ensures the report layout remains unchange
+
 1. Admin
 Admins have the highest level of permissions in a Power BI workspace. They can:
 
