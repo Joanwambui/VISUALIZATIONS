@@ -47,4 +47,9 @@ for the app it provides access to read only consumers
 
 distrbtn of content frm wrkspace can be done from links or direct access
 
-
+if you navigate to security - you can add people in the rowevel security but if there many users that can be time-consuming so instead we can create
+security group in azure active directory then write pyton script to add/remove users dynamically.
+implemented this by providing azure ad creds
+-tenant id, client_id, user_principal_name = email
+instead of adding all the members now we can just add the security group instead.
+now test as role still on service
