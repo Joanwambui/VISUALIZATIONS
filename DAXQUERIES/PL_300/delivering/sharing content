@@ -1,1 +1,50 @@
+workspace organization:
+-common dataflows
+-datasets
+-reports
+DATA WORKSPACE
+REPRT WORKSPACE
+
+Pple that can edit workspaces
+contrbtr,member,admin
+
+build allows one to create new content based on the shared datasets
+a dataset already in the workspace one can use directquery for powerbi dataset to create reports
+
+build permission allows user to:
+create new reports
+create composite model
+connect xmla endpoint
+analyze in excel
+
+bbuild permission can be granted directly via dataet permission or indirectly granted in the following ways
+-saring report/dasboard
+-publishing an app
+workspace roles of contrbtr,member or admin
+
+BI Contentt ownership approaches
+-business led selfservice BI
+-Managed selfservice BI
+-Enterprise BI
+
+Standard workspace allows for:
+better collabooration
+better security
+reduced risk
+
+my workspace - 
+stadard workspace - collaboration/small team distrbtn
+app - broad content distrbtn/pple you don't work closely with
+sharing - 
+
+if you have been editing the reportss and you had an app - you will have to publish on the app again
+(dataset changes happen immediately (from workspace to app))
+there is a workaround for this though- 
+
+workspace you can limit access to those authoring,developing,data validators, qa ad user accptnce testing
+
+for the app it provides access to read only consumers
+
+distrbtn of content frm wrkspace can be done from links or direct access
+
 
