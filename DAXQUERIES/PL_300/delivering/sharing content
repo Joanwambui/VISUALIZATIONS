@@ -53,3 +53,15 @@ implemented this by providing azure ad creds
 -tenant id, client_id, user_principal_name = email
 instead of adding all the members now we can just add the security group instead.
 now test as role still on service
+
+only admin and member have te ability to share links to reports from the wrkspace
+admin and member are the only ones that can publish reports to the app
+clustr themes of the report and categorize users into groups based on their specific reporting needs
+
+row-level security - access only certain rows of data
+object level security - enables safeguarding sensitive tables and columns
+
+certified custom visuals are available on app source that have undergone comprehensive qality testing
+Only custom visuals that have been certified are capable f being viewed in export tto powerpoint mode and email subscrptns
+
+user actvty can be tracked on bi actvty log and unified office 365 audit log
