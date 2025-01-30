@@ -10,4 +10,4 @@ Total      210        210
 
 Measure (AvgPrice)= CALCULATE(AVERAGE(Products[Price]), ALL(Products))
 
-Measure (Avg Price final) = IF(HASONEVALUE(Products[Name]),[AvgPrice],SUMX(Products, [AvgPrice]))
+Measure (Avg Price final) = IF(HASONEVALUE(Products[Name]),[AvgPrice],SUMX(Products, [AvgPrice])) .
