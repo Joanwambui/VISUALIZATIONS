@@ -1,3 +1,4 @@
+
 Creating a Dashed horizontal line for a forecast visual denoting 40th percentile of daily sales 
 
 DAX = PERCENTILEX.INC(Sales,Sales[Total Sales],0.40)
